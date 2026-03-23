@@ -1,0 +1,17 @@
+﻿---
+title: ""
+image: "../../images/py_kurs_cover06.webp"
+toc: true
+toc-depth: 3
+page-layout: full
+---
+
+<br>
+
+::: {.d-flex .gap-2}
+[Home](../../index.qmd){.btn .btn-outline-secondary .btn-sm}
+[Python Overview](../index.qmd){.btn .btn-outline-secondary .btn-sm}
+:::
+
+# Week 6: Pandas II
+*The foundation of your Python journey.*

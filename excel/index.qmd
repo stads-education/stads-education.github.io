@@ -1,0 +1,12 @@
+---
+title: "Excel Course"
+subtitle: "Learn the Excel fundamentals."
+layout: full
+listing:
+  contents: 
+    - "01_pdf_test.qmd"
+
+  type: grid           
+  sort: "filename"     
+  categories: false
+---

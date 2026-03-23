@@ -1,0 +1,12 @@
+{
+  "hash": "143edaec1715398439cdba8b33eb98c1",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: \"Lesson 01 — Basics\"\nexecute:\n  freeze: true\n---\n\n## Python Basics (Lesson placeholder)\n\n::: {#ac20baeb .cell execution_count=1}\n``` {.python .cell-code}\n# Kurzes Beispiel\nprint('Hello STADS!')\n```\n\n::: {.cell-output .cell-output-stdout}\n```\nHello STADS!\n```\n:::\n:::\n\n\n::: callout-tip\nDiese Lesson ist ein Platzhalter. Inhalte aus der alten Seite können hier eingefügt werden.\n:::\n\n",
+    "supporting": [
+      "01_basics_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}

@@ -1,0 +1,17 @@
+﻿---
+title: ""
+image: "../../images/py_kurs_cover09.webp"
+toc: true
+toc-depth: 3
+page-layout: full
+---
+
+<br>
+
+::: {.d-flex .gap-2}
+[Home](../../index.qmd){.btn .btn-outline-secondary .btn-sm}
+[Python Overview](../index.qmd){.btn .btn-outline-secondary .btn-sm}
+:::
+
+# Week 9: Q&A and Sample Exam
+*The foundation of your Python journey.*

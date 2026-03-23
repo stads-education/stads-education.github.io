@@ -1,0 +1,7 @@
+# python/_metadata.yml
+block-layout: true
+
+format:
+  html:
+    toc: true
+    toc-depth: 3

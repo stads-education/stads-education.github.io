@@ -1,0 +1,22 @@
+---
+title: "Python Fundamentals"
+subtitle: "From Zero to Data Hero"
+layout: full
+listing:
+  contents: 
+    - "01basics1.qmd"
+    - "02basics2.qmd"
+    - "03basics3.qmd"
+    - "04basics4.qmd"
+    - "05pandas1.qmd"
+    - "06pandas2.qmd"
+    - "07Visualisations.qmd"
+    - "08WrapUp_Refresher.qmd"
+    - "09QA_SampleExam.qmd"
+  type: grid           # Creates clean cards for each chapter
+  sort: "filename"     # Sorts by 01, 02...
+  categories: false
+---
+
+Welcome to the STADS Python course! This course is divided into logical stages.
+Choose a chapter below to get started.

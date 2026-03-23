@@ -1,0 +1,72 @@
+---
+title: ""
+page-layout: full
+sidebar: false
+toc: false
+execute:
+  freeze: true
+---
+
+<br><br><br><br><br>
+
+
+
+
+::: {.column-screen .hero-vibe}
+::: {.hero-content}
+<div class="hero-title">Learn what makes Code work.</div>
+<div class="hero-subtitle">Master the tech universities don't teach.</div>
+
+<br>
+
+[Go to Courses](#courses){.btn .hero-btn}
+:::
+:::
+
+<br><br><br>
+
+::: {.column-page #courses}
+---
+
+<br>
+
+::: {.text-start}
+# Current Course Portfolio
+:::
+
+<br>
+
+::: {.course-grid}
+
+::: {.card .p-5 .text-center .shadow-sm .card-flex}
+<div>
+## 📊 Excel Course
+Learn to handle data with confidence, build clean spreadsheets, and master the tools you'll actually need in a professional office environment.
+</div>
+
+[View Course Details](excel/index.qmd){.btn .btn-lg .btn-custom}
+:::
+
+::: {.card .p-5 .text-center .shadow-sm .card-flex}
+<div>
+## 🐍 Python Fundamentals
+Master the world's most popular language for data science. From basics to advanced data manipulation with Pandas.
+</div>
+
+[View Course Details](python/index.qmd){.btn .btn-lg .btn-custom}
+:::
+
+::: {.card .p-5 .text-center .shadow-sm .card-flex}
+<div>
+## 🤖 Agentic Engineering
+Learn to build software at the speed of thought. Master LLMs, AI-assistants, and modern developer workflows.
+</div>
+
+[View Course Details](agentic_engineering/index.qmd){.btn .btn-lg .btn-custom}
+:::
+
+:::
+:::
+
+<br><br><br>
+

@@ -1,0 +1,46 @@
+project:
+  type: website
+  resources:
+    - images/
+
+website:
+  title: ""
+  navbar:
+    background: primary
+    logo: images/STADS_LOGO_2021_SHORT_wht.png
+    left:
+      - href: index.qmd
+        text: Home
+      - text: Courses
+        menu:
+          - href: python/index.qmd
+            text: Python Course
+          - href: agentic_engineering/index.qmd
+            text: Agentic Engineering
+          - href: excel/index.qmd
+            text: Excel Course
+      - href: https://www.stads.de/
+        text: About Us
+        target: _blank
+    right:
+      - icon: github
+        href: https://github.com/DavidSnr1/stads-quarto-demo
+        target: _blank
+
+  
+
+format:
+  html:
+    theme: cosmo
+    css: styles/custom.css
+    include-after-body:
+      text: |
+        <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          const links = document.querySelectorAll('.new-tab');
+          links.forEach(link => {
+            link.setAttribute('target', '_blank');
+            link.setAttribute('rel', 'noopener noreferrer');
+          });
+        });
+        </script>
