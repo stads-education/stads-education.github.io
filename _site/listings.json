@@ -6,10 +6,6 @@
     ]
   },
   {
-    "listing": "/agentic_engineering/index.html",
-    "items": []
-  },
-  {
     "listing": "/python/index.html",
     "items": [
       "/python/lessons/01basics1.html",
@@ -22,5 +18,9 @@
       "/python/lessons/08WrapUp_Refresher.html",
       "/python/lessons/09QA_SampleExam.html"
     ]
+  },
+  {
+    "listing": "/agentic_engineering/index.html",
+    "items": []
   }
 ]
