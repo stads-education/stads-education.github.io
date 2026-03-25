@@ -16,8 +16,9 @@ Excel Grundlagen: Formeln - Formatierung - Datenanalyse
 
 ::: {.card .shadow-sm .p-3}
 ![PDF Preview](../../../files/Excel_Grundlagen_preview.jpg){.border .rounded .mb-3}
-
+<!--
 [Download PDF](../../../files/Excel_Grundlagen.pdf){.btn .btn-outline-primary .w-100 role="button" target="_blank"}
+-->
 :::
 :::
 
