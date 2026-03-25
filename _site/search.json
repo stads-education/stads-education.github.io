@@ -1,54 +1,5 @@
 [
   {
-    "objectID": "python/lessons/09QA_SampleExam.html",
-    "href": "python/lessons/09QA_SampleExam.html",
-    "title": "Week 9: Q&A and Sample Exam",
-    "section": "",
-    "text": "Home Python Overview\n\n\nWeek 9: Q&A and Sample Exam\nThe foundation of your Python journey."
-  },
-  {
-    "objectID": "python/lessons/07Visualisations.html",
-    "href": "python/lessons/07Visualisations.html",
-    "title": "Week 7: Visualisations",
-    "section": "",
-    "text": "Home Python Overview\n\n\nWeek 7: Visualisations\nThe foundation of your Python journey."
-  },
-  {
-    "objectID": "python/lessons/05pandas1.html",
-    "href": "python/lessons/05pandas1.html",
-    "title": "Week 5: Pandas I",
-    "section": "",
-    "text": "Home Python Overview\n\n\nWeek 5: Pandas I\nThe foundation of your Python journey."
-  },
-  {
-    "objectID": "python/lessons/03basics3.html#project-3-random-number-guesser",
-    "href": "python/lessons/03basics3.html#project-3-random-number-guesser",
-    "title": "Week 3: Python Basics III",
-    "section": "Project 3: Random Number Guesser",
-    "text": "Project 3: Random Number Guesser\n\nThe TaskThe Solution\n\n\nYour task is to code the number guesser game. You should generate a random number and the user has to keep guessing until they find the number.\nTo do:\nInitialize a random number. Create a loop that runs until the number is guessed. Ask the user for their guess. If the guessed number equals the actual number then print “Hurraaa you won! GUESSED_NUMBER was the correct guess.” If the guessed number is larger than the actual number then print “Go lower!” If the guessed number is smaller than the actual number then print “Go higher!”\nOptional:\nImplement lives so the user must guess the number within a limited number of tries. Give the user the chance to play again after a correct guess.\n\n\nimport random\n\nnum = random.randrange(0,100)\n\nnumber_guessed = False\n\nwhile not number_guessed:\n    guess = int(input(\"Guess a number between 0 and 100: \"))\n    if guess == num:\n        print(f\"Hurraaa you won! {guess} was the corret guess.\")\n        play_again = input(\"Do you want to play again? (y/n): \")\n        if play_again == \"y\":\n            num = random.randrange(0,100)\n        else:\n            number_guessed = True\n    elif guess &gt; num:\n        print(\"Go lower!\")\n    else:\n        print(\"Go higher!\")"
-  },
-  {
-    "objectID": "python/lessons/03basics3.html#resources",
-    "href": "python/lessons/03basics3.html#resources",
-    "title": "Week 3: Python Basics III",
-    "section": "Resources",
-    "text": "Resources\n\n\n\nGitHub Repo\n\n\nw3schools Tutorial"
-  },
-  {
-    "objectID": "python/lessons/01basics1.html#project-1-band-name-generator",
-    "href": "python/lessons/01basics1.html#project-1-band-name-generator",
-    "title": "Week 1: Python Basics I",
-    "section": "Project 1: Band Name Generator",
-    "text": "Project 1: Band Name Generator\n\nThe TaskThe Solution\n\n\nCreate a band name generator that processes user input.\n\nCreate a welcome message for your program.\nAsk the user for the city where they grew up.\nAsk the user for the name of their first pet.\nCombine the city and pet names and show them their band name.\n\n\n\nprint(\"Welcome to the Band Name Generator.\")\ncity = input(\"What's the name of the city you grew up in?\\n\")\npet = input(\"What's your pet's name?\\n\")\nprint(\"Your band name could be \" + city + \" \" + pet)"
-  },
-  {
-    "objectID": "python/lessons/01basics1.html#resources",
-    "href": "python/lessons/01basics1.html#resources",
-    "title": "Week 1: Python Basics I",
-    "section": "Resources",
-    "text": "Resources\n\n\n\nGitHub Repo\n\n\nw3schools Tutorial"
-  },
-  {
     "objectID": "index.html#excel-course",
     "href": "index.html#excel-course",
     "title": "Current Course Portfolio",
@@ -77,11 +28,39 @@
     "text": "Excel Course Material\n\n\nDownloadable PDF and Excel files.\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "agentic_engineering/index.html",
-    "href": "agentic_engineering/index.html",
-    "title": "Vibecoding",
+    "objectID": "python/lessons/07Visualisations.html",
+    "href": "python/lessons/07Visualisations.html",
+    "title": "Week 7: Visualisations",
     "section": "",
-    "text": "No matching items"
+    "text": "Home Python Overview\n\n\nWeek 7: Visualisations\nThe foundation of your Python journey."
+  },
+  {
+    "objectID": "python/lessons/08WrapUp_Refresher.html",
+    "href": "python/lessons/08WrapUp_Refresher.html",
+    "title": "Week 8: Wrap-Up & Refresher",
+    "section": "",
+    "text": "Home Python Overview\n\n\nWeek 8: Wrap-Up & Refresher\nThe foundation of your Python journey."
+  },
+  {
+    "objectID": "python/lessons/05pandas1.html",
+    "href": "python/lessons/05pandas1.html",
+    "title": "Week 5: Pandas I",
+    "section": "",
+    "text": "Home Python Overview\n\n\nWeek 5: Pandas I\nThe foundation of your Python journey."
+  },
+  {
+    "objectID": "python/lessons/09QA_SampleExam.html",
+    "href": "python/lessons/09QA_SampleExam.html",
+    "title": "Week 9: Q&A and Sample Exam",
+    "section": "",
+    "text": "Home Python Overview\n\n\nWeek 9: Q&A and Sample Exam\nThe foundation of your Python journey."
+  },
+  {
+    "objectID": "python/lessons/04basics4.html",
+    "href": "python/lessons/04basics4.html",
+    "title": "Week 4: Python Basics IV",
+    "section": "",
+    "text": "Home Python Overview\n\n\nWeek 4: Python Basics IV\nThe foundation of your Python journey."
   },
   {
     "objectID": "contact.html",
@@ -91,18 +70,46 @@
     "text": "Contact\nContact us if you have questions about our courses.\n(Page under construction)"
   },
   {
-    "objectID": "excel/lessons/data/01_pdf_test.html",
-    "href": "excel/lessons/data/01_pdf_test.html",
-    "title": "Excel Course Material",
-    "section": "",
-    "text": "Downloadable PDF and Excel files for the course.\n\n\n\n\nPDF\nPDF File\n\n\n\n\nPDF Preview\n\n\nDownload PDF\n\n\n\n\n\n\nExcel\nExcel File\n\n\n\n\nExcel Preview\n\n\nDownload Excel"
-  },
-  {
     "objectID": "python/index.html",
     "href": "python/index.html",
     "title": "Python Fundamentals",
     "section": "",
     "text": "Welcome to the STADS Python course! This course is divided into logical stages. Choose a chapter below to get started.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWeek 1: Python Basics I\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWeek 2: Python Basics II\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWeek 3: Python Basics III\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWeek 4: Python Basics IV\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWeek 5: Pandas I\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWeek 6: Pandas II\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWeek 7: Visualisations\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWeek 8: Wrap-Up & Refresher\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWeek 9: Q&A and Sample Exam\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "python/lessons/01basics1.html#project-1-band-name-generator",
+    "href": "python/lessons/01basics1.html#project-1-band-name-generator",
+    "title": "Week 1: Python Basics I",
+    "section": "Project 1: Band Name Generator",
+    "text": "Project 1: Band Name Generator\n\nThe TaskThe Solution\n\n\nCreate a band name generator that processes user input.\n\nCreate a welcome message for your program.\nAsk the user for the city where they grew up.\nAsk the user for the name of their first pet.\nCombine the city and pet names and show them their band name.\n\n\n\nprint(\"Welcome to the Band Name Generator.\")\ncity = input(\"What's the name of the city you grew up in?\\n\")\npet = input(\"What's your pet's name?\\n\")\nprint(\"Your band name could be \" + city + \" \" + pet)"
+  },
+  {
+    "objectID": "python/lessons/01basics1.html#resources",
+    "href": "python/lessons/01basics1.html#resources",
+    "title": "Week 1: Python Basics I",
+    "section": "Resources",
+    "text": "Resources\n\n\n\nGitHub Repo\n\n\nw3schools Tutorial"
+  },
+  {
+    "objectID": "python/lessons/03basics3.html#project-3-random-number-guesser",
+    "href": "python/lessons/03basics3.html#project-3-random-number-guesser",
+    "title": "Week 3: Python Basics III",
+    "section": "Project 3: Random Number Guesser",
+    "text": "Project 3: Random Number Guesser\n\nThe TaskThe Solution\n\n\nYour task is to code the number guesser game. You should generate a random number and the user has to keep guessing until they find the number.\nTo do:\nInitialize a random number. Create a loop that runs until the number is guessed. Ask the user for their guess. If the guessed number equals the actual number then print “Hurraaa you won! GUESSED_NUMBER was the correct guess.” If the guessed number is larger than the actual number then print “Go lower!” If the guessed number is smaller than the actual number then print “Go higher!”\nOptional:\nImplement lives so the user must guess the number within a limited number of tries. Give the user the chance to play again after a correct guess.\n\n\nimport random\n\nnum = random.randrange(0,100)\n\nnumber_guessed = False\n\nwhile not number_guessed:\n    guess = int(input(\"Guess a number between 0 and 100: \"))\n    if guess == num:\n        print(f\"Hurraaa you won! {guess} was the corret guess.\")\n        play_again = input(\"Do you want to play again? (y/n): \")\n        if play_again == \"y\":\n            num = random.randrange(0,100)\n        else:\n            number_guessed = True\n    elif guess &gt; num:\n        print(\"Go lower!\")\n    else:\n        print(\"Go higher!\")"
+  },
+  {
+    "objectID": "python/lessons/03basics3.html#resources",
+    "href": "python/lessons/03basics3.html#resources",
+    "title": "Week 3: Python Basics III",
+    "section": "Resources",
+    "text": "Resources\n\n\n\nGitHub Repo\n\n\nw3schools Tutorial"
+  },
+  {
+    "objectID": "python/lessons/06pandas2.html",
+    "href": "python/lessons/06pandas2.html",
+    "title": "Week 6: Pandas II",
+    "section": "",
+    "text": "Home Python Overview\n\n\nWeek 6: Pandas II\nThe foundation of your Python journey."
   },
   {
     "objectID": "python/lessons/02basics2.html#project-2-love-calculator",
@@ -119,59 +126,17 @@
     "text": "Resources\n\n\n\nGitHub Repo\n\n\nw3schools Tutorial"
   },
   {
-    "objectID": "python/lessons/04basics4.html",
-    "href": "python/lessons/04basics4.html",
-    "title": "Week 4: Python Basics IV",
+    "objectID": "agentic_engineering/index.html",
+    "href": "agentic_engineering/index.html",
+    "title": "Vibecoding",
     "section": "",
-    "text": "Home Python Overview\n\n\nWeek 4: Python Basics IV\nThe foundation of your Python journey."
-  },
-  {
-    "objectID": "python/lessons/06pandas2.html",
-    "href": "python/lessons/06pandas2.html",
-    "title": "Week 6: Pandas II",
-    "section": "",
-    "text": "Home Python Overview\n\n\nWeek 6: Pandas II\nThe foundation of your Python journey."
-  },
-  {
-    "objectID": "python/lessons/08WrapUp_Refresher.html",
-    "href": "python/lessons/08WrapUp_Refresher.html",
-    "title": "Week 8: Wrap-Up & Refresher",
-    "section": "",
-    "text": "Home Python Overview\n\n\nWeek 8: Wrap-Up & Refresher\nThe foundation of your Python journey."
-  },
-  {
-    "objectID": "excel/lessons/data/01_pdf_test.html#title-excel-masterclass",
-    "href": "excel/lessons/data/01_pdf_test.html#title-excel-masterclass",
-    "title": "Excel Kurs-Unterlagen",
-    "section": "title: “Excel Masterclass”",
-    "text": "title: “Excel Masterclass”\n\n📊 Interaktive Daten-Vorschau\nHier kannst du die Struktur der Excel-Vorlage direkt im Browser prüfen:\n\n\n\n\n  \n    \n      \n    \n        \n        \n        \n        \n        \n        \n        \n        \n    \n    \n   \n    \n      \n  \n        \n    \n    \n  \n        \n    \n    \n  \n        \n    \n      \n  \n        \n            \n                \n                \n            \n\n            \n                \n                \n            \n\n            \n                \n                \n            \n\n            \n                \n                \n            \n\n            \n                \n                \n            \n        \n    \n\n\n        Loading ITables v2.7.3 from the internet...\n        (need help?)\n      \n    \n  \n\n\n\n\n\n:: {.card .p-3 .mt-4 .shadow-sm style=“border-left: 6px solid #198754; background-color: #f8fff9;”} ::: d-flex .align-items-center\n\nBereit zur Bearbeitung? Lade dir die vollständige Vorlage inklusive aller Formeln und Formatierungen herunter.\n\n\n📥 Excel herunterladen{.btn .btn-success .btn-lg .px-4 target=“_blank” role=“button”}(../../../files/Newsvendor.xlsx)\n\n::: :::"
+    "text": "No matching items"
   },
   {
     "objectID": "excel/lessons/data/Course_Material.html",
     "href": "excel/lessons/data/Course_Material.html",
     "title": "Excel Course Material",
     "section": "",
-    "text": "Excel Grundlagen\nExcel Grundlagen: Formeln - Formatierung - Datenanalyse\n\n\n\n\nPDF Preview\n\n\nDownload PDF\n\n\n\n\n\n\nExcel Aufgaben\nExcel Aufgaben und Übungen zur Vertiefung der Grundlagen\n\n\n\n\nExcel Preview\n\n\nDownload Excel"
-  },
-  {
-    "objectID": "Home.html#excel-course",
-    "href": "Home.html#excel-course",
-    "title": "Current Course Portfolio",
-    "section": "📊 Excel Course",
-    "text": "📊 Excel Course\nLearn to handle data with confidence, build clean spreadsheets, and master the tools you’ll actually need in a professional office environment."
-  },
-  {
-    "objectID": "Home.html#python-fundamentals",
-    "href": "Home.html#python-fundamentals",
-    "title": "Current Course Portfolio",
-    "section": "🐍 Python Fundamentals",
-    "text": "🐍 Python Fundamentals\nMaster the world’s most popular language for data science. From basics to advanced data manipulation with Pandas."
-  },
-  {
-    "objectID": "Home.html#agentic-engineering",
-    "href": "Home.html#agentic-engineering",
-    "title": "Current Course Portfolio",
-    "section": "🤖 Agentic Engineering",
-    "text": "🤖 Agentic Engineering\nLearn to build software at the speed of thought. Master LLMs, AI-assistants, and modern developer workflows."
+    "text": "Excel Grundlagen\nExcel Grundlagen: Formeln - Formatierung - Datenanalyse\n\n \n\n\n\n\n\n\nExcel Aufgaben\nExcel Aufgaben und Übungen zur Vertiefung der Grundlagen\n\n\n\n\nExcel Preview\n\n\nDownload Excel"
   }
 ]
