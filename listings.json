@@ -1,0 +1,26 @@
+[
+  {
+    "listing": "/agentic_engineering/index.html",
+    "items": []
+  },
+  {
+    "listing": "/python/index.html",
+    "items": [
+      "/python/lessons/01basics1.html",
+      "/python/lessons/02basics2.html",
+      "/python/lessons/03basics3.html",
+      "/python/lessons/04basics4.html",
+      "/python/lessons/05pandas1.html",
+      "/python/lessons/06pandas2.html",
+      "/python/lessons/07Visualisations.html",
+      "/python/lessons/08WrapUp_Refresher.html",
+      "/python/lessons/09QA_SampleExam.html"
+    ]
+  },
+  {
+    "listing": "/excel/index.html",
+    "items": [
+      "/excel/lessons/data/Course_Material.html"
+    ]
+  }
+]
