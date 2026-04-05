@@ -48,35 +48,25 @@ Optional:
 Implement lives so the user must guess the number within a limited number of tries.
 Give the user the chance to play again after a correct guess.
 
-### The Solution
-```python
-import random
+### Hint
 
-num = random.randrange(0,100)
+Here is a description of all steps required:
 
-number_guessed = False
-
-while not number_guessed:
-    guess = int(input("Guess a number between 0 and 100: "))
-    if guess == num:
-        print(f"Hurraaa you won! {guess} was the corret guess.")
-        play_again = input("Do you want to play again? (y/n): ")
-        if play_again == "y":
-            num = random.randrange(0,100)
-        else:
-            number_guessed = True
-    elif guess > num:
-        print("Go lower!")
-    else:
-        print("Go higher!")
-```
+- Import the random library
+- Create a random number between 0 and 100
+- Create an infinite loop and ask the user for a guess inside the loop
+- Check inside the loop if the guess equals the random number. If so print "Hurraaa you won! {guess} was the correct guess."
+    - At this point you can optionally ask the user if they want to play again. If they answer yes then overwrite the random number with a new random number
+    - If they don't want to play again or you don't want to implement the option to play again: break the loop
+- Else if the guess is larger than the random number print "Go lower!"
+- Else print "Go higher!"
 
 :::
 
 ## Resources
 
 ::: {layout-ncol=2}
-[GitHub Repo](https://www.github.com/STADS-Mannheim/python-course-2025/tree/main){.btn .btn-outline-primary .btn-lg .w-100}
+[GitHub Repo](https://www.github.com/STADS-Mannheim/python-course-2025/tree/main){.btn .btn-outline-primary .btn-lg .w-100 .new-tab}
 
-[w3schools Tutorial](https://www.w3schools.com/python/){.btn .btn-outline-primary .btn-lg .w-100}
+[w3schools Tutorial](https://www.w3schools.com/python/){.btn .btn-outline-primary .btn-lg .w-100 .new-tab}
 :::

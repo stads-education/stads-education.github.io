@@ -11,20 +11,14 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - text: Courses
-        menu:
-          - href: python/index.qmd
-            text: Python Course
-          - href: agentic_engineering/index.qmd
-            text: Agentic Engineering
-          - href: excel/index.qmd
-            text: Excel Course
+      - href: courses.qmd
+        text: Courses
       - href: https://www.stads.de/
         text: About Us
         target: _blank
     right:
       - icon: github
-        href: https://github.com/DavidSnr1/stads-quarto-demo
+        href: https://github.com/stads-education
         target: _blank
 
   

@@ -42,20 +42,19 @@ Create a band name generator that processes user input.
 3. Ask the user for the name of their first pet.
 4. Combine the city and pet names and show them their band name.
 
-### The Solution
-```python
-print("Welcome to the Band Name Generator.")
-city = input("What's the name of the city you grew up in?\n")
-pet = input("What's your pet's name?\n")
-print("Your band name could be " + city + " " + pet)
-```
+### Hint
+# Project 1 Band Name Generator HINTS
+
+1. Create a varibale named city and ask the user for an input.
+2. Create a variable named pet and ask the user for an input.
+3. Print the concatenation of both city and pet.
 
 :::
 
 ## Resources
 
 ::: {layout-ncol=2}
-[GitHub Repo](https://www.github.com/STADS-Mannheim/python-course-2025/tree/main){.btn .btn-outline-primary .btn-lg .w-100 target="_blank"}
+[GitHub Repo](https://www.github.com/STADS-Mannheim/python-course-2025/tree/main){.btn .btn-outline-primary .btn-lg .w-100 target="_blank" .new-tab}
 
-[w3schools Tutorial](https://www.w3schools.com/python/){.btn .btn-outline-primary .btn-lg .w-100}
+[w3schools Tutorial](https://www.w3schools.com/python/){.btn .btn-outline-primary .btn-lg .w-100 .new-tab}
 :::

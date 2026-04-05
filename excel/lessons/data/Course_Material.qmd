@@ -1,7 +1,7 @@
 ---
 title: "Excel Course Material"
 description: "Downloadable PDF and Excel files."
-image: "../../../images/Excel_Logo.jpg"
+image: "../../../images/excel_kurs_preview_icon.png"
 toc: true
 toc-depth: 3
 page-layout: full

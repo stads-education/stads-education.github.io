@@ -7,31 +7,8 @@ execute:
   freeze: true
 ---
 
-<br><br><br><br><br>
-
-
-
-
-::: {.column-screen .hero-vibe}
-::: {.hero-content}
-<div class="hero-title">Learn what makes Code work.</div>
-<div class="hero-subtitle">Master the tech universities don't teach.</div>
-
-<br>
-
-[Go to Courses](#courses){.btn .hero-btn}
-:::
-:::
-
-<br><br><br>
-
-::: {.column-page #courses}
----
-
-<br>
-
 ::: {.text-start}
-# Current Course Portfolio
+# The Complete Course Portfolio
 :::
 
 <br>
@@ -39,25 +16,33 @@ execute:
 ::: {.course-grid}
 
 ::: {.card .p-5 .text-center .shadow-sm .card-flex}
-<div>
+::: {.flex-grow-1}
 ## <img src="images/excel_kurs_preview_icon.png" style="height:1.2em;vertical-align:middle;margin-right:0.3em;" alt=""> Excel Course
 Learn to handle data with confidence, build clean spreadsheets, and master the tools you'll actually need in a professional office environment.
-</div>
+:::
 
 [View Course Details](excel/index.qmd){.btn .btn-lg .btn-custom}
 :::
 
 ::: {.card .p-5 .text-center .shadow-sm .card-flex}
-<div>
+::: {.flex-grow-1}
+## <img src="images/py_kurs_preview_icon.webp" style="height:1.2em;vertical-align:middle;margin-right:0.3em;" alt=""> Python Course
+Master the world's most popular language for data science. From basics to advanced data manipulation with Pandas.
+:::
+
+[View Course Details](python/index.qmd){.btn .btn-lg .btn-custom}
+:::
+
+::: {.card .p-5 .text-center .shadow-sm .card-flex}
+::: {.flex-grow-1}
 ## <img src="images/ae_kurs_preview_icon.webp" style="height:1.2em;vertical-align:middle;margin-right:0.3em;" alt=""> Agentic Engineering
 Learn to build software at the speed of thought. Master LLMs, AI-assistants, and modern developer workflows.
-</div>
+:::
 
 [View Course Details](agentic_engineering/index.qmd){.btn .btn-lg .btn-custom}
 :::
 
 :::
-:::
 
-<br><br><br>
+
 
