@@ -19,7 +19,7 @@ execute:
 
 <br>
 
-[Go to Courses](#courses){.btn .hero-btn}
+[Go to Courses](courses.qmd){.btn .hero-btn}
 :::
 :::
 
