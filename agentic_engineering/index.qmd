@@ -1,6 +1,6 @@
 ---
-title: "Vibecoding"
-subtitle: "From Zero to Data Hero"
+title: "Agentic Engineering"
+subtitle: "Build Software with AI at the Speed of Thought"
 layout: full
 listing:
 
