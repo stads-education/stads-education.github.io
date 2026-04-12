@@ -40,7 +40,7 @@ execute:
 
 ::: {.card .p-5 .text-center .shadow-sm .card-flex}
 <div>
-## <img src="images/excel_kurs_preview_icon.png" style="height:1.2em;vertical-align:middle;margin-right:0.3em;" alt=""> Excel Course
+## 📊 Excel Course
 Learn to handle data with confidence, build clean spreadsheets, and master the tools you'll actually need in a professional office environment.
 </div>
 
@@ -49,7 +49,7 @@ Learn to handle data with confidence, build clean spreadsheets, and master the t
 
 ::: {.card .p-5 .text-center .shadow-sm .card-flex}
 <div>
-## <img src="images/ae_kurs_preview_icon.webp" style="height:1.2em;vertical-align:middle;margin-right:0.3em;" alt=""> Agentic Engineering
+## ⚡️ Agentic Engineering
 Learn to build software at the speed of thought. Master LLMs, AI-assistants, and modern developer workflows.
 </div>
 
