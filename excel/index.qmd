@@ -1,12 +1,38 @@
 ---
-title: "Excel Course"
-subtitle: "Learn the Excel fundamentals."
-layout: full
-listing:
-  contents: 
-    - "Course_Material.qmd"
-
-  type: grid           
-  sort: "filename"     
-  categories: false
+title: "Excel Course Material"
+description: "Downloadable PDF and Excel files."
+toc: true
+toc-depth: 3
+page-layout: full
 ---
+
+::: {.content-block}
+:::: {.columns}
+
+::: {.column width="45%"}
+### Excel fundamentals
+Excel fundamentals: Formulas - Formatting - Data Analysis
+
+::: {.card .shadow-sm .p-3}
+![PDF Preview](../files/Excel_Grundlagen_preview.jpg){.border .rounded .mb-3}
+
+[Download PDF](../files/Excel_Grundlagen.pdf){.btn .btn-outline-primary .w-100 role="button" target="_blank"}
+:::
+:::
+
+::: {.column width="10%"}
+:::
+
+::: {.column width="45%"}
+### Excel Exercises
+Excel Exercises: Practice files to deepen your understanding of Excel 
+
+::: {.card .shadow-sm .p-3}
+![Excel Preview](../files/Excel_Aufgaben_preview.jpg){.border .rounded .mb-3}
+    
+[Download Excel](../files/Excel_Aufgaben.xlsx){.btn .btn-outline-primary .w-100 role="button" target="_blank"}
+:::
+:::
+
+::::
+:::

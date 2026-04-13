@@ -1,13 +1,52 @@
 ---
 title: "Agentic Engineering"
-subtitle: "Build Software with AI at the Speed of Thought"
-layout: full
-listing:
-
-  type: grid           
-  sort: "filename"     
-  categories: false
+description: "Build Software with AI at the Speed of Thought"
+toc: true
+toc-depth: 3
+page-layout: full
 ---
+
+
+::: {.content-block}
+:::: {.columns}
+
+::: {.column width="45%"}
+### Guide: Template
+Subtitle for Guide
+
+::: {.card .shadow-sm .p-3}
+![File Preview](){.border .rounded .mb-3}
+
+[Download File](../files/Excel_Grundlagen.pdf){.btn .btn-outline-primary .w-100 role="button" target="_blank"}
+:::
+:::
+
+::: {.column width="10%"}
+:::
+
+::: {.column width="45%"}
+### Technical Setup
+Subtitle for technical Setup
+
+::: {.card .shadow-sm .p-3}
+![File Preview](){.border .rounded .mb-3}
+    
+[Download File](../files/Excel_Aufgaben.xlsx){.btn .btn-outline-primary .w-100 role="button" target="_blank"}
+:::
+:::
+
+<br><br><br>
+
+::: {.card .text-center .p-3 .mb-4 .bg-light}
+**Example Project**
+<div class="mt-2">
+  [View on GitHub <i class="bi bi-github"></i>](https://github.com/dein-repo){.btn .btn-dark .px-4 role="button" target="_blank"}
+</div>
+:::
+
+::::
+:::
+
 
 
 

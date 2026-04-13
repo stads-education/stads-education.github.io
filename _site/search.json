@@ -56,39 +56,11 @@
     "text": "Excel Course\nLearn to handle data with confidence, build clean spreadsheets, and master the tools you’ll actually need in a professional office environment."
   },
   {
-    "objectID": "index.html#python-fundamentals",
-    "href": "index.html#python-fundamentals",
-    "title": "Current Course Portfolio",
-    "section": "🐍 Python Fundamentals",
-    "text": "🐍 Python Fundamentals\nMaster the world’s most popular language for data science. From basics to advanced data manipulation with Pandas."
-  },
-  {
     "objectID": "index.html#agentic-engineering",
     "href": "index.html#agentic-engineering",
     "title": "Current Course Portfolio",
     "section": " Agentic Engineering",
     "text": "Agentic Engineering\nLearn to build software at the speed of thought. Master LLMs, AI-assistants, and modern developer workflows."
-  },
-  {
-    "objectID": "excel/index.html",
-    "href": "excel/index.html",
-    "title": "Excel Course",
-    "section": "",
-    "text": "Excel Course Material\n\n\nDownloadable PDF and Excel files.\n\n\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "contact.html",
-    "href": "contact.html",
-    "title": "Contact",
-    "section": "",
-    "text": "Contact\nContact us if you have questions about our courses.\n(Page under construction)"
-  },
-  {
-    "objectID": "agentic_engineering/index.html",
-    "href": "agentic_engineering/index.html",
-    "title": "Vibecoding",
-    "section": "",
-    "text": "No matching items"
   },
   {
     "objectID": "courses.html#excel-course",
@@ -98,25 +70,39 @@
     "text": "Excel Course\nLearn to handle data with confidence, build clean spreadsheets, and master the tools you’ll actually need in a professional office environment."
   },
   {
-    "objectID": "courses.html#python-fundamentals",
-    "href": "courses.html#python-fundamentals",
+    "objectID": "courses.html#python-course",
+    "href": "courses.html#python-course",
     "title": "The Complete Course Portfolio",
-    "section": "� Python Fundamentals",
-    "text": "� Python Fundamentals\nMaster the world’s most popular language for data science. From basics to advanced data manipulation with Pandas."
+    "section": " Python Course",
+    "text": "Python Course\nMaster the world’s most popular language for data science. From basics to advanced data manipulation with Pandas."
   },
   {
     "objectID": "courses.html#agentic-engineering",
     "href": "courses.html#agentic-engineering",
     "title": "The Complete Course Portfolio",
     "section": " Agentic Engineering",
-    "text": "Agentic Engineering\nLearn to build software at the speed of thought. Master LLMs, AI-assistants, and modern developer workflows."
+    "text": "Agentic Engineering\nBuild software faster than ever using AI. Learn how to work with LLMs, AI agents, and modern developer tools to turn ideas into real applications."
   },
   {
-    "objectID": "excel/lessons/data/Course_Material.html",
-    "href": "excel/lessons/data/Course_Material.html",
+    "objectID": "agentic_engineering/index.html",
+    "href": "agentic_engineering/index.html",
+    "title": "Agentic Engineering",
+    "section": "",
+    "text": "Guide: Template\nSubtitle for Guide\n\n\n\n\nFile Preview\n\n\nDownload File\n\n\n\n\n\n\nTechnical Setup\nSubtitle for technical Setup\n\n\n\n\nFile Preview\n\n\nDownload File\n\n\n\nExample Project\n\nView on GitHub"
+  },
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
+    "section": "",
+    "text": "Contact\nContact us if you have questions about our courses.\n(Page under construction)"
+  },
+  {
+    "objectID": "excel/index.html",
+    "href": "excel/index.html",
     "title": "Excel Course Material",
     "section": "",
-    "text": "Excel Grundlagen\nExcel Grundlagen: Formeln - Formatierung - Datenanalyse\n\n\n\n\nPDF Preview\n\n\nDownload PDF\n\n\n\n\n\n\nExcel Aufgaben\nExcel Aufgaben und Übungen zur Vertiefung der Grundlagen\n\n\n\n\nExcel Preview\n\n\nDownload Excel"
+    "text": "Excel fundamentals\nExcel fundamentals: Formulas - Formatting - Data Analysis\n\n\n\n\nPDF Preview\n\n\nDownload PDF\n\n\n\n\n\n\nExcel Exercises\nExcel Exercises: Practice files to deepen your understanding of Excel\n\n\n\n\nExcel Preview\n\n\nDownload Excel"
   },
   {
     "objectID": "python/index.html",
@@ -159,19 +145,5 @@
     "title": "Week 8: Wrap-Up & Refresher",
     "section": "",
     "text": "Home Python Overview\n\n\nWeek 8: Wrap-Up & Refresher\nThe foundation of your Python journey."
-  },
-  {
-    "objectID": "courses.html",
-    "href": "courses.html",
-    "title": "Current Course Portfolio",
-    "section": "",
-    "text": ":::"
-  },
-  {
-    "objectID": "courses.html#python-course",
-    "href": "courses.html#python-course",
-    "title": "The Complete Course Portfolio",
-    "section": " Python Course",
-    "text": "Python Course\nMaster the world’s most popular language for data science. From basics to advanced data manipulation with Pandas."
   }
 ]

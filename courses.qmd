@@ -17,7 +17,7 @@ execute:
 
 ::: {.card .p-5 .text-center .shadow-sm .card-flex}
 ::: {.flex-grow-1}
-## 📊 Excel Course
+## <i class="bi bi-file-earmark-spreadsheet"></i> Excel Course
 Learn to handle data with confidence, build clean spreadsheets, and master the tools you'll actually need in a professional office environment.
 :::
 
@@ -26,7 +26,7 @@ Learn to handle data with confidence, build clean spreadsheets, and master the t
 
 ::: {.card .p-5 .text-center .shadow-sm .card-flex}
 ::: {.flex-grow-1}
-## 🐍 Python Course
+## <i class="bi bi-code-slash"></i> Python Course
 Master the world's most popular language for data science. From basics to advanced data manipulation with Pandas.
 :::
 
@@ -35,7 +35,7 @@ Master the world's most popular language for data science. From basics to advanc
 
 ::: {.card .p-5 .text-center .shadow-sm .card-flex}
 ::: {.flex-grow-1}
-## ⚡️ Agentic Engineering
+## <i class="bi bi-robot"></i> Agentic Engineering
 Build software faster than ever using AI.
 Learn how to work with LLMs, AI agents, and modern developer tools to turn ideas into real applications.
 :::
