@@ -10,13 +10,17 @@ page-layout: full
 :::: {.columns}
 
 ::: {.column width="45%"}
-### Excel fundamentals
-Excel fundamentals: Formulas - Formatting - Data Analysis
+<div style="min-height: 120px;">
+### Guide: Template
+Subtitle for Guide
+</div>
 
-::: {.card .shadow-sm .p-3}
-![PDF Preview](../files/Excel_Grundlagen_preview.jpg){.border .rounded .mb-3}
+::: {.card .shadow-sm .p-3 .h-100}
+![File Preview](../files/Excel_Grundlagen_preview.jpg){.border .rounded .mb-3}
 
-[Download PDF](../files/Excel_Grundlagen.pdf){.btn .btn-outline-primary .w-100 role="button" target="_blank"}
+<div class="mt-auto">
+[Download File](../files/Excel_Grundlagen.pdf){.btn .btn-outline-primary .w-100 role="button" target="_blank"}
+</div>
 :::
 :::
 
@@ -24,15 +28,28 @@ Excel fundamentals: Formulas - Formatting - Data Analysis
 :::
 
 ::: {.column width="45%"}
-### Excel Exercises
-Excel Exercises: Practice files to deepen your understanding of Excel 
+<div style="min-height: 120px;">
+### Technical Setup
+Subtitle for technical Setup with longer text to test alignment
+</div>
 
-::: {.card .shadow-sm .p-3}
-![Excel Preview](../files/Excel_Aufgaben_preview.jpg){.border .rounded .mb-3}
+::: {.card .shadow-sm .p-3 .h-100}
+![File Preview](../files/Excel_Aufgaben_preview.jpg){.border .rounded .mb-3}
     
-[Download Excel](../files/Excel_Aufgaben.xlsx){.btn .btn-outline-primary .w-100 role="button" target="_blank"}
+<div class="mt-auto">
+[Download File](../files/Excel_Aufgaben.xlsx){.btn .btn-outline-primary .w-100 role="button" target="_blank"}
+</div>
 :::
 :::
 
 ::::
+
+<br>
+
+::: {.card .text-center .p-3 .mb-4 .bg-light}
+**Example Project**
+<div class="mt-2">
+  [View on GitHub <i class="bi bi-github"></i>](https://github.com/dein-repo){.btn .btn-dark .px-4 role="button" target="_blank"}
+</div>
+:::
 :::

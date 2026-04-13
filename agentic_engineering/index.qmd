@@ -6,18 +6,21 @@ toc-depth: 3
 page-layout: full
 ---
 
-
 ::: {.content-block}
 :::: {.columns}
 
 ::: {.column width="45%"}
+<div style="min-height: 150px;">
 ### Guide: Template
 Subtitle for Guide
+</div>
 
-::: {.card .shadow-sm .p-3}
+::: {.card .shadow-sm .p-3 .h-100}
 ![File Preview](){.border .rounded .mb-3}
 
+<div class="mt-auto">
 [Download File](../files/Excel_Grundlagen.pdf){.btn .btn-outline-primary .w-100 role="button" target="_blank"}
+</div>
 :::
 :::
 
@@ -25,15 +28,21 @@ Subtitle for Guide
 :::
 
 ::: {.column width="45%"}
+<div style="min-height: 150px;">
 ### Technical Setup
 Subtitle for technical Setup
+</div>
 
-::: {.card .shadow-sm .p-3}
+::: {.card .shadow-sm .p-3 .h-100}
 ![File Preview](){.border .rounded .mb-3}
     
+<div class="mt-auto">
 [Download File](../files/Excel_Aufgaben.xlsx){.btn .btn-outline-primary .w-100 role="button" target="_blank"}
+</div>
 :::
 :::
+
+::::
 
 <br><br><br>
 
@@ -43,8 +52,6 @@ Subtitle for technical Setup
   [View on GitHub <i class="bi bi-github"></i>](https://github.com/dein-repo){.btn .btn-dark .px-4 role="button" target="_blank"}
 </div>
 :::
-
-::::
 :::
 
 
