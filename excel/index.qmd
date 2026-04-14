@@ -10,7 +10,7 @@ page-layout: full
 :::: {.columns}
 
 ::: {.column width="45%"}
-<div style="min-height: 120px;">
+<div class="mb-4" style="min-height: 120px;">
 ### Einführung in Excel-Grundlagen
 Formeln · Formatierung · Datenanalyse
 </div>
@@ -28,7 +28,7 @@ Formeln · Formatierung · Datenanalyse
 :::
 
 ::: {.column width="45%"}
-<div style="min-height: 120px;">
+<div class="mb-4" style="min-height: 120px;">
 ### Excel-Datei mit Übungsaufgaben
 Praxisbeispiele zur Vertiefung deiner Excel-Kenntnisse
 </div>
@@ -44,12 +44,6 @@ Praxisbeispiele zur Vertiefung deiner Excel-Kenntnisse
 
 ::::
 
-<br>
+:::
 
-::: {.card .text-center .p-3 .mb-4 .bg-light}
-**Example Project**
-<div class="mt-2">
-  [View on GitHub <i class="bi bi-github"></i>](https://github.com/dein-repo){.btn .btn-dark .px-4 role="button" target="_blank"}
-</div>
-:::
-:::
+<br>
