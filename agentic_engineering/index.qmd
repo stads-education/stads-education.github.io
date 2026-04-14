@@ -19,7 +19,7 @@ Subtitle for Guide
 ![File Preview](){.border .rounded .mb-3}
 
 <div class="mt-auto">
-[Download File](../files/Excel_Grundlagen.pdf){.btn .btn-outline-primary .w-100 role="button" target="_blank"}
+<!-- [Download File](../files/Excel_Grundlagen.pdf){.btn .btn-outline-primary .w-100 role="button" target="_blank"} -->
 </div>
 :::
 :::
@@ -37,7 +37,7 @@ Subtitle for technical Setup
 ![File Preview](){.border .rounded .mb-3}
     
 <div class="mt-auto">
-[Download File](../files/Excel_Aufgaben.xlsx){.btn .btn-outline-primary .w-100 role="button" target="_blank"}
+<!-- [Download File](../files/Excel_Aufgaben.xlsx){.btn .btn-outline-primary .w-100 role="button" target="_blank"} -->
 </div>
 :::
 :::
@@ -48,12 +48,10 @@ Subtitle for technical Setup
 
 ::: {.card .text-center .p-3 .mb-4 .bg-light}
 **Example Project**
-<div class="mt-2">
-  [View on GitHub <i class="bi bi-github"></i>](https://haydenkg.github.io/stads-vibe-coding-workshop/){.btn .btn-dark .px-4 role="button" target="_blank"}
+<div class="mt-2 d-flex gap-2">
+  [View on GitHub <i class="bi bi-github"></i>](){.btn .btn-dark .px-4 role="button" target="_blank"}
+  [Open Website <i class="bi bi-globe"></i>](https://haydenkg.github.io/stads-vibe-coding-workshop/){.btn .btn-outline-primary .px-4 role="button" target="_blank"}
 </div>
+
 :::
 :::
-
-
-
-

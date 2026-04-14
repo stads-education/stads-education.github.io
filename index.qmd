@@ -50,7 +50,8 @@ Learn to handle data with confidence, build clean spreadsheets, and master the t
 ::: {.card .p-5 .text-center .shadow-sm .card-flex}
 <div>
 ## <i class="bi bi-robot"></i> Agentic Engineering
-Learn to build software at the speed of thought. Master LLMs, AI-assistants, and modern developer workflows.
+Build software faster than ever using AI.
+Learn how to work with LLMs, AI agents, and modern developer tools to turn ideas into real applications.
 </div>
 
 [View Course Details](agentic_engineering/index.qmd){.btn .btn-lg .btn-custom}
