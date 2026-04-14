@@ -12,7 +12,7 @@ page-layout: full
 ::: {.column width="45%"}
 <div style="min-height: 150px;">
 ### Guide: Template
-Subtitle for Guide
+<!-- Subtitle for Guide -->
 </div>
 
 ::: {.card .shadow-sm .p-3 .h-100}
@@ -30,7 +30,7 @@ Subtitle for Guide
 ::: {.column width="45%"}
 <div style="min-height: 150px;">
 ### Technical Setup
-Subtitle for technical Setup
+<!-- Subtitle for technical Setup -->
 </div>
 
 ::: {.card .shadow-sm .p-3 .h-100}
@@ -48,10 +48,12 @@ Subtitle for technical Setup
 
 ::: {.card .text-center .p-3 .mb-4 .bg-light}
 **Example Project**
-<div class="mt-2 d-flex gap-2">
+
+<div class="mt-2 d-flex justify-content-center gap-2 flex-wrap">
   [View on GitHub <i class="bi bi-github"></i>](){.btn .btn-dark .px-4 role="button" target="_blank"}
   [Open Website <i class="bi bi-globe"></i>](https://haydenkg.github.io/stads-vibe-coding-workshop/){.btn .btn-outline-primary .px-4 role="button" target="_blank"}
 </div>
+:::
 
 :::
 :::
