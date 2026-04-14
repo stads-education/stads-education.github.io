@@ -11,8 +11,8 @@ page-layout: full
 
 ::: {.column width="45%"}
 <div style="min-height: 120px;">
-### Guide: Template
-Subtitle for Guide
+### Einführung in Excel-Grundlagen
+Formeln · Formatierung · Datenanalyse
 </div>
 
 ::: {.card .shadow-sm .p-3 .h-100}
@@ -29,8 +29,8 @@ Subtitle for Guide
 
 ::: {.column width="45%"}
 <div style="min-height: 120px;">
-### Technical Setup
-Subtitle for technical Setup with longer text to test alignment
+### Excel-Datei mit Übungsaufgaben
+Praxisbeispiele zur Vertiefung deiner Excel-Kenntnisse
 </div>
 
 ::: {.card .shadow-sm .p-3 .h-100}
