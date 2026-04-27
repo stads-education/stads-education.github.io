@@ -11,20 +11,38 @@ page-layout: full
 ::: {.d-flex .gap-2}
 [Home](../../index.qmd){.btn .btn-outline-secondary .btn-sm}
 [Python Overview](../index.qmd){.btn .btn-outline-secondary .btn-sm}
+[1](./01basics1.qmd){.btn .btn-outline-secondary .btn-sm}
+[2](./02basics2.qmd){.btn .btn-outline-secondary .btn-sm}
+[3](./03basics3.qmd){.btn .btn-outline-secondary .btn-sm}
+[4](./04basics4.qmd){.btn .btn-outline-secondary .btn-sm}
+[5](./05pandas1.qmd){.btn .btn-outline-secondary .btn-sm}
+[6](./06pandas2.qmd){.btn .btn-outline-secondary .btn-sm}
+[7](./07Visualisations.qmd){.btn .btn-outline-secondary .btn-sm}
+[8](./08WrapUp_Refresher.qmd){.btn .btn-outline-secondary .btn-sm}
+[9](./09QA_SampleExam.qmd){.btn .btn-outline-secondary .btn-sm}
 :::
 
 # Week 2: Python Basics II
 *The foundation of your Python journey.*
 
 ::: {layout-ncol=1}
+### (Project)
+* Review [**Project 1**](https://stads-python-course.github.io/projects/project-1.html){.new-tab}
+
 ### (Fundamentals)
 * [**Python Booleans**](https://www.w3schools.com/python/python_booleans.asp){.new-tab}
 * [**Python Operators**](https://www.w3schools.com/python/python_operators.asp){.new-tab}
 * [**Python Math**](https://www.w3schools.com/python/python_math.asp){.new-tab}
+
+### (Project)
+* [**Project 2: Love Calculator**](https://stads-python-course.github.io/projects/project-2.html){.new-tab}
+* Review [**Project 2**](https://stads-python-course.github.io/projects/project-2.html){.new-tab}
+
+### (Fundamentals)
 * [**Python Lists**](https://www.w3schools.com/python/python_lists.asp){.new-tab}
-* [**Python Tuples**](https://www.w3schools.com/python/python_tuples.asp){.new-tab}
-* [**Python Sets**](https://www.w3schools.com/python/python_sets.asp){.new-tab}
-* [**Python Dictionaries**](https://www.w3schools.com/python/python_dictionaries.asp){.new-tab}
+* [**Python Tuples**](https://www.w3schools.com/python/python_tuples.asp){.new-tab} (postponed to week 3)
+* [**Python Sets**](https://www.w3schools.com/python/python_sets.asp){.new-tab} (postponed to week 3)
+* [**Python Dictionaries**](https://www.w3schools.com/python/python_dictionaries.asp){.new-tab} (postponed to week 3)
 :::
 
 <br>
@@ -35,7 +53,7 @@ page-layout: full
 
 ### The Task
 Everyone knows the love calculators from the internet. You input two names and get a love score. Today you will code your own love calculator. You can be creative and make it all alone with your own creativity or you can use this template:
-
+```python
 name1 = your name
 name2 = their name
 combined_string = name1 + name2 # convert it to all lowercase
@@ -50,6 +68,7 @@ first_digit = t + r + u + e
 second_digit = l + o + v + e
 
 love_score = string representation of first_digit + string representation of second_digit
+```
 
 if the love score is under 10 or greater than 90 then print the score and the phrase "you go together like coke and mentos"
 if the love score is between inclusive 40 and inclusive 50 then print the score and the phrase "you are mid together"

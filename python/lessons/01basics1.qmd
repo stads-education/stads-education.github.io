@@ -11,12 +11,24 @@ page-layout: full
 ::: {.d-flex .gap-2}
 [Home](../../index.qmd){.btn .btn-outline-secondary .btn-sm}
 [Python Overview](../index.qmd){.btn .btn-outline-secondary .btn-sm}
+[1](./01basics1.qmd){.btn .btn-outline-secondary .btn-sm}
+[2](./02basics2.qmd){.btn .btn-outline-secondary .btn-sm}
+[3](./03basics3.qmd){.btn .btn-outline-secondary .btn-sm}
+[4](./04basics4.qmd){.btn .btn-outline-secondary .btn-sm}
+[5](./05pandas1.qmd){.btn .btn-outline-secondary .btn-sm}
+[6](./06pandas2.qmd){.btn .btn-outline-secondary .btn-sm}
+[7](./07Visualisations.qmd){.btn .btn-outline-secondary .btn-sm}
+[8](./08WrapUp_Refresher.qmd){.btn .btn-outline-secondary .btn-sm}
+[9](./09QA_SampleExam.qmd){.btn .btn-outline-secondary .btn-sm}
 :::
 
 # Week 1: Python Basics I
 *The foundation of your Python journey.*
 
 ::: {layout-ncol=1}
+### (Introduction)
+* **Introduction Presentation**
+
 ### (Fundamentals)
 * [**Python Syntax**](https://www.w3schools.com/python/python_syntax.asp){.new-tab}
 * [**Python Comments**](https://www.w3schools.com/python/python_comments.asp){.new-tab}
@@ -26,6 +38,17 @@ page-layout: full
 * [**Python Casting**](https://www.w3schools.com/python/python_casting.asp){.new-tab}
 * [**Python Strings**](https://www.w3schools.com/python/python_strings.asp){.new-tab}
 * [**Python User Input**](https://www.w3schools.com/python/python_user_input.asp){.new-tab}
+
+### (Project)
+* [**Project 1: Band Name Generator**](https://stads-python-course.github.io/projects/project-1.html){.new-tab}
+:::
+
+<br>
+
+### Material
+
+::: {layout-ncol=1}
+* [**Introductory Slides**](https://stads-python-course.github.io/assets/docs/introductory_slides.pdf){.new-tab}
 :::
 
 <br>

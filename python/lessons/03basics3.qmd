@@ -11,20 +11,40 @@ page-layout: full
 ::: {.d-flex .gap-2}
 [Home](../../index.qmd){.btn .btn-outline-secondary .btn-sm}
 [Python Overview](../index.qmd){.btn .btn-outline-secondary .btn-sm}
+[1](./01basics1.qmd){.btn .btn-outline-secondary .btn-sm}
+[2](./02basics2.qmd){.btn .btn-outline-secondary .btn-sm}
+[3](./03basics3.qmd){.btn .btn-outline-secondary .btn-sm}
+[4](./04basics4.qmd){.btn .btn-outline-secondary .btn-sm}
+[5](./05pandas1.qmd){.btn .btn-outline-secondary .btn-sm}
+[6](./06pandas2.qmd){.btn .btn-outline-secondary .btn-sm}
+[7](./07Visualisations.qmd){.btn .btn-outline-secondary .btn-sm}
+[8](./08WrapUp_Refresher.qmd){.btn .btn-outline-secondary .btn-sm}
+[9](./09QA_SampleExam.qmd){.btn .btn-outline-secondary .btn-sm}
 :::
 
 # Week 3: Python Basics III
 *The foundation of your Python journey.*
 
 ::: {layout-ncol=1}
+### (Test your Understanding)
+* **Python Basics I-II**
+
 ### (Fundamentals)
+* [**Python Tuples**](https://www.w3schools.com/python/python_tuples.asp){.new-tab} (from week 2)
+* [**Python Sets**](https://www.w3schools.com/python/python_sets.asp){.new-tab} (from week 2)
+* [**Python Dictionaries**](https://www.w3schools.com/python/python_dictionaries.asp){.new-tab} (from week 2)
 * [**Python Conditions**](https://www.w3schools.com/python/python_conditions.asp){.new-tab}
 * [**Python While Loops**](https://www.w3schools.com/python/python_while_loops.asp){.new-tab}
 * [**Python For Loops**](https://www.w3schools.com/python/python_for_loops.asp){.new-tab}
+
+### (Project)
+* [**Project 3: Random Number Guesser**](https://stads-python-course.github.io/projects/project-3.html){.new-tab}
+* Review [**Project 3**](https://stads-python-course.github.io/projects/project-3.html){.new-tab}
+
+### (Fundamentals)
 * [**Python Functions**](https://www.w3schools.com/python/python_functions.asp){.new-tab}
 * [**Python Lambda**](https://www.w3schools.com/python/python_lambda.asp){.new-tab}
 :::
-
 <br>
 
 ## Project 3: Random Number Guesser

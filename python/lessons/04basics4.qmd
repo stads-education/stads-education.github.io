@@ -11,8 +11,64 @@ page-layout: full
 ::: {.d-flex .gap-2}
 [Home](../../index.qmd){.btn .btn-outline-secondary .btn-sm}
 [Python Overview](../index.qmd){.btn .btn-outline-secondary .btn-sm}
+[1](./01basics1.qmd){.btn .btn-outline-secondary .btn-sm}
+[2](./02basics2.qmd){.btn .btn-outline-secondary .btn-sm}
+[3](./03basics3.qmd){.btn .btn-outline-secondary .btn-sm}
+[4](./04basics4.qmd){.btn .btn-outline-secondary .btn-sm}
+[5](./05pandas1.qmd){.btn .btn-outline-secondary .btn-sm}
+[6](./06pandas2.qmd){.btn .btn-outline-secondary .btn-sm}
+[7](./07Visualisations.qmd){.btn .btn-outline-secondary .btn-sm}
+[8](./08WrapUp_Refresher.qmd){.btn .btn-outline-secondary .btn-sm}
+[9](./09QA_SampleExam.qmd){.btn .btn-outline-secondary .btn-sm}
 :::
 
 # Week 4: Python Basics IV
 *The foundation of your Python journey.*
+
+::: {layout-ncol=1}
+### (Fundamentals)
+* [**Python Classes/Objects**](https://www.w3schools.com/python/python_classes.asp){.new-tab}
+* [**Python Inheritance**](https://www.w3schools.com/python/python_inheritance.asp){.new-tab}
+* [**Python Scope**](https://www.w3schools.com/python/python_scope.asp){.new-tab}
+* [**Python String Formatting**](https://www.w3schools.com/python/python_string_formatting.asp){.new-tab}
+
+### (Test your Understanding)
+* **Python Basics III-IV**
+
+### (Jupyter Notebook)
+* **Introduction Jupyter Notebook**
+
+### (Old Exam Questions)
+* [**Python Basics**](https://github.com/STADS-Mannheim/python-course-2025/tree/main/Week_04_Old_Exam_Questions){.new-tab}
+:::
+
+<br>
+
+### Material
+
+::: {layout-ncol=1}
+* [**Jupyter Notebook Introductory Slides**](https://stads-python-course.github.io/assets/docs/jupyter_notebook_slides.pdf){.new-tab}
+* [**Jupyter Notebook Demo**](https://stads-python-course.github.io/assets/docs/jupyter_notebook_demo.ipynb){.new-tab}
+:::
+
+<br>
+
+### Additional Material
+
+These pages from the w3schools Python Tutorial are not exam relevant, but I recommend checking them out:
+
+::: {layout-ncol=1}
+* [**Python Try...Except**](https://www.w3schools.com/python/python_try_except.asp){.new-tab}
+* [**Python RegEx**](https://www.w3schools.com/python/python_regex.asp){.new-tab}
+:::
+
+<br>
+
+## Resources
+
+::: {layout-ncol=2}
+[GitHub Repo](https://www.github.com/STADS-Mannheim/python-course-2025/tree/main){.btn .btn-outline-primary .btn-lg .w-100 .new-tab}
+
+[w3schools Tutorial](https://www.w3schools.com/python/){.btn .btn-outline-primary .btn-lg .w-100 .new-tab}
+:::
 

@@ -20,6 +20,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -128,7 +163,6 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#week-2-python-basics-ii" id="toc-week-2-python-basics-ii" class="nav-link active" data-scroll-target="#week-2-python-basics-ii">Week 2: Python Basics II</a>
   <ul class="collapse">
-  <li><a href="#fundamentals" id="toc-fundamentals" class="nav-link" data-scroll-target="#fundamentals">(Fundamentals)</a></li>
   <li><a href="#project-2-love-calculator" id="toc-project-2-love-calculator" class="nav-link" data-scroll-target="#project-2-love-calculator">Project 2: Love Calculator</a></li>
   <li><a href="#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources">Resources</a></li>
   </ul></li>
@@ -143,12 +177,20 @@ ul.task-list li input[type="checkbox"] {
 
 <p><br></p>
 <div class="d-flex gap-2">
-<p><a href="../../index.html" class="btn btn-outline-secondary btn-sm">Home</a> <a href="../../python/index.html" class="btn btn-outline-secondary btn-sm">Python Overview</a></p>
+<p><a href="../../index.html" class="btn btn-outline-secondary btn-sm">Home</a> <a href="../../python/index.html" class="btn btn-outline-secondary btn-sm">Python Overview</a> <a href="../../python/lessons/01basics1.html" class="btn btn-outline-secondary btn-sm">1</a> <a href="../../python/lessons/02basics2.html" class="btn btn-outline-secondary btn-sm">2</a> <a href="../../python/lessons/03basics3.html" class="btn btn-outline-secondary btn-sm">3</a> <a href="../../python/lessons/04basics4.html" class="btn btn-outline-secondary btn-sm">4</a> <a href="../../python/lessons/05pandas1.html" class="btn btn-outline-secondary btn-sm">5</a> <a href="../../python/lessons/06pandas2.html" class="btn btn-outline-secondary btn-sm">6</a> <a href="../../python/lessons/07Visualisations.html" class="btn btn-outline-secondary btn-sm">7</a> <a href="../../python/lessons/08WrapUp_Refresher.html" class="btn btn-outline-secondary btn-sm">8</a> <a href="../../python/lessons/09QA_SampleExam.html" class="btn btn-outline-secondary btn-sm">9</a></p>
 </div>
 <section id="week-2-python-basics-ii" class="level1">
 <h1>Week 2: Python Basics II</h1>
 <p><em>The foundation of your Python journey.</em></p>
 <div class="quarto-layout-panel" data-layout-ncol="1">
+<div class="quarto-layout-row">
+<section id="project" class="level3 quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
+<h3 class="anchored" data-anchor-id="project">(Project)</h3>
+<ul>
+<li>Review <a href="https://stads-python-course.github.io/projects/project-1.html" class="new-tab"><strong>Project 1</strong></a></li>
+</ul>
+</section>
+</div>
 <div class="quarto-layout-row">
 <section id="fundamentals" class="level3 quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
 <h3 class="anchored" data-anchor-id="fundamentals">(Fundamentals)</h3>
@@ -156,10 +198,26 @@ ul.task-list li input[type="checkbox"] {
 <li><a href="https://www.w3schools.com/python/python_booleans.asp" class="new-tab"><strong>Python Booleans</strong></a></li>
 <li><a href="https://www.w3schools.com/python/python_operators.asp" class="new-tab"><strong>Python Operators</strong></a></li>
 <li><a href="https://www.w3schools.com/python/python_math.asp" class="new-tab"><strong>Python Math</strong></a></li>
+</ul>
+</section>
+</div>
+<div class="quarto-layout-row">
+<section id="project-1" class="level3 quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
+<h3 class="anchored" data-anchor-id="project-1">(Project)</h3>
+<ul>
+<li><a href="https://stads-python-course.github.io/projects/project-2.html" class="new-tab"><strong>Project 2: Love Calculator</strong></a></li>
+<li>Review <a href="https://stads-python-course.github.io/projects/project-2.html" class="new-tab"><strong>Project 2</strong></a></li>
+</ul>
+</section>
+</div>
+<div class="quarto-layout-row">
+<section id="fundamentals-1" class="level3 quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
+<h3 class="anchored" data-anchor-id="fundamentals-1">(Fundamentals)</h3>
+<ul>
 <li><a href="https://www.w3schools.com/python/python_lists.asp" class="new-tab"><strong>Python Lists</strong></a></li>
-<li><a href="https://www.w3schools.com/python/python_tuples.asp" class="new-tab"><strong>Python Tuples</strong></a></li>
-<li><a href="https://www.w3schools.com/python/python_sets.asp" class="new-tab"><strong>Python Sets</strong></a></li>
-<li><a href="https://www.w3schools.com/python/python_dictionaries.asp" class="new-tab"><strong>Python Dictionaries</strong></a></li>
+<li><a href="https://www.w3schools.com/python/python_tuples.asp" class="new-tab"><strong>Python Tuples</strong></a> (postponed to week 3)</li>
+<li><a href="https://www.w3schools.com/python/python_sets.asp" class="new-tab"><strong>Python Sets</strong></a> (postponed to week 3)</li>
+<li><a href="https://www.w3schools.com/python/python_dictionaries.asp" class="new-tab"><strong>Python Dictionaries</strong></a> (postponed to week 3)</li>
 </ul>
 </section>
 </div>
@@ -172,10 +230,20 @@ ul.task-list li input[type="checkbox"] {
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <p>Everyone knows the love calculators from the internet. You input two names and get a love score. Today you will code your own love calculator. You can be creative and make it all alone with your own creativity or you can use this template:</p>
-<p>name1 = your name name2 = their name combined_string = name1 + name2 # convert it to all lowercase</p>
-<p>t = number of t’s in combined_string r = number of r’s in combined_string u = … e = … first_digit = t + r + u + e</p>
-<p>… second_digit = l + o + v + e</p>
-<p>love_score = string representation of first_digit + string representation of second_digit</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>name1 <span class="op">=</span> your name</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>name2 <span class="op">=</span> their name</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>combined_string <span class="op">=</span> name1 <span class="op">+</span> name2 <span class="co"># convert it to all lowercase</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>t <span class="op">=</span> number of t<span class="st">'s in combined_string</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="er">r = number of r's in combined_string</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>u <span class="op">=</span> ...</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>e <span class="op">=</span> ...</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>first_digit <span class="op">=</span> t <span class="op">+</span> r <span class="op">+</span> u <span class="op">+</span> e</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>...</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>second_digit <span class="op">=</span> l <span class="op">+</span> o <span class="op">+</span> v <span class="op">+</span> e</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>love_score <span class="op">=</span> string representation of first_digit <span class="op">+</span> string representation of second_digit</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>if the love score is under 10 or greater than 90 then print the score and the phrase “you go together like coke and mentos” if the love score is between inclusive 40 and inclusive 50 then print the score and the phrase “you are mid together” if the love score is 69 then print the score and the phrase “you are like ying and yang” else print the score and the phrase “you are like bonnie and clyde”</p>
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">

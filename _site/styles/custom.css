@@ -153,3 +153,13 @@
 .card-body {
   text-align: center;
 }
+
+/* Reduziert den Abstand zwischen layout-Blöcken und Headings */
+.quarto-layout-panel {
+  margin-bottom: 0.5rem !important;
+}
+
+.quarto-layout-panel + h3,
+.quarto-layout-panel + h2 {
+  margin-top: 1rem !important;
+}

@@ -10,7 +10,7 @@ page-layout: full
 :::: {.columns}
 
 ::: {.column width="45%"}
-<div style="min-height: 150px;">
+<div style="min-height: 100px;">
 ### Tag 1:
 Einführung und technisches Setup
 </div>

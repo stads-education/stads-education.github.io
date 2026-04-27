@@ -11,7 +11,34 @@ page-layout: full
 ::: {.d-flex .gap-2}
 [Home](../../index.qmd){.btn .btn-outline-secondary .btn-sm}
 [Python Overview](../index.qmd){.btn .btn-outline-secondary .btn-sm}
+[1](./01basics1.qmd){.btn .btn-outline-secondary .btn-sm}
+[2](./02basics2.qmd){.btn .btn-outline-secondary .btn-sm}
+[3](./03basics3.qmd){.btn .btn-outline-secondary .btn-sm}
+[4](./04basics4.qmd){.btn .btn-outline-secondary .btn-sm}
+[5](./05pandas1.qmd){.btn .btn-outline-secondary .btn-sm}
+[6](./06pandas2.qmd){.btn .btn-outline-secondary .btn-sm}
+[7](./07Visualisations.qmd){.btn .btn-outline-secondary .btn-sm}
+[8](./08WrapUp_Refresher.qmd){.btn .btn-outline-secondary .btn-sm}
+[9](./09QA_SampleExam.qmd){.btn .btn-outline-secondary .btn-sm}
 :::
 
 # Week 8: Wrap-Up & Refresher
 *The foundation of your Python journey.*
+
+::: {layout-ncol=1}
+### (Recap)
+* **Recap**
+
+### (Python Refresher)
+* [**Basics**](https://github.com/STADS-Mannheim/python-course-2025/tree/main/Week_08_Refresher/Basics){.new-tab}
+* [**Functions**](https://github.com/STADS-Mannheim/python-course-2025/tree/main/Week_08_Refresher/Functions){.new-tab}
+* [**Classes**](https://github.com/STADS-Mannheim/python-course-2025/tree/main/Week_08_Refresher/Classes){.new-tab}
+:::
+
+## Resources
+
+::: {layout-ncol=2}
+[GitHub Repo](https://www.github.com/STADS-Mannheim/python-course-2025/tree/main){.btn .btn-outline-primary .btn-lg .w-100 .new-tab}
+
+[w3schools Tutorial](https://www.w3schools.com/python/){.btn .btn-outline-primary .btn-lg .w-100 .new-tab}
+:::
