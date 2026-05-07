@@ -1,0 +1,48 @@
+---
+title: "SQL Course"
+description: "Learn the basics of SQL and how to use it to query databases, analyze data, and build powerful data-driven applications."
+toc: true
+toc-depth: 3
+page-layout: full
+---
+
+::: {.content-block}
+:::: {.columns}
+
+::: {.column width="45%"}
+<div style="min-height: 100px;">
+### Einfuehrung und technisches Setup
+Subtitle for introduction and technical setup
+</div>
+
+::: {.card .shadow-sm .p-3 .h-100}
+![File Preview](../files/Agentic_Engineering_preview.jpg){.border .rounded .mb-3}
+
+<div class="mt-auto">
+[Download PDF File](../files/Agentic_Engineering_01.pdf){.btn .btn-outline-primary .w-100 role="button" target="_blank"}
+</div>
+:::
+:::
+
+::: {.column width="10%"}
+:::
+
+
+::: {.column width="45%"}
+<div style="min-height: 100px;">
+### SQL Project
+Subtitle for SQL Project
+</div>
+
+::: {.card .shadow-sm .p-3 .h-100}
+![File Preview](../files/Agentic_Engineering_preview.jpg){.border .rounded .mb-3}
+    
+<div class="mt-auto">
+[Download SQL File](../files/Excel_Aufgaben.xlsx){.btn .btn-outline-primary .w-100 role="button" target="_blank"}
+</div>
+:::
+:::
+
+::::
+
+:::

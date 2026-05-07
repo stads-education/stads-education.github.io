@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="Learn the basics of SQL and how to use it to query databases, analyze data, and build powerful data-driven applications.">
 
-<title>courses</title>
+<title>SQL Course</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +24,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-029b10fc0dc652dab2ec1ac156c1a037.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-029b10fc0dc652dab2ec1ac156c1a037.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,7 +71,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles/custom.css">
+<link rel="stylesheet" href="../styles/custom.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -80,9 +81,9 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./images/STADS_LOGO_2021_SHORT_wht.png" alt="" class="navbar-logo light-content">
-    <img src="./images/STADS_LOGO_2021_SHORT_wht.png" alt="" class="navbar-logo dark-content">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../images/STADS_LOGO_2021_SHORT_wht.png" alt="" class="navbar-logo light-content">
+    <img src="../images/STADS_LOGO_2021_SHORT_wht.png" alt="" class="navbar-logo dark-content">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -92,16 +93,23 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./stads-education.html"> 
+    <a class="nav-link" href="../index.qmd"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./courses.html" aria-current="page"> 
+    <a class="nav-link" href="../courses.html"> 
 <span class="menu-text">Courses</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="https://www.stads.de/" target="_blank"> 
 <span class="menu-text">About Us</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/stads-education" target="_blank"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -114,45 +122,73 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
+    </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content column-page" id="quarto-document-content">
 
-
-
-
-<section id="the-complete-course-portfolio" class="level1 text-start">
-<h1>The Complete Course Portfolio</h1>
-</section>
-<p><br></p>
-<div class="course-grid">
-<div class="card p-5 text-center shadow-sm card-flex">
-<section id="excel-course" class="level2 flex-grow-1">
-<h2 class="anchored" data-anchor-id="excel-course"><i class="bi bi-file-earmark-spreadsheet"></i> Excel Course</h2>
-<p>Learn to handle data with confidence, build clean spreadsheets, and master the tools you’ll actually need in a professional office environment.</p>
-</section>
-<p><a href="./excel/index.html" class="btn btn-lg btn-custom">View Course Details</a></p>
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">SQL Course</h1>
 </div>
-<div class="card p-5 text-center shadow-sm card-flex">
-<section id="python-course" class="level2 flex-grow-1">
-<h2 class="anchored" data-anchor-id="python-course"><i class="bi bi-code-slash"></i> Python Course</h2>
-<p>Master the world’s most popular language for data science. From basics to advanced data manipulation with Pandas.</p>
-</section>
-<p><a href="./python/index.html" class="btn btn-lg btn-custom">View Course Details</a></p>
+
+<div>
+  <div class="description">
+    Learn the basics of SQL and how to use it to query databases, analyze data, and build powerful data-driven applications.
+  </div>
 </div>
-<div class="card p-5 text-center shadow-sm card-flex">
-<section id="agentic-engineering" class="level2 flex-grow-1">
-<h2 class="anchored" data-anchor-id="agentic-engineering"><i class="bi bi-robot"></i> Agentic Engineering</h2>
-<p>Build software faster than ever using AI. Learn how to work with LLMs, AI agents, and modern developer tools to turn ideas into real applications.</p>
+
+
+<div class="quarto-title-meta column-page">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="content-block">
+<div class="columns">
+<div class="column" style="width:45%;">
+<section id="einfuehrung-und-technisches-setup" class="level3" style="min-height: 100px;">
+<h3 class="anchored" data-anchor-id="einfuehrung-und-technisches-setup">Einfuehrung und technisches Setup</h3>
+<p>Subtitle for introduction and technical setup</p>
 </section>
-<p><a href="./agentic_engineering/index.html" class="btn btn-lg btn-custom">View Course Details</a></p>
+<div class="card shadow-sm p-3 h-100">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../files/Agentic_Engineering_preview.jpg" class="border rounded mb-3 img-fluid figure-img"></p>
+<figcaption>File Preview</figcaption>
+</figure>
 </div>
-<div class="card p-5 text-center shadow-sm card-flex">
-<section id="sql-course" class="level2 flex-grow-1">
-<h2 class="anchored" data-anchor-id="sql-course"><i class="bi bi-database"></i> SQL Course</h2>
-<p>Learn the basics of SQL and how to use it to query databases, analyze data, and build powerful data-driven applications.</p>
+<div class="mt-auto">
+<p><a href="../files/Agentic_Engineering_01.pdf" class="btn btn-outline-primary w-100" role="button" target="_blank">Download PDF File</a></p>
+</div>
+</div>
+</div><div class="column" style="width:10%;">
+
+</div><div class="column" style="width:45%;">
+<section id="sql-project" class="level3" style="min-height: 100px;">
+<h3 class="anchored" data-anchor-id="sql-project">SQL Project</h3>
+<p>Subtitle for SQL Project</p>
 </section>
-<p><a href="./sql_course/index.html" class="btn btn-lg btn-custom">View Course Details</a></p>
+<div class="card shadow-sm p-3 h-100">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../files/Agentic_Engineering_preview.jpg" class="border rounded mb-3 img-fluid figure-img"></p>
+<figcaption>File Preview</figcaption>
+</figure>
+</div>
+<div class="mt-auto">
+<p><a href="../files/Excel_Aufgaben.xlsx" class="btn btn-outline-primary w-100" role="button" target="_blank">Download SQL File</a></p>
+</div>
+</div>
+</div>
 </div>
 </div>
 

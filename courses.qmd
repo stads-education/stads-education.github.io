@@ -43,6 +43,15 @@ Learn how to work with LLMs, AI agents, and modern developer tools to turn ideas
 [View Course Details](agentic_engineering/index.qmd){.btn .btn-lg .btn-custom}
 :::
 
+::: {.card .p-5 .text-center .shadow-sm .card-flex}
+::: {.flex-grow-1}
+## <i class="bi bi-database"></i> SQL Course
+Learn the basics of SQL and how to use it to query databases, analyze data, and build powerful data-driven applications.
+:::
+
+[View Course Details](sql_course/index.qmd){.btn .btn-lg .btn-custom}
+:::
+
 :::
 
 

@@ -7,20 +7,17 @@ website:
   title: ""
   navbar:
     background: primary
-    logo: images/STADS_LOGO_2021_SHORT_wht.png
+    logo: 
+      path: images/STADS_LOGO_2021_SHORT_wht.png
+      href: stads-education.qmd  
     left:
-      - href: index.qmd
+      - href: stads-education.qmd
         text: Home
       - href: courses.qmd
         text: Courses
       - href: https://www.stads.de/
         text: About Us
         target: _blank
-    right:
-      - icon: github
-        href: https://github.com/stads-education
-        target: _blank
-
   
 
 format:
