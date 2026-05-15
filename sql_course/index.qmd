@@ -15,10 +15,10 @@ page-layout: full
 </div>
 
 ::: {.card .shadow-sm .p-3 .h-100}
-![File Preview](../files/Agentic_Engineering_preview.jpg){.border .rounded .mb-3}
+<!--- ![File Preview](../files/Agentic_Engineering_preview.jpg){.border .rounded .mb-3}
 
 <div class="mt-auto">
-[Download PDF File](../files/Agentic_Engineering_01.pdf){.btn .btn-outline-primary .w-100 role="button" target="_blank"}
+<!--- [Download PDF File](../files/Agentic_Engineering_01.pdf){.btn .btn-outline-primary .w-100 role="button" target="_blank"}
 </div>
 :::
 :::
