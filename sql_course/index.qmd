@@ -14,16 +14,14 @@ page-layout: full
 ### Einführung in SQL-Grundlagen & Übungen
 </div>
 
-<!--
 ::: {.card .shadow-sm .p-3 .h-100}
-![File Preview](../files/Agentic_Engineering_preview.jpg){.border .rounded .mb-3}
+![File Preview](../files/SQL_Grundlagen_preview.jpg){.border .rounded .mb-3}
 
 <div class="mt-auto">
-<!--- [Download PDF File](../files/Agentic_Engineering_01.pdf){.btn .btn-outline-primary .w-100 role="button" target="_blank"}
+[Download PDF File](../files/SQL_Grundlagen.pdf){.btn .btn-outline-primary .w-100 role="button" target="_blank"}
 </div>
 :::
 :::
--->
 
 ::: {.column width="10%"}
 :::
@@ -31,11 +29,11 @@ page-layout: full
 
 ::: {.column width="45%"}
 <div style="min-height: 100px;">
-### SQL-Datei für die Übungsaufgaben
+### Datenbank für die Übungsaufgaben
 </div>
 
 ::: {.card .shadow-sm .p-3 .h-100}
-![File Preview](../files/SQL_preview.jpg){.border .rounded .mb-3}
+![File Preview](../files/SQL_Datenbank_preview.jpg){.border .rounded .mb-3}
     
 <div class="mt-auto">
 [Download SQL File](../files/testdatabase.db){.btn .btn-outline-primary .w-100 role="button" target="_blank"}
