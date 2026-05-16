@@ -1,0 +1,165 @@
+.stads-hero-title {
+  font-size: 4rem !important;
+  font-weight: 800 !important;
+  line-height: 1.0 !important;
+  margin: 0 !important;
+  display: block !important;
+}
+
+/* Navbar overrides */
+.navbar-brand-logo img {
+  max-height: 60px;
+  width: auto;
+  margin: -5px;
+}
+
+.navbar {
+  background-color: #203765 !important;
+}
+
+/* Utility classes */
+.bg-stads-blue {
+  background-color: #203765;
+}
+
+.flex-gap-20 {
+  display: flex;
+  gap: 20px;
+}
+
+.card-flex {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.btn-custom {
+  background-color: #7388B0;
+  color: white;
+  border: none;
+  margin-top: auto;
+}
+
+.page-margin {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.hero-vibe {
+    /* Volle Breite erzwingen */
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    
+    /* Kompakte Höhe */
+    padding: 80px 0;
+    margin-top: -3rem; /* Zieht das Banner hoch zur Navbar */
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    
+    /* Dezenter Farbwechsel */
+    background: linear-gradient(-45deg, #004a99, #4a6fa5, #003366);
+    background-size: 200% 200%;
+    animation: gradientShift 12s ease infinite;
+    border: none;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.hero-title {
+    font-size: clamp(2rem, 5vw, 3.5rem); /* Schriftgröße passt sich dem Bildschirm an */
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    letter-spacing: -1px;
+}
+
+.hero-subtitle {
+    font-size: clamp(1rem, 2vw, 1.4rem);
+    opacity: 0.9;
+    font-weight: 400;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-btn {
+    background-color: white !important;
+    color: #004a99 !important;
+    border: none;
+    padding: 12px 30px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+    transform: scale(1.05);
+    background-color: #f8f9fa !important;
+}
+
+
+/* Der Container nutzt CSS Grid für perfekte Gleichheit */
+.course-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  width: 100%;
+}
+
+/* Die Karten innerhalb des Grids */
+.card.card-flex {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Schiebt Button nach unten */
+  align-items: center;
+  width: 100%; /* Zwingt beide auf die gleiche Breite */
+  box-sizing: border-box;
+}
+
+/* Fix für Mobile: Verhindert das "Aneinanderkleben" */
+@media (max-width: 768px) {
+  .course-grid {
+    grid-template-columns: 1fr; /* Nur eine Spalte auf Mobile */
+  }
+  
+  .card.card-flex {
+    margin-bottom: 20px;
+    width: 100% !important; /* Volle Breite des Bildschirms minus Padding */
+  }
+}
+
+/* Zentriert alle h2-Titel innerhalb einer Karte */
+.card h2 {
+  text-align: center;
+  width: 100%; /* Stellt sicher, dass die Zentrierung über die volle Breite wirkt */
+  margin-left: auto;
+  margin-right: auto;
+  display: block; /* Erzwingt eine eigene Zeile für den Titel */
+}
+
+/* Optional: Zwingt auch den gesamten Textkörper der Karte zur Zentrierung */
+.card-body {
+  text-align: center;
+}
+
+/* Reduziert den Abstand zwischen layout-Bl�cken und Headings */
+.quarto-layout-panel {
+  margin-bottom: 0.5rem !important;
+}
+
+.quarto-layout-panel + h3,
+.quarto-layout-panel + h2 {
+  margin-top: 1rem !important;
+}
