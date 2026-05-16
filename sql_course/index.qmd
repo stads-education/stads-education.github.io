@@ -11,18 +11,19 @@ page-layout: full
 
 ::: {.column width="45%"}
 <div style="min-height: 100px;">
-### Einfuehrung und technisches Setup
-Subtitle for introduction and technical setup
+### Einführung in SQL-Grundlagen & Übungen
 </div>
 
+<!--
 ::: {.card .shadow-sm .p-3 .h-100}
 ![File Preview](../files/Agentic_Engineering_preview.jpg){.border .rounded .mb-3}
 
 <div class="mt-auto">
-[Download PDF File](../files/Agentic_Engineering_01.pdf){.btn .btn-outline-primary .w-100 role="button" target="_blank"}
+<!--- [Download PDF File](../files/Agentic_Engineering_01.pdf){.btn .btn-outline-primary .w-100 role="button" target="_blank"}
 </div>
 :::
 :::
+-->
 
 ::: {.column width="10%"}
 :::
@@ -30,15 +31,14 @@ Subtitle for introduction and technical setup
 
 ::: {.column width="45%"}
 <div style="min-height: 100px;">
-### SQL Project
-Subtitle for SQL Project
+### SQL-Datei für die Übungsaufgaben
 </div>
 
 ::: {.card .shadow-sm .p-3 .h-100}
-![File Preview](../files/Agentic_Engineering_preview.jpg){.border .rounded .mb-3}
+![File Preview](../files/SQL_preview.jpg){.border .rounded .mb-3}
     
 <div class="mt-auto">
-[Download SQL File](../files/Excel_Aufgaben.xlsx){.btn .btn-outline-primary .w-100 role="button" target="_blank"}
+[Download SQL File](../files/testdatabase.db){.btn .btn-outline-primary .w-100 role="button" target="_blank"}
 </div>
 :::
 :::
