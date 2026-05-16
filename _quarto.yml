@@ -9,9 +9,9 @@ website:
     background: primary
     logo: 
       path: images/STADS_LOGO_2021_SHORT_wht.png
-      href: stads-education.qmd  
+      href: index.qmd  
     left:
-      - href: stads-education.qmd
+      - href: index.qmd
         text: Home
       - href: courses.qmd
         text: Courses
