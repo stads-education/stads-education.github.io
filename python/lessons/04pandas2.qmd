@@ -1,0 +1,114 @@
+---
+title: ""
+image: "../../images/py_kurs_cover04.webp"
+toc: true
+toc-depth: 3
+toc-expand: true
+page-layout: full
+---
+
+<br>
+
+::: {.d-flex .gap-2}
+[Home](../../index.qmd){.btn .btn-outline-secondary .btn-sm}
+[Python Overview](../index.qmd){.btn .btn-outline-secondary .btn-sm}
+[1](./01basics1.qmd){.btn .btn-outline-secondary .btn-sm}
+[2](./02basics2.qmd){.btn .btn-outline-secondary .btn-sm}
+[3](./03pandas1.qmd){.btn .btn-outline-secondary .btn-sm}
+[4](./04pandas2.qmd){.btn .btn-outline-secondary .btn-sm}
+:::
+
+# Session 4: Pandas II & Matplotlib
+*Daten aufbereiten, auswerten und sichtbar machen.*
+
+In dieser Session bereitest du Daten sauber auf, fasst sie nach Gruppen zusammen und machst deine Ergebnisse mit Diagrammen sichtbar, erst direkt mit Pandas, dann mit Matplotlib.
+
+<br>
+
+## Themen
+
+### Pandas Cleaning Data
+Rohdaten enthalten oft Duplikate, Tippfehler oder uneinheitliche Schreibweisen. Bevor man auswertet, werden sie bereinigt, z. B. doppelte Zeilen entfernt und Texte vereinheitlicht.
+
+```python
+df = df.drop_duplicates()
+df["stadt"] = df["stadt"].str.strip().str.title()
+df = df.rename(columns={"alter": "age"})
+```
+
+### Pandas Type Conversions
+Nicht jede Spalte hat automatisch den richtigen Datentyp, Zahlen oder Daten werden z. B. oft als Text eingelesen. Mit `astype()` und `pd.to_datetime()` wandelt man sie um.
+
+```python
+df["alter"] = df["alter"].astype(int)
+df["datum"] = pd.to_datetime(df["datum"])
+df.dtypes
+```
+
+### Pandas Creating New Columns
+Neue Spalten entstehen, indem man einem neuen Spaltennamen einen Wert oder eine Berechnung aus anderen Spalten zuweist.
+
+```python
+df["preis_brutto"] = df["preis"] * 1.19
+df["volljaehrig"] = df["alter"] >= 18
+```
+
+### Pandas Sorting & Indexing
+Mit `sort_values()` sortiert man nach einer oder mehreren Spalten. Mit `set_index()` und `reset_index()` legt man fest, welche Spalte als Zeilenbeschriftung dient.
+
+```python
+df.sort_values("alter", ascending=False)
+df = df.set_index("name")
+df = df.reset_index()
+```
+
+### Pandas GroupBy & Aggregations
+Mit `groupby()` teilt man die Daten in Gruppen und berechnet für jede Gruppe Kennzahlen, z. B. den Durchschnitt pro Kategorie.
+
+```python
+df.groupby("stadt")["alter"].mean()
+df.groupby("stadt").agg({"alter": ["mean", "max"], "name": "count"})
+```
+
+### Pandas Built-in Plotting
+Pandas kann Diagramme direkt aus einem DataFrame oder einer Series erzeugen, ideal für einen schnellen ersten Blick auf die Daten.
+
+```python
+df["alter"].plot(kind="hist")
+df.groupby("stadt")["alter"].mean().plot(kind="bar")
+```
+
+### Matplotlib Basics
+Matplotlib ist die Standardbibliothek für Diagramme in Python. Mit `plt.plot()` erstellt man einen Plot und mit `plt.show()` zeigt man ihn an.
+
+```python
+import matplotlib.pyplot as plt
+
+x = [1, 2, 3, 4]
+y = [10, 20, 15, 25]
+plt.plot(x, y)
+plt.show()
+```
+
+### Matplotlib Labels, Titles & Layout
+Ein Diagramm wird erst durch Beschriftungen verständlich: Titel, Achsenbeschriftungen und Legende. Mit `figsize` und `tight_layout()` steuert man Größe und Abstände.
+
+```python
+plt.figure(figsize=(8, 4))
+plt.plot(x, y, label="Umsatz")
+plt.title("Umsatz pro Quartal")
+plt.xlabel("Quartal")
+plt.ylabel("Umsatz in €")
+plt.legend()
+plt.tight_layout()
+plt.show()
+```
+
+### Matplotlib Plot Types
+Je nach Frage passt ein anderer Diagrammtyp: Linien für Verläufe, Balken für Vergleiche, Histogramme für Verteilungen und Streudiagramme für Zusammenhänge.
+
+```python
+plt.bar(["A", "B", "C"], [5, 8, 3])     # Balken
+plt.hist(df["alter"], bins=10)          # Histogramm
+plt.scatter(df["alter"], df["preis"])   # Streudiagramm
+```

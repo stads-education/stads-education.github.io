@@ -1,8 +1,9 @@
-﻿---
+---
 title: ""
 image: "../../images/py_kurs_cover01.webp"
 toc: true
 toc-depth: 3
+toc-expand: true
 page-layout: full
 ---
 
@@ -13,71 +14,152 @@ page-layout: full
 [Python Overview](../index.qmd){.btn .btn-outline-secondary .btn-sm}
 [1](./01basics1.qmd){.btn .btn-outline-secondary .btn-sm}
 [2](./02basics2.qmd){.btn .btn-outline-secondary .btn-sm}
-[3](./03basics3.qmd){.btn .btn-outline-secondary .btn-sm}
-[4](./04basics4.qmd){.btn .btn-outline-secondary .btn-sm}
-[5](./05pandas1.qmd){.btn .btn-outline-secondary .btn-sm}
-[6](./06pandas2.qmd){.btn .btn-outline-secondary .btn-sm}
-[7](./07Visualisations.qmd){.btn .btn-outline-secondary .btn-sm}
-[8](./08WrapUp_Refresher.qmd){.btn .btn-outline-secondary .btn-sm}
-[9](./09QA_SampleExam.qmd){.btn .btn-outline-secondary .btn-sm}
+[3](./03pandas1.qmd){.btn .btn-outline-secondary .btn-sm}
+[4](./04pandas2.qmd){.btn .btn-outline-secondary .btn-sm}
 :::
 
-# Week 1: Python Basics I
-*The foundation of your Python journey.*
+# Session 1: Python Basics I
+*Das Fundament für deinen Einstieg in Python.*
 
-::: {layout-ncol=1}
-### (Introduction)
-* **Introduction Presentation**
-
-### (Fundamentals)
-* [**Python Syntax**](https://www.w3schools.com/python/python_syntax.asp){.new-tab}
-* [**Python Comments**](https://www.w3schools.com/python/python_comments.asp){.new-tab}
-* [**Python Variables**](https://www.w3schools.com/python/python_variables.asp){.new-tab}
-* [**Python Data Types**](https://www.w3schools.com/python/python_datatypes.asp){.new-tab}
-* [**Python Numbers**](https://www.w3schools.com/python/python_numbers.asp){.new-tab}
-* [**Python Casting**](https://www.w3schools.com/python/python_casting.asp){.new-tab}
-* [**Python Strings**](https://www.w3schools.com/python/python_strings.asp){.new-tab}
-* [**Python User Input**](https://www.w3schools.com/python/python_user_input.asp){.new-tab}
-
-### (Project)
-* [**Project 1: Band Name Generator**](https://stads-python-course.github.io/projects/project-1.html){.new-tab}
-:::
+In dieser Session lernst du die Grundbausteine von Python kennen: wie Code aufgebaut ist, wie man Werte speichert und umwandelt, mit Text und Zahlen arbeitet und erste Entscheidungen im Programm trifft.
 
 <br>
 
-### Material
+## Themen
 
-::: {layout-ncol=1}
-* [**Introductory Slides**](https://stads-python-course.github.io/assets/docs/introductory_slides.pdf){.new-tab}
-:::
+### Python Syntax
+Python-Code wird Zeile für Zeile ausgeführt, entweder direkt im Terminal oder als `.py`-Datei. Besonders wichtig: **Einrückungen** sind kein Stilmittel, sondern bestimmen, welche Zeilen zu einem Codeblock gehören. Fehlt sie, gibt es einen Fehler.
 
-<br>
+```python
+if 5 > 2:
+    print("Fünf ist größer als zwei!")
+```
 
-## Project 1: Band Name Generator
+[Zum Thema →](https://www.w3schools.com/python/python_syntax.asp){.btn .btn-outline-primary .btn-sm .new-tab}
 
-::: {.panel-tabset}
+### Python Comments
+Kommentare beginnen mit `#` und werden von Python ignoriert. Sie erklären den Code oder schalten Zeilen beim Testen vorübergehend aus. Für mehrzeilige Notizen kann man jede Zeile mit `#` beginnen oder einen String in dreifachen Anführungszeichen nutzen.
 
-### The Task
-Create a band name generator that processes user input.
+```python
+# Begrüßung ausgeben
+print("Hallo!")  # Kommentar am Zeilenende
+# print("Diese Zeile wird nicht ausgeführt")
+```
 
-1. Create a welcome message for your program.
-2. Ask the user for the city where they grew up.
-3. Ask the user for the name of their first pet.
-4. Combine the city and pet names and show them their band name.
+[Zum Thema →](https://www.w3schools.com/python/python_comments.asp){.btn .btn-outline-primary .btn-sm .new-tab}
 
-### Hint
-# Project 1 Band Name Generator HINTS
+### Python Variables
+Eine Variable entsteht in dem Moment, in dem man ihr einen Wert zuweist. Einen Typ muss man nicht angeben, und er kann sich später sogar ändern. Variablennamen unterscheiden zwischen Groß- und Kleinschreibung (`name` ≠ `Name`).
 
-1. Create a varibale named city and ask the user for an input.
-2. Create a variable named pet and ask the user for an input.
-3. Print the concatenation of both city and pet.
+```python
+stadt = "Mannheim"
+alter = 21
+print(stadt, alter)
+```
 
-:::
+[Zum Thema →](https://www.w3schools.com/python/python_variables.asp){.btn .btn-outline-primary .btn-sm .new-tab}
 
-## Resources
+### Python Data Types
+Jeder Wert hat einen Datentyp, z. B. Text (`str`), Zahlen (`int`, `float`), Wahrheitswerte (`bool`) oder Sammlungen wie `list` und `dict`. Mit `type()` lässt sich der Typ jederzeit prüfen.
 
-::: {layout-ncol=2}
-[GitHub Repo](https://www.github.com/STADS-Mannheim/python-course-2025/tree/main){.btn .btn-outline-primary .btn-lg .w-100 target="_blank" .new-tab}
+```python
+x = 3.5
+print(type(x))   # <class 'float'>
+```
 
-[w3schools Tutorial](https://www.w3schools.com/python/){.btn .btn-outline-primary .btn-lg .w-100 .new-tab}
-:::
+[Zum Thema →](https://www.w3schools.com/python/python_datatypes.asp){.btn .btn-outline-primary .btn-sm .new-tab}
+
+### Python Numbers
+Python kennt drei Zahlentypen: Ganzzahlen (`int`), Kommazahlen (`float`) und komplexe Zahlen (`complex`). Mit dem Modul `random` lassen sich außerdem Zufallszahlen erzeugen.
+
+```python
+import random
+punkte = 42          # int
+preis = 9.99         # float
+print(random.randrange(1, 7))  # Würfelwurf
+```
+
+[Zum Thema →](https://www.w3schools.com/python/python_numbers.asp){.btn .btn-outline-primary .btn-sm .new-tab}
+
+### Python Casting
+Beim Casting wandelt man einen Wert gezielt in einen anderen Typ um, mit `int()`, `float()` und `str()`. Achtung: `int()` schneidet Nachkommastellen einfach ab.
+
+```python
+int(3.9)       # 3
+float("2.5")   # 2.5
+str(100)       # '100'
+```
+
+[Zum Thema →](https://www.w3schools.com/python/python_casting.asp){.btn .btn-outline-primary .btn-sm .new-tab}
+
+### Python Strings
+Strings sind Texte in einfachen oder doppelten Anführungszeichen. Man kann auf einzelne Zeichen per Index zugreifen, die Länge mit `len()` bestimmen und mit `in` prüfen, ob ein Teiltext enthalten ist.
+
+```python
+gruss = "Hallo Python"
+print(gruss[0])            # H
+print(len(gruss))          # 12
+print("Python" in gruss)   # True
+```
+
+[Zum Thema →](https://www.w3schools.com/python/python_strings.asp){.btn .btn-outline-primary .btn-sm .new-tab}
+
+### Python User Input
+Mit `input()` wartet das Programm auf eine Eingabe über die Tastatur. Das Ergebnis ist **immer ein String**, für Berechnungen muss es also erst umgewandelt werden.
+
+```python
+name = input("Wie heißt du? ")
+jahr = int(input("Geburtsjahr: "))
+print(name, "wird", 2026 - jahr, "Jahre alt.")
+```
+
+[Zum Thema →](https://www.w3schools.com/python/python_user_input.asp){.btn .btn-outline-primary .btn-sm .new-tab}
+
+### Python Booleans
+Ein Boolean ist entweder `True` oder `False` und entsteht z. B. beim Vergleichen von Werten. Mit `bool()` lässt sich jeder Wert prüfen: Leere Werte, `0` und `None` sind `False`, fast alles andere ist `True`.
+
+```python
+print(10 > 9)       # True
+print(bool(""))     # False
+print(bool("Hi"))   # True
+```
+
+[Zum Thema →](https://www.w3schools.com/python/python_booleans.asp){.btn .btn-outline-primary .btn-sm .new-tab}
+
+### Python Operators
+Operatoren verknüpfen Werte und Variablen. Die wichtigsten Gruppen sind Rechenoperatoren (`+ - * / // % **`), Zuweisungen (`=`, `+=`), Vergleiche (`==`, `!=`, `<`, `>`) und logische Operatoren (`and`, `or`, `not`).
+
+```python
+x = 7
+print(x // 2, x % 2)        # 3 1
+print(x > 5 and x < 10)     # True
+```
+
+[Zum Thema →](https://www.w3schools.com/python/python_operators.asp){.btn .btn-outline-primary .btn-sm .new-tab}
+
+### Python Math
+Für einfache Berechnungen gibt es eingebaute Funktionen wie `min()`, `max()`, `abs()` und `pow()`. Das Modul `math` ergänzt z. B. `sqrt()`, `ceil()`, `floor()` und die Konstante `pi`.
+
+```python
+import math
+print(max(3, 8, 1))      # 8
+print(math.sqrt(16))     # 4.0
+print(math.ceil(2.1))    # 3
+```
+
+[Zum Thema →](https://www.w3schools.com/python/python_math.asp){.btn .btn-outline-primary .btn-sm .new-tab}
+
+### Python Conditions
+Mit `if`, `elif` und `else` reagiert ein Programm auf Bedingungen. Nur der Block, dessen Bedingung zutrifft, wird ausgeführt, und auch hier entscheidet die Einrückung, was dazugehört.
+
+```python
+note = 1.7
+if note <= 1.5:
+    print("Sehr gut")
+elif note <= 2.5:
+    print("Gut")
+else:
+    print("Weiter üben!")
+```
+
+[Zum Thema →](https://www.w3schools.com/python/python_conditions.asp){.btn .btn-outline-primary .btn-sm .new-tab}

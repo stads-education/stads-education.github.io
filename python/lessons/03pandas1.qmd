@@ -1,0 +1,100 @@
+---
+title: ""
+image: "../../images/py_kurs_cover03.webp"
+toc: true
+toc-depth: 3
+toc-expand: true
+page-layout: full
+---
+
+<br>
+
+::: {.d-flex .gap-2}
+[Home](../../index.qmd){.btn .btn-outline-secondary .btn-sm}
+[Python Overview](../index.qmd){.btn .btn-outline-secondary .btn-sm}
+[1](./01basics1.qmd){.btn .btn-outline-secondary .btn-sm}
+[2](./02basics2.qmd){.btn .btn-outline-secondary .btn-sm}
+[3](./03pandas1.qmd){.btn .btn-outline-secondary .btn-sm}
+[4](./04pandas2.qmd){.btn .btn-outline-secondary .btn-sm}
+:::
+
+# Session 3: Pandas I
+*Der Einstieg in die Datenanalyse mit Python.*
+
+In dieser Session lernst du Pandas kennen, die wichtigste Python-Bibliothek für Tabellendaten. Du liest Daten ein, verschaffst dir einen Überblick, wählst gezielt Zeilen und Spalten aus und gehst mit fehlenden Werten um.
+
+<br>
+
+## Themen
+
+### Pandas Getting Started
+Pandas wird einmal mit `pip install pandas` installiert und dann üblicherweise unter dem Kürzel `pd` importiert. Damit stehen alle Werkzeuge zum Arbeiten mit Tabellen bereit.
+
+```python
+import pandas as pd
+print(pd.__version__)
+```
+
+### Pandas DataFrames & Series
+Ein **DataFrame** ist eine Tabelle mit Zeilen und Spalten, ähnlich wie ein Excel-Sheet. Jede einzelne Spalte davon ist eine **Series**, also eine eindimensionale Liste von Werten mit Index.
+
+```python
+df = pd.DataFrame({
+    "name": ["Lea", "Tom", "Eva"],
+    "alter": [22, 25, 21]
+})
+alter = df["alter"]     # Series
+```
+
+### Pandas Read CSV
+Echte Daten liegen meist in Dateien. Mit `pd.read_csv()` wird eine CSV-Datei direkt als DataFrame eingelesen, mit `to_csv()` speichert man sie wieder.
+
+```python
+df = pd.read_csv("daten.csv")
+df.to_csv("daten_neu.csv", index=False)
+```
+
+### Pandas Analyzing Data
+Bevor man analysiert, verschafft man sich einen Überblick: `head()` zeigt die ersten Zeilen, `info()` die Spalten und Datentypen, `shape` die Größe der Tabelle.
+
+```python
+df.head()       # erste 5 Zeilen
+df.info()       # Spalten, Typen, fehlende Werte
+df.shape        # (Zeilen, Spalten)
+```
+
+### Pandas Selecting Data
+Spalten wählt man über ihren Namen aus, Zeilen über `loc` (nach Label) oder `iloc` (nach Position).
+
+```python
+df["name"]                  # eine Spalte
+df[["name", "alter"]]       # mehrere Spalten
+df.loc[0, "name"]           # Zeile 0, Spalte "name"
+df.iloc[0:2]                # die ersten zwei Zeilen
+```
+
+### Pandas Filtering Data
+Mit Bedingungen in eckigen Klammern behält man nur die Zeilen, die zutreffen. Mehrere Bedingungen werden mit `&` (und) bzw. `|` (oder) verknüpft.
+
+```python
+df[df["alter"] > 21]
+df[(df["alter"] > 21) & (df["name"] != "Tom")]
+```
+
+### Pandas Handling Missing Data
+Fehlende Werte (`NaN`) sind in echten Daten normal. Man kann sie finden, entfernen oder durch einen sinnvollen Wert ersetzen.
+
+```python
+df.isna().sum()             # fehlende Werte pro Spalte
+df.dropna()                 # Zeilen mit Lücken entfernen
+df["alter"].fillna(0)       # Lücken mit 0 füllen
+```
+
+### Pandas Summary Statistics
+Mit wenigen Befehlen bekommt man Kennzahlen wie Mittelwert, Minimum oder Maximum, für eine Spalte oder mit `describe()` für alle Zahlenspalten auf einmal.
+
+```python
+df.describe()
+df["alter"].mean()
+df["name"].value_counts()
+```

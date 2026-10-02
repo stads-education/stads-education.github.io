@@ -1,8 +1,9 @@
-﻿---
+---
 title: ""
 image: "../../images/py_kurs_cover02.webp"
 toc: true
 toc-depth: 3
+toc-expand: true
 page-layout: full
 ---
 
@@ -13,90 +14,125 @@ page-layout: full
 [Python Overview](../index.qmd){.btn .btn-outline-secondary .btn-sm}
 [1](./01basics1.qmd){.btn .btn-outline-secondary .btn-sm}
 [2](./02basics2.qmd){.btn .btn-outline-secondary .btn-sm}
-[3](./03basics3.qmd){.btn .btn-outline-secondary .btn-sm}
-[4](./04basics4.qmd){.btn .btn-outline-secondary .btn-sm}
-[5](./05pandas1.qmd){.btn .btn-outline-secondary .btn-sm}
-[6](./06pandas2.qmd){.btn .btn-outline-secondary .btn-sm}
-[7](./07Visualisations.qmd){.btn .btn-outline-secondary .btn-sm}
-[8](./08WrapUp_Refresher.qmd){.btn .btn-outline-secondary .btn-sm}
-[9](./09QA_SampleExam.qmd){.btn .btn-outline-secondary .btn-sm}
+[3](./03pandas1.qmd){.btn .btn-outline-secondary .btn-sm}
+[4](./04pandas2.qmd){.btn .btn-outline-secondary .btn-sm}
 :::
 
-# Week 2: Python Basics II
-*The foundation of your Python journey.*
+# Session 2: Python Basics II
+*Daten sammeln, wiederholen und wiederverwenden.*
 
-::: {layout-ncol=1}
-### (Project)
-* Review [**Project 1**](https://stads-python-course.github.io/projects/project-1.html){.new-tab}
-
-### (Fundamentals)
-* [**Python Booleans**](https://www.w3schools.com/python/python_booleans.asp){.new-tab}
-* [**Python Operators**](https://www.w3schools.com/python/python_operators.asp){.new-tab}
-* [**Python Math**](https://www.w3schools.com/python/python_math.asp){.new-tab}
-
-### (Project)
-* [**Project 2: Love Calculator**](https://stads-python-course.github.io/projects/project-2.html){.new-tab}
-* Review [**Project 2**](https://stads-python-course.github.io/projects/project-2.html){.new-tab}
-
-### (Fundamentals)
-* [**Python Lists**](https://www.w3schools.com/python/python_lists.asp){.new-tab}
-* [**Python Tuples**](https://www.w3schools.com/python/python_tuples.asp){.new-tab} (postponed to week 3)
-* [**Python Sets**](https://www.w3schools.com/python/python_sets.asp){.new-tab} (postponed to week 3)
-* [**Python Dictionaries**](https://www.w3schools.com/python/python_dictionaries.asp){.new-tab} (postponed to week 3)
-:::
+In dieser Session lernst du die vier Sammlungstypen von Python kennen, wiederholst Code mit Schleifen und packst Logik in eigene Funktionen, damit du sie nicht immer wieder neu schreiben musst.
 
 <br>
 
-## Project 2: Love Calculator
+## Themen
 
-::: {.panel-tabset}
+### Python Lists
+Listen speichern mehrere Werte in einer Variable, geschrieben in eckigen Klammern. Sie sind **geordnet, veränderbar** und erlauben doppelte Werte. Der erste Eintrag hat den Index `0`.
 
-### The Task
-Everyone knows the love calculators from the internet. You input two names and get a love score. Today you will code your own love calculator. You can be creative and make it all alone with your own creativity or you can use this template:
 ```python
-name1 = your name
-name2 = their name
-combined_string = name1 + name2 # convert it to all lowercase
-
-t = number of t's in combined_string
-r = number of r's in combined_string
-u = ...
-e = ...
-first_digit = t + r + u + e
-
-...
-second_digit = l + o + v + e
-
-love_score = string representation of first_digit + string representation of second_digit
+fruechte = ["Apfel", "Banane", "Kirsche"]
+fruechte.append("Mango")
+print(fruechte[0], len(fruechte))   # Apfel 4
 ```
 
-if the love score is under 10 or greater than 90 then print the score and the phrase "you go together like coke and mentos"
-if the love score is between inclusive 40 and inclusive 50 then print the score and the phrase "you are mid together"
-if the love score is 69 then print the score and the phrase "you are like ying and yang"
-else print the score and the phrase "you are like bonnie and clyde"
+[Zum Thema →](https://www.w3schools.com/python/python_lists.asp){.btn .btn-outline-primary .btn-sm .new-tab}
 
-### Hint
+### Python Tuples
+Tupel funktionieren ähnlich wie Listen, werden aber mit runden Klammern geschrieben und sind **nicht veränderbar**. Sie eignen sich für feste Daten wie Koordinaten. Ein Tupel mit nur einem Element braucht ein Komma: `("a",)`.
 
-Here is a description of all steps required:
-- Ask the user for their name
-- Ask the user for their love's name
-- Concatenate both to one string and make it lowercase
-- Count the number of t's, r's, u's and e's for the first digit
-- Count the number of l's, o's, v's and e's for the second digit
-- Convert both digits to strings then add them
-- Convert the result back to an integer
+```python
+punkt = (49.48, 8.47)
+print(punkt[0])     # 49.48
+# punkt[0] = 50     → Fehler, Tupel sind unveränderbar
+```
 
-- if the love score is smaller or equal to 10 or larger or equal to 90 print "Your love score is {love_score}%, you go together like coca cola and mentos"
-- else if love score is greater than 10 and smaller than 60 print "Your love score is {love_score}%, you are mid together"
-- else if love score equals 69 print "Your love score is {love_score}%, you are like ying and yang."
-- else print "Your love score is {love_score}%, you are like bonnie and clyde."
+[Zum Thema →](https://www.w3schools.com/python/python_tuples.asp){.btn .btn-outline-primary .btn-sm .new-tab}
 
-:::
+### Python Sets
+Sets stehen in geschweiften Klammern, sind **ungeordnet** und enthalten jeden Wert nur einmal. Doppelte Einträge werden automatisch entfernt. Ideal, wenn nur die eindeutigen Werte zählen.
 
-## Resources
+```python
+farben = {"rot", "blau", "rot", "grün"}
+print(farben)            # {'rot', 'blau', 'grün'}
+farben.add("gelb")
+```
 
-::: {layout-ncol=2}
-[GitHub Repo](https://www.github.com/STADS-Mannheim/python-course-2025/tree/main){.btn .btn-outline-primary .btn-lg .w-100 .new-tab}
+[Zum Thema →](https://www.w3schools.com/python/python_sets.asp){.btn .btn-outline-primary .btn-sm .new-tab}
 
-[w3schools Tutorial](https://www.w3schools.com/python/){.btn .btn-outline-primary .btn-lg .w-100 .new-tab}
-:::
+### Python Dictionaries
+Dictionaries speichern Daten als **Schlüssel-Wert-Paare**. Über den Schlüssel greift man direkt auf den Wert zu. Jeder Schlüssel ist eindeutig, Werte können aber jeden Datentyp haben, auch Listen.
+
+```python
+student = {"name": "Lea", "semester": 3, "kurse": ["Python", "SQL"]}
+print(student["name"])       # Lea
+student["semester"] = 4
+```
+
+[Zum Thema →](https://www.w3schools.com/python/python_dictionaries.asp){.btn .btn-outline-primary .btn-sm .new-tab}
+
+### Python While Loops
+Eine `while`-Schleife wiederholt Code, **solange eine Bedingung wahr ist**. Wichtig: Die Bedingung muss irgendwann falsch werden, sonst läuft die Schleife endlos. Mit `break` bricht man vorzeitig ab, mit `continue` springt man zum nächsten Durchlauf.
+
+```python
+i = 1
+while i <= 3:
+    print("Durchlauf", i)
+    i += 1
+```
+
+[Zum Thema →](https://www.w3schools.com/python/python_while_loops.asp){.btn .btn-outline-primary .btn-sm .new-tab}
+
+### Python For Loops
+Eine `for`-Schleife geht **jedes Element einer Sequenz** durch, z. B. eine Liste, einen String oder ein Dictionary. Mit `range()` lässt sich auch einfach eine bestimmte Anzahl an Wiederholungen erzeugen.
+
+```python
+for frucht in ["Apfel", "Banane"]:
+    print(frucht)
+
+for i in range(3):
+    print(i)        # 0, 1, 2
+```
+
+[Zum Thema →](https://www.w3schools.com/python/python_for_loops.asp){.btn .btn-outline-primary .btn-sm .new-tab}
+
+### Python Functions
+Mit `def` definiert man eine Funktion: einen benannten Codeblock, den man beliebig oft aufrufen kann. Funktionen können Parameter entgegennehmen und mit `return` ein Ergebnis zurückgeben.
+
+```python
+def begruessung(name):
+    return "Hallo " + name + "!"
+
+print(begruessung("Max"))   # Hallo Max!
+```
+
+[Zum Thema →](https://www.w3schools.com/python/python_functions.asp){.btn .btn-outline-primary .btn-sm .new-tab}
+
+### Python Lambda
+Eine Lambda-Funktion ist eine **kleine, namenlose Funktion** in einer Zeile: `lambda argumente: ausdruck`. Sie wird oft kurz zusammen mit `sorted()`, `map()` oder `filter()` genutzt.
+
+```python
+verdoppeln = lambda x: x * 2
+print(verdoppeln(5))        # 10
+
+namen = ["Tom", "Alexandra", "Eva"]
+print(sorted(namen, key=lambda n: len(n)))
+```
+
+[Zum Thema →](https://www.w3schools.com/python/python_lambda.asp){.btn .btn-outline-primary .btn-sm .new-tab}
+
+### Python Scope
+Der Scope bestimmt, **wo eine Variable sichtbar ist**. Variablen innerhalb einer Funktion sind lokal und nur dort verfügbar. Variablen im Hauptprogramm sind global und überall lesbar.
+
+```python
+x = 10              # global
+
+def zeige():
+    y = 5           # lokal
+    print(x + y)
+
+zeige()             # 15
+# print(y)          → Fehler, y existiert nur in der Funktion
+```
+
+[Zum Thema →](https://www.w3schools.com/python/python_scope.asp){.btn .btn-outline-primary .btn-sm .new-tab}
