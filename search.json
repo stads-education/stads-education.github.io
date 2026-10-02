@@ -1,0 +1,107 @@
+[
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
+    "section": "",
+    "text": "Contact\nContact us if you have questions about our courses.\n(Page under construction)"
+  },
+  {
+    "objectID": "python/lessons/01basics1.html#themen",
+    "href": "python/lessons/01basics1.html#themen",
+    "title": "Session 1: Python Basics I",
+    "section": "Themen",
+    "text": "Themen\n\nPython Syntax\nPython-Code wird Zeile für Zeile ausgeführt, entweder direkt im Terminal oder als .py-Datei. Besonders wichtig: Einrückungen sind kein Stilmittel, sondern bestimmen, welche Zeilen zu einem Codeblock gehören. Fehlt sie, gibt es einen Fehler.\nif 5 &gt; 2:\n    print(\"Fünf ist größer als zwei!\")\nZum Thema →\n\n\nPython Comments\nKommentare beginnen mit # und werden von Python ignoriert. Sie erklären den Code oder schalten Zeilen beim Testen vorübergehend aus. Für mehrzeilige Notizen kann man jede Zeile mit # beginnen oder einen String in dreifachen Anführungszeichen nutzen.\n# Begrüßung ausgeben\nprint(\"Hallo!\")  # Kommentar am Zeilenende\n# print(\"Diese Zeile wird nicht ausgeführt\")\nZum Thema →\n\n\nPython Variables\nEine Variable entsteht in dem Moment, in dem man ihr einen Wert zuweist. Einen Typ muss man nicht angeben, und er kann sich später sogar ändern. Variablennamen unterscheiden zwischen Groß- und Kleinschreibung (name ≠ Name).\nstadt = \"Mannheim\"\nalter = 21\nprint(stadt, alter)\nZum Thema →\n\n\nPython Data Types\nJeder Wert hat einen Datentyp, z. B. Text (str), Zahlen (int, float), Wahrheitswerte (bool) oder Sammlungen wie list und dict. Mit type() lässt sich der Typ jederzeit prüfen.\nx = 3.5\nprint(type(x))   # &lt;class 'float'&gt;\nZum Thema →\n\n\nPython Numbers\nPython kennt drei Zahlentypen: Ganzzahlen (int), Kommazahlen (float) und komplexe Zahlen (complex). Mit dem Modul random lassen sich außerdem Zufallszahlen erzeugen.\nimport random\npunkte = 42          # int\npreis = 9.99         # float\nprint(random.randrange(1, 7))  # Würfelwurf\nZum Thema →\n\n\nPython Casting\nBeim Casting wandelt man einen Wert gezielt in einen anderen Typ um, mit int(), float() und str(). Achtung: int() schneidet Nachkommastellen einfach ab.\nint(3.9)       # 3\nfloat(\"2.5\")   # 2.5\nstr(100)       # '100'\nZum Thema →\n\n\nPython Strings\nStrings sind Texte in einfachen oder doppelten Anführungszeichen. Man kann auf einzelne Zeichen per Index zugreifen, die Länge mit len() bestimmen und mit in prüfen, ob ein Teiltext enthalten ist.\ngruss = \"Hallo Python\"\nprint(gruss[0])            # H\nprint(len(gruss))          # 12\nprint(\"Python\" in gruss)   # True\nZum Thema →\n\n\nPython User Input\nMit input() wartet das Programm auf eine Eingabe über die Tastatur. Das Ergebnis ist immer ein String, für Berechnungen muss es also erst umgewandelt werden.\nname = input(\"Wie heißt du? \")\njahr = int(input(\"Geburtsjahr: \"))\nprint(name, \"wird\", 2026 - jahr, \"Jahre alt.\")\nZum Thema →\n\n\nPython Booleans\nEin Boolean ist entweder True oder False und entsteht z. B. beim Vergleichen von Werten. Mit bool() lässt sich jeder Wert prüfen: Leere Werte, 0 und None sind False, fast alles andere ist True.\nprint(10 &gt; 9)       # True\nprint(bool(\"\"))     # False\nprint(bool(\"Hi\"))   # True\nZum Thema →\n\n\nPython Operators\nOperatoren verknüpfen Werte und Variablen. Die wichtigsten Gruppen sind Rechenoperatoren (+ - * / // % **), Zuweisungen (=, +=), Vergleiche (==, !=, &lt;, &gt;) und logische Operatoren (and, or, not).\nx = 7\nprint(x // 2, x % 2)        # 3 1\nprint(x &gt; 5 and x &lt; 10)     # True\nZum Thema →\n\n\nPython Math\nFür einfache Berechnungen gibt es eingebaute Funktionen wie min(), max(), abs() und pow(). Das Modul math ergänzt z. B. sqrt(), ceil(), floor() und die Konstante pi.\nimport math\nprint(max(3, 8, 1))      # 8\nprint(math.sqrt(16))     # 4.0\nprint(math.ceil(2.1))    # 3\nZum Thema →\n\n\nPython Conditions\nMit if, elif und else reagiert ein Programm auf Bedingungen. Nur der Block, dessen Bedingung zutrifft, wird ausgeführt, und auch hier entscheidet die Einrückung, was dazugehört.\nnote = 1.7\nif note &lt;= 1.5:\n    print(\"Sehr gut\")\nelif note &lt;= 2.5:\n    print(\"Gut\")\nelse:\n    print(\"Weiter üben!\")\nZum Thema →"
+  },
+  {
+    "objectID": "python/lessons/02basics2.html#themen",
+    "href": "python/lessons/02basics2.html#themen",
+    "title": "Session 2: Python Basics II",
+    "section": "Themen",
+    "text": "Themen\n\nPython Lists\nListen speichern mehrere Werte in einer Variable, geschrieben in eckigen Klammern. Sie sind geordnet, veränderbar und erlauben doppelte Werte. Der erste Eintrag hat den Index 0.\nfruechte = [\"Apfel\", \"Banane\", \"Kirsche\"]\nfruechte.append(\"Mango\")\nprint(fruechte[0], len(fruechte))   # Apfel 4\nZum Thema →\n\n\nPython Tuples\nTupel funktionieren ähnlich wie Listen, werden aber mit runden Klammern geschrieben und sind nicht veränderbar. Sie eignen sich für feste Daten wie Koordinaten. Ein Tupel mit nur einem Element braucht ein Komma: (\"a\",).\npunkt = (49.48, 8.47)\nprint(punkt[0])     # 49.48\n# punkt[0] = 50     → Fehler, Tupel sind unveränderbar\nZum Thema →\n\n\nPython Sets\nSets stehen in geschweiften Klammern, sind ungeordnet und enthalten jeden Wert nur einmal. Doppelte Einträge werden automatisch entfernt. Ideal, wenn nur die eindeutigen Werte zählen.\nfarben = {\"rot\", \"blau\", \"rot\", \"grün\"}\nprint(farben)            # {'rot', 'blau', 'grün'}\nfarben.add(\"gelb\")\nZum Thema →\n\n\nPython Dictionaries\nDictionaries speichern Daten als Schlüssel-Wert-Paare. Über den Schlüssel greift man direkt auf den Wert zu. Jeder Schlüssel ist eindeutig, Werte können aber jeden Datentyp haben, auch Listen.\nstudent = {\"name\": \"Lea\", \"semester\": 3, \"kurse\": [\"Python\", \"SQL\"]}\nprint(student[\"name\"])       # Lea\nstudent[\"semester\"] = 4\nZum Thema →\n\n\nPython While Loops\nEine while-Schleife wiederholt Code, solange eine Bedingung wahr ist. Wichtig: Die Bedingung muss irgendwann falsch werden, sonst läuft die Schleife endlos. Mit break bricht man vorzeitig ab, mit continue springt man zum nächsten Durchlauf.\ni = 1\nwhile i &lt;= 3:\n    print(\"Durchlauf\", i)\n    i += 1\nZum Thema →\n\n\nPython For Loops\nEine for-Schleife geht jedes Element einer Sequenz durch, z. B. eine Liste, einen String oder ein Dictionary. Mit range() lässt sich auch einfach eine bestimmte Anzahl an Wiederholungen erzeugen.\nfor frucht in [\"Apfel\", \"Banane\"]:\n    print(frucht)\n\nfor i in range(3):\n    print(i)        # 0, 1, 2\nZum Thema →\n\n\nPython Functions\nMit def definiert man eine Funktion: einen benannten Codeblock, den man beliebig oft aufrufen kann. Funktionen können Parameter entgegennehmen und mit return ein Ergebnis zurückgeben.\ndef begruessung(name):\n    return \"Hallo \" + name + \"!\"\n\nprint(begruessung(\"Max\"))   # Hallo Max!\nZum Thema →\n\n\nPython Lambda\nEine Lambda-Funktion ist eine kleine, namenlose Funktion in einer Zeile: lambda argumente: ausdruck. Sie wird oft kurz zusammen mit sorted(), map() oder filter() genutzt.\nverdoppeln = lambda x: x * 2\nprint(verdoppeln(5))        # 10\n\nnamen = [\"Tom\", \"Alexandra\", \"Eva\"]\nprint(sorted(namen, key=lambda n: len(n)))\nZum Thema →\n\n\nPython Scope\nDer Scope bestimmt, wo eine Variable sichtbar ist. Variablen innerhalb einer Funktion sind lokal und nur dort verfügbar. Variablen im Hauptprogramm sind global und überall lesbar.\nx = 10              # global\n\ndef zeige():\n    y = 5           # lokal\n    print(x + y)\n\nzeige()             # 15\n# print(y)          → Fehler, y existiert nur in der Funktion\nZum Thema →"
+  },
+  {
+    "objectID": "python/index.html",
+    "href": "python/index.html",
+    "title": "Python Fundamentals",
+    "section": "",
+    "text": "Welcome to the STADS Python course! The course consists of four sessions. Choose a chapter below to get started.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSession 1: Python Basics I\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSession 2: Python Basics II\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSession 3: Pandas I\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSession 4: Pandas II & Matplotlib\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html#sql-course",
+    "href": "index.html#sql-course",
+    "title": "Current Course Portfolio",
+    "section": " SQL Course",
+    "text": "SQL Course\nLearn the basics of SQL and how to use it to query databases, analyze data, and build powerful data-driven applications."
+  },
+  {
+    "objectID": "index.html#agentic-engineering",
+    "href": "index.html#agentic-engineering",
+    "title": "Current Course Portfolio",
+    "section": " Agentic Engineering",
+    "text": "Agentic Engineering\nBuild software faster than ever using AI. Learn how to work with LLMs, AI agents, and modern developer tools to turn ideas into real applications."
+  },
+  {
+    "objectID": "excel/index.html",
+    "href": "excel/index.html",
+    "title": "Excel Course Material",
+    "section": "",
+    "text": "Einführung in Excel-Grundlagen\nFormeln · Formatierung · Datenanalyse\n\n\n\n\n\nFile Preview\n\n\n\nDownload File\n\n\n\n\n\n\nExcel-Datei mit Übungsaufgaben\nPraxisbeispiele zur Vertiefung deiner Excel-Kenntnisse\n\n\n\n\n\nFile Preview\n\n\n\nDownload File"
+  },
+  {
+    "objectID": "courses.html#excel-course",
+    "href": "courses.html#excel-course",
+    "title": "The Complete Course Portfolio",
+    "section": " Excel Course",
+    "text": "Excel Course\nLearn to handle data with confidence, build clean spreadsheets, and master the tools you’ll actually need in a professional office environment."
+  },
+  {
+    "objectID": "courses.html#python-course",
+    "href": "courses.html#python-course",
+    "title": "The Complete Course Portfolio",
+    "section": " Python Course",
+    "text": "Python Course\nMaster the world’s most popular language for data science. From basics to advanced data manipulation with Pandas."
+  },
+  {
+    "objectID": "courses.html#agentic-engineering",
+    "href": "courses.html#agentic-engineering",
+    "title": "The Complete Course Portfolio",
+    "section": " Agentic Engineering",
+    "text": "Agentic Engineering\nBuild software faster than ever using AI. Learn how to work with LLMs, AI agents, and modern developer tools to turn ideas into real applications."
+  },
+  {
+    "objectID": "courses.html#sql-course",
+    "href": "courses.html#sql-course",
+    "title": "The Complete Course Portfolio",
+    "section": " SQL Course",
+    "text": "SQL Course\nLearn the basics of SQL and how to use it to query databases, analyze data, and build powerful data-driven applications."
+  },
+  {
+    "objectID": "agentic_engineering/index.html",
+    "href": "agentic_engineering/index.html",
+    "title": "Agentic Engineering",
+    "section": "",
+    "text": "Tag 1:\nEinführung und technisches Setup\n\n\n\n\n\nFile Preview\n\n\n\nDownload File\n\n\n\n\n\n\n\n\nExample Project\n\nView on GitHub  Open Website"
+  },
+  {
+    "objectID": "python/lessons/04pandas2.html#themen",
+    "href": "python/lessons/04pandas2.html#themen",
+    "title": "Session 4: Pandas II & Matplotlib",
+    "section": "Themen",
+    "text": "Themen\n\nPandas Cleaning Data\nRohdaten enthalten oft Duplikate, Tippfehler oder uneinheitliche Schreibweisen. Bevor man auswertet, werden sie bereinigt, z. B. doppelte Zeilen entfernt und Texte vereinheitlicht.\ndf = df.drop_duplicates()\ndf[\"stadt\"] = df[\"stadt\"].str.strip().str.title()\ndf = df.rename(columns={\"alter\": \"age\"})\n\n\nPandas Type Conversions\nNicht jede Spalte hat automatisch den richtigen Datentyp, Zahlen oder Daten werden z. B. oft als Text eingelesen. Mit astype() und pd.to_datetime() wandelt man sie um.\ndf[\"alter\"] = df[\"alter\"].astype(int)\ndf[\"datum\"] = pd.to_datetime(df[\"datum\"])\ndf.dtypes\n\n\nPandas Creating New Columns\nNeue Spalten entstehen, indem man einem neuen Spaltennamen einen Wert oder eine Berechnung aus anderen Spalten zuweist.\ndf[\"preis_brutto\"] = df[\"preis\"] * 1.19\ndf[\"volljaehrig\"] = df[\"alter\"] &gt;= 18\n\n\nPandas Sorting & Indexing\nMit sort_values() sortiert man nach einer oder mehreren Spalten. Mit set_index() und reset_index() legt man fest, welche Spalte als Zeilenbeschriftung dient.\ndf.sort_values(\"alter\", ascending=False)\ndf = df.set_index(\"name\")\ndf = df.reset_index()\n\n\nPandas GroupBy & Aggregations\nMit groupby() teilt man die Daten in Gruppen und berechnet für jede Gruppe Kennzahlen, z. B. den Durchschnitt pro Kategorie.\ndf.groupby(\"stadt\")[\"alter\"].mean()\ndf.groupby(\"stadt\").agg({\"alter\": [\"mean\", \"max\"], \"name\": \"count\"})\n\n\nPandas Built-in Plotting\nPandas kann Diagramme direkt aus einem DataFrame oder einer Series erzeugen, ideal für einen schnellen ersten Blick auf die Daten.\ndf[\"alter\"].plot(kind=\"hist\")\ndf.groupby(\"stadt\")[\"alter\"].mean().plot(kind=\"bar\")\n\n\nMatplotlib Basics\nMatplotlib ist die Standardbibliothek für Diagramme in Python. Mit plt.plot() erstellt man einen Plot und mit plt.show() zeigt man ihn an.\nimport matplotlib.pyplot as plt\n\nx = [1, 2, 3, 4]\ny = [10, 20, 15, 25]\nplt.plot(x, y)\nplt.show()\n\n\nMatplotlib Labels, Titles & Layout\nEin Diagramm wird erst durch Beschriftungen verständlich: Titel, Achsenbeschriftungen und Legende. Mit figsize und tight_layout() steuert man Größe und Abstände.\nplt.figure(figsize=(8, 4))\nplt.plot(x, y, label=\"Umsatz\")\nplt.title(\"Umsatz pro Quartal\")\nplt.xlabel(\"Quartal\")\nplt.ylabel(\"Umsatz in €\")\nplt.legend()\nplt.tight_layout()\nplt.show()\n\n\nMatplotlib Plot Types\nJe nach Frage passt ein anderer Diagrammtyp: Linien für Verläufe, Balken für Vergleiche, Histogramme für Verteilungen und Streudiagramme für Zusammenhänge.\nplt.bar([\"A\", \"B\", \"C\"], [5, 8, 3])     # Balken\nplt.hist(df[\"alter\"], bins=10)          # Histogramm\nplt.scatter(df[\"alter\"], df[\"preis\"])   # Streudiagramm"
+  },
+  {
+    "objectID": "python/lessons/03pandas1.html#themen",
+    "href": "python/lessons/03pandas1.html#themen",
+    "title": "Session 3: Pandas I",
+    "section": "Themen",
+    "text": "Themen\n\nPandas Getting Started\nPandas wird einmal mit pip install pandas installiert und dann üblicherweise unter dem Kürzel pd importiert. Damit stehen alle Werkzeuge zum Arbeiten mit Tabellen bereit.\nimport pandas as pd\nprint(pd.__version__)\n\n\nPandas DataFrames & Series\nEin DataFrame ist eine Tabelle mit Zeilen und Spalten, ähnlich wie ein Excel-Sheet. Jede einzelne Spalte davon ist eine Series, also eine eindimensionale Liste von Werten mit Index.\ndf = pd.DataFrame({\n    \"name\": [\"Lea\", \"Tom\", \"Eva\"],\n    \"alter\": [22, 25, 21]\n})\nalter = df[\"alter\"]     # Series\n\n\nPandas Read CSV\nEchte Daten liegen meist in Dateien. Mit pd.read_csv() wird eine CSV-Datei direkt als DataFrame eingelesen, mit to_csv() speichert man sie wieder.\ndf = pd.read_csv(\"daten.csv\")\ndf.to_csv(\"daten_neu.csv\", index=False)\n\n\nPandas Analyzing Data\nBevor man analysiert, verschafft man sich einen Überblick: head() zeigt die ersten Zeilen, info() die Spalten und Datentypen, shape die Größe der Tabelle.\ndf.head()       # erste 5 Zeilen\ndf.info()       # Spalten, Typen, fehlende Werte\ndf.shape        # (Zeilen, Spalten)\n\n\nPandas Selecting Data\nSpalten wählt man über ihren Namen aus, Zeilen über loc (nach Label) oder iloc (nach Position).\ndf[\"name\"]                  # eine Spalte\ndf[[\"name\", \"alter\"]]       # mehrere Spalten\ndf.loc[0, \"name\"]           # Zeile 0, Spalte \"name\"\ndf.iloc[0:2]                # die ersten zwei Zeilen\n\n\nPandas Filtering Data\nMit Bedingungen in eckigen Klammern behält man nur die Zeilen, die zutreffen. Mehrere Bedingungen werden mit & (und) bzw. | (oder) verknüpft.\ndf[df[\"alter\"] &gt; 21]\ndf[(df[\"alter\"] &gt; 21) & (df[\"name\"] != \"Tom\")]\n\n\nPandas Handling Missing Data\nFehlende Werte (NaN) sind in echten Daten normal. Man kann sie finden, entfernen oder durch einen sinnvollen Wert ersetzen.\ndf.isna().sum()             # fehlende Werte pro Spalte\ndf.dropna()                 # Zeilen mit Lücken entfernen\ndf[\"alter\"].fillna(0)       # Lücken mit 0 füllen\n\n\nPandas Summary Statistics\nMit wenigen Befehlen bekommt man Kennzahlen wie Mittelwert, Minimum oder Maximum, für eine Spalte oder mit describe() für alle Zahlenspalten auf einmal.\ndf.describe()\ndf[\"alter\"].mean()\ndf[\"name\"].value_counts()"
+  },
+  {
+    "objectID": "sql_course/index.html",
+    "href": "sql_course/index.html",
+    "title": "SQL Course",
+    "section": "",
+    "text": "Einführung in SQL-Grundlagen & Übungen\n\n\n\n\n\nFile Preview\n\n\n\nDownload PDF File\n\n\n\n\n\n\nDatenbank für die Übungsaufgaben\n\n\n\n\n\nFile Preview\n\n\n\nDownload SQL File"
+  }
+]
