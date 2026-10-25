@@ -1,0 +1,11 @@
+[
+  {
+    "listing": "/python/index.html",
+    "items": [
+      "/python/lessons/01basics1.html",
+      "/python/lessons/02basics2.html",
+      "/python/lessons/03pandas1.html",
+      "/python/lessons/04pandas2.html"
+    ]
+  }
+]
