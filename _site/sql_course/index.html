@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.27">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -10,6 +10,9 @@
 
 <title>SQL Course</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -33,15 +36,14 @@ ul.task-list li input[type="checkbox"] {
 <meta name="quarto:offset" content="../">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-029b10fc0dc652dab2ec1ac156c1a037.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-84cfdeff8e8ddd510a79be3971e85af5.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -93,7 +95,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.qmd"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
@@ -103,13 +105,6 @@ ul.task-list li input[type="checkbox"] {
   <li class="nav-item">
     <a class="nav-link" href="https://www.stads.de/" target="_blank"> 
 <span class="menu-text">About Us</span></a>
-  </li>  
-</ul>
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/stads-education" target="_blank"> <i class="bi bi-github" role="img">
-</i> 
-<span class="menu-text"></span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -155,37 +150,35 @@ ul.task-list li input[type="checkbox"] {
 <div class="content-block">
 <div class="columns">
 <div class="column" style="width:45%;">
-<section id="einfuehrung-und-technisches-setup" class="level3" style="min-height: 100px;">
-<h3 class="anchored" data-anchor-id="einfuehrung-und-technisches-setup">Einfuehrung und technisches Setup</h3>
-<p>Subtitle for introduction and technical setup</p>
+<section id="einführung-in-sql-grundlagen-übungen" class="level3" style="min-height: 100px;">
+<h3 class="anchored" data-anchor-id="einführung-in-sql-grundlagen-übungen">Einführung in SQL-Grundlagen &amp; Übungen</h3>
 </section>
 <div class="card shadow-sm p-3 h-100">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../files/Agentic_Engineering_preview.jpg" class="border rounded mb-3 img-fluid figure-img"></p>
+<p><img src="../files/SQL_Grundlagen_preview.jpg" class="border rounded mb-3 img-fluid figure-img"></p>
 <figcaption>File Preview</figcaption>
 </figure>
 </div>
 <div class="mt-auto">
-<p><a href="../files/Agentic_Engineering_01.pdf" class="btn btn-outline-primary w-100" role="button" target="_blank">Download PDF File</a></p>
+<p><a href="../files/SQL_Grundlagen.pdf" class="btn btn-outline-primary w-100" role="button" target="_blank">Download PDF File</a></p>
 </div>
 </div>
 </div><div class="column" style="width:10%;">
 
 </div><div class="column" style="width:45%;">
-<section id="sql-project" class="level3" style="min-height: 100px;">
-<h3 class="anchored" data-anchor-id="sql-project">SQL Project</h3>
-<p>Subtitle for SQL Project</p>
+<section id="datenbank-für-die-übungsaufgaben" class="level3" style="min-height: 100px;">
+<h3 class="anchored" data-anchor-id="datenbank-für-die-übungsaufgaben">Datenbank für die Übungsaufgaben</h3>
 </section>
 <div class="card shadow-sm p-3 h-100">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../files/Agentic_Engineering_preview.jpg" class="border rounded mb-3 img-fluid figure-img"></p>
+<p><img src="../files/SQL_Datenbank_preview.jpg" class="border rounded mb-3 img-fluid figure-img"></p>
 <figcaption>File Preview</figcaption>
 </figure>
 </div>
 <div class="mt-auto">
-<p><a href="../files/Excel_Aufgaben.xlsx" class="btn btn-outline-primary w-100" role="button" target="_blank">Download SQL File</a></p>
+<p><a href="../files/testdatabase.db" class="btn btn-outline-primary w-100" role="button" target="_blank">Download SQL File</a></p>
 </div>
 </div>
 </div>

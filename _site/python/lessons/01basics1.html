@@ -2,13 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.27">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>basics1</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -19,6 +22,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -32,15 +70,14 @@ ul.task-list li input[type="checkbox"] {
 <meta name="quarto:offset" content="../../">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-029b10fc0dc652dab2ec1ac156c1a037.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-84cfdeff8e8ddd510a79be3971e85af5.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -104,13 +141,6 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">About Us</span></a>
   </li>  
 </ul>
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/stads-education" target="_blank"> <i class="bi bi-github" role="img">
-</i> 
-<span class="menu-text"></span></a>
-  </li>  
-</ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
 </div>
@@ -118,124 +148,155 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#week-1-python-basics-i" id="toc-week-1-python-basics-i" class="nav-link active" data-scroll-target="#week-1-python-basics-i">Week 1: Python Basics I</a>
+  <li><a href="#session-1-python-basics-i" id="toc-session-1-python-basics-i" class="nav-link active" data-scroll-target="#session-1-python-basics-i">Session 1: Python Basics I</a>
   <ul class="collapse">
-  <li><a href="#material" id="toc-material" class="nav-link" data-scroll-target="#material">Material</a></li>
-  <li><a href="#project-1-band-name-generator" id="toc-project-1-band-name-generator" class="nav-link" data-scroll-target="#project-1-band-name-generator">Project 1: Band Name Generator</a></li>
-  <li><a href="#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources">Resources</a></li>
+  <li><a href="#themen" id="toc-themen" class="nav-link" data-scroll-target="#themen">Themen</a>
+  <ul class="collapse">
+  <li><a href="#python-syntax" id="toc-python-syntax" class="nav-link" data-scroll-target="#python-syntax">Python Syntax</a></li>
+  <li><a href="#python-comments" id="toc-python-comments" class="nav-link" data-scroll-target="#python-comments">Python Comments</a></li>
+  <li><a href="#python-variables" id="toc-python-variables" class="nav-link" data-scroll-target="#python-variables">Python Variables</a></li>
+  <li><a href="#python-data-types" id="toc-python-data-types" class="nav-link" data-scroll-target="#python-data-types">Python Data Types</a></li>
+  <li><a href="#python-numbers" id="toc-python-numbers" class="nav-link" data-scroll-target="#python-numbers">Python Numbers</a></li>
+  <li><a href="#python-casting" id="toc-python-casting" class="nav-link" data-scroll-target="#python-casting">Python Casting</a></li>
+  <li><a href="#python-strings" id="toc-python-strings" class="nav-link" data-scroll-target="#python-strings">Python Strings</a></li>
+  <li><a href="#python-user-input" id="toc-python-user-input" class="nav-link" data-scroll-target="#python-user-input">Python User Input</a></li>
+  <li><a href="#python-booleans" id="toc-python-booleans" class="nav-link" data-scroll-target="#python-booleans">Python Booleans</a></li>
+  <li><a href="#python-operators" id="toc-python-operators" class="nav-link" data-scroll-target="#python-operators">Python Operators</a></li>
+  <li><a href="#python-math" id="toc-python-math" class="nav-link" data-scroll-target="#python-math">Python Math</a></li>
+  <li><a href="#python-conditions" id="toc-python-conditions" class="nav-link" data-scroll-target="#python-conditions">Python Conditions</a></li>
+  </ul></li>
   </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><h1 class="title display-7">Project 1 Band Name Generator HINTS</h1></header>
+<main class="content column-page-left" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
 
 <p><br></p>
 <div class="d-flex gap-2">
-<p><a href="../../index.html" class="btn btn-outline-secondary btn-sm">Home</a> <a href="../../python/index.html" class="btn btn-outline-secondary btn-sm">Python Overview</a> <a href="../../python/lessons/01basics1.html" class="btn btn-outline-secondary btn-sm">1</a> <a href="../../python/lessons/02basics2.html" class="btn btn-outline-secondary btn-sm">2</a> <a href="../../python/lessons/03basics3.html" class="btn btn-outline-secondary btn-sm">3</a> <a href="../../python/lessons/04basics4.html" class="btn btn-outline-secondary btn-sm">4</a> <a href="../../python/lessons/05pandas1.html" class="btn btn-outline-secondary btn-sm">5</a> <a href="../../python/lessons/06pandas2.html" class="btn btn-outline-secondary btn-sm">6</a> <a href="../../python/lessons/07Visualisations.html" class="btn btn-outline-secondary btn-sm">7</a> <a href="../../python/lessons/08WrapUp_Refresher.html" class="btn btn-outline-secondary btn-sm">8</a> <a href="../../python/lessons/09QA_SampleExam.html" class="btn btn-outline-secondary btn-sm">9</a></p>
+<p><a href="../../index.html" class="btn btn-outline-secondary btn-sm">Home</a> <a href="../../python/index.html" class="btn btn-outline-secondary btn-sm">Python Overview</a> <a href="../../python/lessons/01basics1.html" class="btn btn-outline-secondary btn-sm">1</a> <a href="../../python/lessons/02basics2.html" class="btn btn-outline-secondary btn-sm">2</a> <a href="../../python/lessons/03pandas1.html" class="btn btn-outline-secondary btn-sm">3</a> <a href="../../python/lessons/04pandas2.html" class="btn btn-outline-secondary btn-sm">4</a></p>
 </div>
-<section id="week-1-python-basics-i" class="level1">
-<h1>Week 1: Python Basics I</h1>
-<p><em>The foundation of your Python journey.</em></p>
-<div class="quarto-layout-panel" data-layout-ncol="1">
-<div class="quarto-layout-row">
-<section id="introduction" class="level3 quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
-<h3 class="anchored" data-anchor-id="introduction">(Introduction)</h3>
-<ul>
-<li><strong>Introduction Presentation</strong></li>
-</ul>
-</section>
-</div>
-<div class="quarto-layout-row">
-<section id="fundamentals" class="level3 quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
-<h3 class="anchored" data-anchor-id="fundamentals">(Fundamentals)</h3>
-<ul>
-<li><a href="https://www.w3schools.com/python/python_syntax.asp" class="new-tab"><strong>Python Syntax</strong></a></li>
-<li><a href="https://www.w3schools.com/python/python_comments.asp" class="new-tab"><strong>Python Comments</strong></a></li>
-<li><a href="https://www.w3schools.com/python/python_variables.asp" class="new-tab"><strong>Python Variables</strong></a></li>
-<li><a href="https://www.w3schools.com/python/python_datatypes.asp" class="new-tab"><strong>Python Data Types</strong></a></li>
-<li><a href="https://www.w3schools.com/python/python_numbers.asp" class="new-tab"><strong>Python Numbers</strong></a></li>
-<li><a href="https://www.w3schools.com/python/python_casting.asp" class="new-tab"><strong>Python Casting</strong></a></li>
-<li><a href="https://www.w3schools.com/python/python_strings.asp" class="new-tab"><strong>Python Strings</strong></a></li>
-<li><a href="https://www.w3schools.com/python/python_user_input.asp" class="new-tab"><strong>Python User Input</strong></a></li>
-</ul>
-</section>
-</div>
-<div class="quarto-layout-row">
-<section id="project" class="level3 quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
-<h3 class="anchored" data-anchor-id="project">(Project)</h3>
-<ul>
-<li><a href="https://stads-python-course.github.io/projects/project-1.html" class="new-tab"><strong>Project 1: Band Name Generator</strong></a></li>
-</ul>
-</section>
-</div>
-</div>
+<section id="session-1-python-basics-i" class="level1">
+<h1>Session 1: Python Basics I</h1>
+<p><em>Das Fundament für deinen Einstieg in Python.</em></p>
+<p>In dieser Session lernst du die Grundbausteine von Python kennen: wie Code aufgebaut ist, wie man Werte speichert und umwandelt, mit Text und Zahlen arbeitet und erste Entscheidungen im Programm trifft.</p>
 <p><br></p>
-<section id="material" class="level3">
-<h3 class="anchored" data-anchor-id="material">Material</h3>
-<div class="quarto-layout-panel" data-layout-ncol="1">
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
-<ul>
-<li><a href="https://stads-python-course.github.io/assets/docs/introductory_slides.pdf" class="new-tab"><strong>Introductory Slides</strong></a></li>
-</ul>
-</div>
-</div>
-</div>
-<p><br></p>
+<section id="themen" class="level2">
+<h2 class="anchored" data-anchor-id="themen">Themen</h2>
+<section id="python-syntax" class="level3">
+<h3 class="anchored" data-anchor-id="python-syntax">Python Syntax</h3>
+<p>Python-Code wird Zeile für Zeile ausgeführt, entweder direkt im Terminal oder als <code>.py</code>-Datei. Besonders wichtig: <strong>Einrückungen</strong> sind kein Stilmittel, sondern bestimmen, welche Zeilen zu einem Codeblock gehören. Fehlt sie, gibt es einen Fehler.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="dv">5</span> <span class="op">&gt;</span> <span class="dv">2</span>:</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Fünf ist größer als zwei!"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><a href="https://www.w3schools.com/python/python_syntax.asp" class="btn btn-outline-primary btn-sm new-tab">Zum Thema →</a></p>
 </section>
-<section id="project-1-band-name-generator" class="level2">
-<h2 class="anchored" data-anchor-id="project-1-band-name-generator">Project 1: Band Name Generator</h2>
-<div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">The Task</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Hint</a></li></ul>
-<div class="tab-content">
-<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<p>Create a band name generator that processes user input.</p>
-<ol type="1">
-<li>Create a welcome message for your program.</li>
-<li>Ask the user for the city where they grew up.</li>
-<li>Ask the user for the name of their first pet.</li>
-<li>Combine the city and pet names and show them their band name.</li>
-</ol>
-</div>
-<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<section id="project-1-band-name-generator-hints" class="level1">
-
-<ol type="1">
-<li>Create a varibale named city and ask the user for an input.</li>
-<li>Create a variable named pet and ask the user for an input.</li>
-<li>Print the concatenation of both city and pet.</li>
-</ol>
+<section id="python-comments" class="level3">
+<h3 class="anchored" data-anchor-id="python-comments">Python Comments</h3>
+<p>Kommentare beginnen mit <code>#</code> und werden von Python ignoriert. Sie erklären den Code oder schalten Zeilen beim Testen vorübergehend aus. Für mehrzeilige Notizen kann man jede Zeile mit <code>#</code> beginnen oder einen String in dreifachen Anführungszeichen nutzen.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Begrüßung ausgeben</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Hallo!"</span>)  <span class="co"># Kommentar am Zeilenende</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co"># print("Diese Zeile wird nicht ausgeführt")</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><a href="https://www.w3schools.com/python/python_comments.asp" class="btn btn-outline-primary btn-sm new-tab">Zum Thema →</a></p>
 </section>
-</div>
-</div>
-</div>
+<section id="python-variables" class="level3">
+<h3 class="anchored" data-anchor-id="python-variables">Python Variables</h3>
+<p>Eine Variable entsteht in dem Moment, in dem man ihr einen Wert zuweist. Einen Typ muss man nicht angeben, und er kann sich später sogar ändern. Variablennamen unterscheiden zwischen Groß- und Kleinschreibung (<code>name</code> ≠ <code>Name</code>).</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>stadt <span class="op">=</span> <span class="st">"Mannheim"</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>alter <span class="op">=</span> <span class="dv">21</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(stadt, alter)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><a href="https://www.w3schools.com/python/python_variables.asp" class="btn btn-outline-primary btn-sm new-tab">Zum Thema →</a></p>
 </section>
-<section id="resources" class="level2">
-<h2 class="anchored" data-anchor-id="resources">Resources</h2>
-<div class="quarto-layout-panel" data-layout-ncol="2">
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<p><a href="https://www.github.com/STADS-Mannheim/python-course-2025/tree/main" class="btn btn-outline-primary btn-lg w-100 new-tab" target="_blank">GitHub Repo</a></p>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<p><a href="https://www.w3schools.com/python/" class="btn btn-outline-primary btn-lg w-100 new-tab">w3schools Tutorial</a></p>
-</div>
-</div>
-</div>
+<section id="python-data-types" class="level3">
+<h3 class="anchored" data-anchor-id="python-data-types">Python Data Types</h3>
+<p>Jeder Wert hat einen Datentyp, z. B. Text (<code>str</code>), Zahlen (<code>int</code>, <code>float</code>), Wahrheitswerte (<code>bool</code>) oder Sammlungen wie <code>list</code> und <code>dict</code>. Mit <code>type()</code> lässt sich der Typ jederzeit prüfen.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="fl">3.5</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">type</span>(x))   <span class="co"># &lt;class 'float'&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><a href="https://www.w3schools.com/python/python_datatypes.asp" class="btn btn-outline-primary btn-sm new-tab">Zum Thema →</a></p>
+</section>
+<section id="python-numbers" class="level3">
+<h3 class="anchored" data-anchor-id="python-numbers">Python Numbers</h3>
+<p>Python kennt drei Zahlentypen: Ganzzahlen (<code>int</code>), Kommazahlen (<code>float</code>) und komplexe Zahlen (<code>complex</code>). Mit dem Modul <code>random</code> lassen sich außerdem Zufallszahlen erzeugen.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> random</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>punkte <span class="op">=</span> <span class="dv">42</span>          <span class="co"># int</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>preis <span class="op">=</span> <span class="fl">9.99</span>         <span class="co"># float</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(random.randrange(<span class="dv">1</span>, <span class="dv">7</span>))  <span class="co"># Würfelwurf</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><a href="https://www.w3schools.com/python/python_numbers.asp" class="btn btn-outline-primary btn-sm new-tab">Zum Thema →</a></p>
+</section>
+<section id="python-casting" class="level3">
+<h3 class="anchored" data-anchor-id="python-casting">Python Casting</h3>
+<p>Beim Casting wandelt man einen Wert gezielt in einen anderen Typ um, mit <code>int()</code>, <code>float()</code> und <code>str()</code>. Achtung: <code>int()</code> schneidet Nachkommastellen einfach ab.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="bu">int</span>(<span class="fl">3.9</span>)       <span class="co"># 3</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="bu">float</span>(<span class="st">"2.5"</span>)   <span class="co"># 2.5</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="bu">str</span>(<span class="dv">100</span>)       <span class="co"># '100'</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><a href="https://www.w3schools.com/python/python_casting.asp" class="btn btn-outline-primary btn-sm new-tab">Zum Thema →</a></p>
+</section>
+<section id="python-strings" class="level3">
+<h3 class="anchored" data-anchor-id="python-strings">Python Strings</h3>
+<p>Strings sind Texte in einfachen oder doppelten Anführungszeichen. Man kann auf einzelne Zeichen per Index zugreifen, die Länge mit <code>len()</code> bestimmen und mit <code>in</code> prüfen, ob ein Teiltext enthalten ist.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>gruss <span class="op">=</span> <span class="st">"Hallo Python"</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(gruss[<span class="dv">0</span>])            <span class="co"># H</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">len</span>(gruss))          <span class="co"># 12</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Python"</span> <span class="kw">in</span> gruss)   <span class="co"># True</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><a href="https://www.w3schools.com/python/python_strings.asp" class="btn btn-outline-primary btn-sm new-tab">Zum Thema →</a></p>
+</section>
+<section id="python-user-input" class="level3">
+<h3 class="anchored" data-anchor-id="python-user-input">Python User Input</h3>
+<p>Mit <code>input()</code> wartet das Programm auf eine Eingabe über die Tastatur. Das Ergebnis ist <strong>immer ein String</strong>, für Berechnungen muss es also erst umgewandelt werden.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>name <span class="op">=</span> <span class="bu">input</span>(<span class="st">"Wie heißt du? "</span>)</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>jahr <span class="op">=</span> <span class="bu">int</span>(<span class="bu">input</span>(<span class="st">"Geburtsjahr: "</span>))</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(name, <span class="st">"wird"</span>, <span class="dv">2026</span> <span class="op">-</span> jahr, <span class="st">"Jahre alt."</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><a href="https://www.w3schools.com/python/python_user_input.asp" class="btn btn-outline-primary btn-sm new-tab">Zum Thema →</a></p>
+</section>
+<section id="python-booleans" class="level3">
+<h3 class="anchored" data-anchor-id="python-booleans">Python Booleans</h3>
+<p>Ein Boolean ist entweder <code>True</code> oder <code>False</code> und entsteht z. B. beim Vergleichen von Werten. Mit <code>bool()</code> lässt sich jeder Wert prüfen: Leere Werte, <code>0</code> und <code>None</code> sind <code>False</code>, fast alles andere ist <code>True</code>.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="dv">10</span> <span class="op">&gt;</span> <span class="dv">9</span>)       <span class="co"># True</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">bool</span>(<span class="st">""</span>))     <span class="co"># False</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">bool</span>(<span class="st">"Hi"</span>))   <span class="co"># True</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><a href="https://www.w3schools.com/python/python_booleans.asp" class="btn btn-outline-primary btn-sm new-tab">Zum Thema →</a></p>
+</section>
+<section id="python-operators" class="level3">
+<h3 class="anchored" data-anchor-id="python-operators">Python Operators</h3>
+<p>Operatoren verknüpfen Werte und Variablen. Die wichtigsten Gruppen sind Rechenoperatoren (<code>+ - * / // % **</code>), Zuweisungen (<code>=</code>, <code>+=</code>), Vergleiche (<code>==</code>, <code>!=</code>, <code>&lt;</code>, <code>&gt;</code>) und logische Operatoren (<code>and</code>, <code>or</code>, <code>not</code>).</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">7</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(x <span class="op">//</span> <span class="dv">2</span>, x <span class="op">%</span> <span class="dv">2</span>)        <span class="co"># 3 1</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(x <span class="op">&gt;</span> <span class="dv">5</span> <span class="kw">and</span> x <span class="op">&lt;</span> <span class="dv">10</span>)     <span class="co"># True</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><a href="https://www.w3schools.com/python/python_operators.asp" class="btn btn-outline-primary btn-sm new-tab">Zum Thema →</a></p>
+</section>
+<section id="python-math" class="level3">
+<h3 class="anchored" data-anchor-id="python-math">Python Math</h3>
+<p>Für einfache Berechnungen gibt es eingebaute Funktionen wie <code>min()</code>, <code>max()</code>, <code>abs()</code> und <code>pow()</code>. Das Modul <code>math</code> ergänzt z. B. <code>sqrt()</code>, <code>ceil()</code>, <code>floor()</code> und die Konstante <code>pi</code>.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> math</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">max</span>(<span class="dv">3</span>, <span class="dv">8</span>, <span class="dv">1</span>))      <span class="co"># 8</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(math.sqrt(<span class="dv">16</span>))     <span class="co"># 4.0</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(math.ceil(<span class="fl">2.1</span>))    <span class="co"># 3</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><a href="https://www.w3schools.com/python/python_math.asp" class="btn btn-outline-primary btn-sm new-tab">Zum Thema →</a></p>
+</section>
+<section id="python-conditions" class="level3">
+<h3 class="anchored" data-anchor-id="python-conditions">Python Conditions</h3>
+<p>Mit <code>if</code>, <code>elif</code> und <code>else</code> reagiert ein Programm auf Bedingungen. Nur der Block, dessen Bedingung zutrifft, wird ausgeführt, und auch hier entscheidet die Einrückung, was dazugehört.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>note <span class="op">=</span> <span class="fl">1.7</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> note <span class="op">&lt;=</span> <span class="fl">1.5</span>:</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Sehr gut"</span>)</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="cf">elif</span> note <span class="op">&lt;=</span> <span class="fl">2.5</span>:</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Gut"</span>)</span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Weiter üben!"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><a href="https://www.w3schools.com/python/python_conditions.asp" class="btn btn-outline-primary btn-sm new-tab">Zum Thema →</a></p>
 
 
+</section>
 </section>
 </section>
 

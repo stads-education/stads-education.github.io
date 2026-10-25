@@ -2,13 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.27">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>wrapup_refresher</title>
+<title>pandas1</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -19,6 +22,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -32,15 +70,14 @@ ul.task-list li input[type="checkbox"] {
 <meta name="quarto:offset" content="../../">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-029b10fc0dc652dab2ec1ac156c1a037.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-84cfdeff8e8ddd510a79be3971e85af5.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -104,13 +141,6 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">About Us</span></a>
   </li>  
 </ul>
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/stads-education" target="_blank"> <i class="bi bi-github" role="img">
-</i> 
-<span class="menu-text"></span></a>
-  </li>  
-</ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
 </div>
@@ -118,68 +148,113 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#week-8-wrap-up-refresher" id="toc-week-8-wrap-up-refresher" class="nav-link active" data-scroll-target="#week-8-wrap-up-refresher">Week 8: Wrap-Up &amp; Refresher</a>
+  <li><a href="#session-3-pandas-i" id="toc-session-3-pandas-i" class="nav-link active" data-scroll-target="#session-3-pandas-i">Session 3: Pandas I</a>
   <ul class="collapse">
-  <li><a href="#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources">Resources</a></li>
+  <li><a href="#material" id="toc-material" class="nav-link" data-scroll-target="#material">Material</a></li>
+  <li><a href="#themen" id="toc-themen" class="nav-link" data-scroll-target="#themen">Themen</a>
+  <ul class="collapse">
+  <li><a href="#pandas-getting-started" id="toc-pandas-getting-started" class="nav-link" data-scroll-target="#pandas-getting-started">Pandas Getting Started</a></li>
+  <li><a href="#pandas-dataframes-series" id="toc-pandas-dataframes-series" class="nav-link" data-scroll-target="#pandas-dataframes-series">Pandas DataFrames &amp; Series</a></li>
+  <li><a href="#pandas-read-csv" id="toc-pandas-read-csv" class="nav-link" data-scroll-target="#pandas-read-csv">Pandas Read CSV</a></li>
+  <li><a href="#pandas-analyzing-data" id="toc-pandas-analyzing-data" class="nav-link" data-scroll-target="#pandas-analyzing-data">Pandas Analyzing Data</a></li>
+  <li><a href="#pandas-selecting-data" id="toc-pandas-selecting-data" class="nav-link" data-scroll-target="#pandas-selecting-data">Pandas Selecting Data</a></li>
+  <li><a href="#pandas-filtering-data" id="toc-pandas-filtering-data" class="nav-link" data-scroll-target="#pandas-filtering-data">Pandas Filtering Data</a></li>
+  <li><a href="#pandas-handling-missing-data" id="toc-pandas-handling-missing-data" class="nav-link" data-scroll-target="#pandas-handling-missing-data">Pandas Handling Missing Data</a></li>
+  <li><a href="#pandas-summary-statistics" id="toc-pandas-summary-statistics" class="nav-link" data-scroll-target="#pandas-summary-statistics">Pandas Summary Statistics</a></li>
+  </ul></li>
   </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content column-page-left" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
 
 <p><br></p>
 <div class="d-flex gap-2">
-<p><a href="../../index.html" class="btn btn-outline-secondary btn-sm">Home</a> <a href="../../python/index.html" class="btn btn-outline-secondary btn-sm">Python Overview</a> <a href="../../python/lessons/01basics1.html" class="btn btn-outline-secondary btn-sm">1</a> <a href="../../python/lessons/02basics2.html" class="btn btn-outline-secondary btn-sm">2</a> <a href="../../python/lessons/03basics3.html" class="btn btn-outline-secondary btn-sm">3</a> <a href="../../python/lessons/04basics4.html" class="btn btn-outline-secondary btn-sm">4</a> <a href="../../python/lessons/05pandas1.html" class="btn btn-outline-secondary btn-sm">5</a> <a href="../../python/lessons/06pandas2.html" class="btn btn-outline-secondary btn-sm">6</a> <a href="../../python/lessons/07Visualisations.html" class="btn btn-outline-secondary btn-sm">7</a> <a href="../../python/lessons/08WrapUp_Refresher.html" class="btn btn-outline-secondary btn-sm">8</a> <a href="../../python/lessons/09QA_SampleExam.html" class="btn btn-outline-secondary btn-sm">9</a></p>
+<p><a href="../../index.html" class="btn btn-outline-secondary btn-sm">Home</a> <a href="../../python/index.html" class="btn btn-outline-secondary btn-sm">Python Overview</a> <a href="../../python/lessons/01basics1.html" class="btn btn-outline-secondary btn-sm">1</a> <a href="../../python/lessons/02basics2.html" class="btn btn-outline-secondary btn-sm">2</a> <a href="../../python/lessons/03pandas1.html" class="btn btn-outline-secondary btn-sm">3</a> <a href="../../python/lessons/04pandas2.html" class="btn btn-outline-secondary btn-sm">4</a></p>
 </div>
-<section id="week-8-wrap-up-refresher" class="level1">
-<h1>Week 8: Wrap-Up &amp; Refresher</h1>
-<p><em>The foundation of your Python journey.</em></p>
-<div class="quarto-layout-panel" data-layout-ncol="1">
-<div class="quarto-layout-row">
-<section id="recap" class="level3 quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
-<h3 class="anchored" data-anchor-id="recap">(Recap)</h3>
-<ul>
-<li><strong>Recap</strong></li>
-</ul>
+<section id="session-3-pandas-i" class="level1">
+<h1>Session 3: Pandas I</h1>
+<p><em>Der Einstieg in die Datenanalyse mit Python.</em></p>
+<p>In dieser Session lernst du Pandas kennen, die wichtigste Python-Bibliothek für Tabellendaten. Du liest Daten ein, verschaffst dir einen Überblick, wählst gezielt Zeilen und Spalten aus und gehst mit fehlenden Werten um.</p>
+<p><br></p>
+<section id="material" class="level2">
+<h2 class="anchored" data-anchor-id="material">Material</h2>
+<p>Das Vorbereitungs-Notebook enthält alle Themen dieser Session zum Mitmachen. Öffne es in Jupyter oder VS Code.</p>
+<p><a href="../../files/Python_Session3_Vorbereitung.html" class="btn btn-outline-primary" role="button" download="Python_Session3_Vorbereitung.ipynb">Notebook herunterladen (.ipynb)</a></p>
+<p><br></p>
 </section>
-</div>
-<div class="quarto-layout-row">
-<section id="python-refresher" class="level3 quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
-<h3 class="anchored" data-anchor-id="python-refresher">(Python Refresher)</h3>
-<ul>
-<li><a href="https://github.com/STADS-Mannheim/python-course-2025/tree/main/Week_08_Refresher/Basics" class="new-tab"><strong>Basics</strong></a></li>
-<li><a href="https://github.com/STADS-Mannheim/python-course-2025/tree/main/Week_08_Refresher/Functions" class="new-tab"><strong>Functions</strong></a></li>
-<li><a href="https://github.com/STADS-Mannheim/python-course-2025/tree/main/Week_08_Refresher/Classes" class="new-tab"><strong>Classes</strong></a></li>
-</ul>
+<section id="themen" class="level2">
+<h2 class="anchored" data-anchor-id="themen">Themen</h2>
+<section id="pandas-getting-started" class="level3">
+<h3 class="anchored" data-anchor-id="pandas-getting-started">Pandas Getting Started</h3>
+<p>Pandas wird einmal mit <code>pip install pandas</code> installiert und dann üblicherweise unter dem Kürzel <code>pd</code> importiert. Damit stehen alle Werkzeuge zum Arbeiten mit Tabellen bereit.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(pd.__version__)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-</div>
-</div>
-<section id="resources" class="level2">
-<h2 class="anchored" data-anchor-id="resources">Resources</h2>
-<div class="quarto-layout-panel" data-layout-ncol="2">
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<p><a href="https://www.github.com/STADS-Mannheim/python-course-2025/tree/main" class="btn btn-outline-primary btn-lg w-100 new-tab">GitHub Repo</a></p>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<p><a href="https://www.w3schools.com/python/" class="btn btn-outline-primary btn-lg w-100 new-tab">w3schools Tutorial</a></p>
-</div>
-</div>
-</div>
+<section id="pandas-dataframes-series" class="level3">
+<h3 class="anchored" data-anchor-id="pandas-dataframes-series">Pandas DataFrames &amp; Series</h3>
+<p>Ein <strong>DataFrame</strong> ist eine Tabelle mit Zeilen und Spalten, ähnlich wie ein Excel-Sheet. Jede einzelne Spalte davon ist eine <strong>Series</strong>, also eine eindimensionale Liste von Werten mit Index.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame({</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">"name"</span>: [<span class="st">"Lea"</span>, <span class="st">"Tom"</span>, <span class="st">"Eva"</span>],</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">"alter"</span>: [<span class="dv">22</span>, <span class="dv">25</span>, <span class="dv">21</span>]</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>})</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>alter <span class="op">=</span> df[<span class="st">"alter"</span>]     <span class="co"># Series</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="pandas-read-csv" class="level3">
+<h3 class="anchored" data-anchor-id="pandas-read-csv">Pandas Read CSV</h3>
+<p>Echte Daten liegen meist in Dateien. Mit <code>pd.read_csv()</code> wird eine CSV-Datei direkt als DataFrame eingelesen, mit <code>to_csv()</code> speichert man sie wieder.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">"daten.csv"</span>)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>df.to_csv(<span class="st">"daten_neu.csv"</span>, index<span class="op">=</span><span class="va">False</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="pandas-analyzing-data" class="level3">
+<h3 class="anchored" data-anchor-id="pandas-analyzing-data">Pandas Analyzing Data</h3>
+<p>Bevor man analysiert, verschafft man sich einen Überblick: <code>head()</code> zeigt die ersten Zeilen, <code>info()</code> die Spalten und Datentypen, <code>shape</code> die Größe der Tabelle.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>df.head()       <span class="co"># erste 5 Zeilen</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>df.info()       <span class="co"># Spalten, Typen, fehlende Werte</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>df.shape        <span class="co"># (Zeilen, Spalten)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="pandas-selecting-data" class="level3">
+<h3 class="anchored" data-anchor-id="pandas-selecting-data">Pandas Selecting Data</h3>
+<p>Spalten wählt man über ihren Namen aus, Zeilen über <code>loc</code> (nach Label) oder <code>iloc</code> (nach Position).</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"name"</span>]                  <span class="co"># eine Spalte</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>df[[<span class="st">"name"</span>, <span class="st">"alter"</span>]]       <span class="co"># mehrere Spalten</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>df.loc[<span class="dv">0</span>, <span class="st">"name"</span>]           <span class="co"># Zeile 0, Spalte "name"</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>df.iloc[<span class="dv">0</span>:<span class="dv">2</span>]                <span class="co"># die ersten zwei Zeilen</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="pandas-filtering-data" class="level3">
+<h3 class="anchored" data-anchor-id="pandas-filtering-data">Pandas Filtering Data</h3>
+<p>Mit Bedingungen in eckigen Klammern behält man nur die Zeilen, die zutreffen. Mehrere Bedingungen werden mit <code>&amp;</code> (und) bzw. <code>|</code> (oder) verknüpft.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>df[df[<span class="st">"alter"</span>] <span class="op">&gt;</span> <span class="dv">21</span>]</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>df[(df[<span class="st">"alter"</span>] <span class="op">&gt;</span> <span class="dv">21</span>) <span class="op">&amp;</span> (df[<span class="st">"name"</span>] <span class="op">!=</span> <span class="st">"Tom"</span>)]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="pandas-handling-missing-data" class="level3">
+<h3 class="anchored" data-anchor-id="pandas-handling-missing-data">Pandas Handling Missing Data</h3>
+<p>Fehlende Werte (<code>NaN</code>) sind in echten Daten normal. Man kann sie finden, entfernen oder durch einen sinnvollen Wert ersetzen.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>df.isna().<span class="bu">sum</span>()             <span class="co"># fehlende Werte pro Spalte</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>df.dropna()                 <span class="co"># Zeilen mit Lücken entfernen</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"alter"</span>].fillna(<span class="dv">0</span>)       <span class="co"># Lücken mit 0 füllen</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="pandas-summary-statistics" class="level3">
+<h3 class="anchored" data-anchor-id="pandas-summary-statistics">Pandas Summary Statistics</h3>
+<p>Mit wenigen Befehlen bekommt man Kennzahlen wie Mittelwert, Minimum oder Maximum, für eine Spalte oder mit <code>describe()</code> für alle Zahlenspalten auf einmal.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>df.describe()</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"alter"</span>].mean()</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"name"</span>].value_counts()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 
 
+</section>
 </section>
 </section>
 

@@ -2,13 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.27">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>pandas1</title>
+<title>pandas2</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -19,6 +22,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -32,15 +70,14 @@ ul.task-list li input[type="checkbox"] {
 <meta name="quarto:offset" content="../../">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-029b10fc0dc652dab2ec1ac156c1a037.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-84cfdeff8e8ddd510a79be3971e85af5.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -104,13 +141,6 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">About Us</span></a>
   </li>  
 </ul>
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/stads-education" target="_blank"> <i class="bi bi-github" role="img">
-</i> 
-<span class="menu-text"></span></a>
-  </li>  
-</ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
 </div>
@@ -118,68 +148,119 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#week-5-pandas-i" id="toc-week-5-pandas-i" class="nav-link active" data-scroll-target="#week-5-pandas-i">Week 5: Pandas I</a>
+  <li><a href="#session-4-pandas-ii-matplotlib" id="toc-session-4-pandas-ii-matplotlib" class="nav-link active" data-scroll-target="#session-4-pandas-ii-matplotlib">Session 4: Pandas II &amp; Matplotlib</a>
   <ul class="collapse">
-  <li><a href="#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources">Resources</a></li>
+  <li><a href="#themen" id="toc-themen" class="nav-link" data-scroll-target="#themen">Themen</a>
+  <ul class="collapse">
+  <li><a href="#pandas-cleaning-data" id="toc-pandas-cleaning-data" class="nav-link" data-scroll-target="#pandas-cleaning-data">Pandas Cleaning Data</a></li>
+  <li><a href="#pandas-type-conversions" id="toc-pandas-type-conversions" class="nav-link" data-scroll-target="#pandas-type-conversions">Pandas Type Conversions</a></li>
+  <li><a href="#pandas-creating-new-columns" id="toc-pandas-creating-new-columns" class="nav-link" data-scroll-target="#pandas-creating-new-columns">Pandas Creating New Columns</a></li>
+  <li><a href="#pandas-sorting-indexing" id="toc-pandas-sorting-indexing" class="nav-link" data-scroll-target="#pandas-sorting-indexing">Pandas Sorting &amp; Indexing</a></li>
+  <li><a href="#pandas-groupby-aggregations" id="toc-pandas-groupby-aggregations" class="nav-link" data-scroll-target="#pandas-groupby-aggregations">Pandas GroupBy &amp; Aggregations</a></li>
+  <li><a href="#pandas-built-in-plotting" id="toc-pandas-built-in-plotting" class="nav-link" data-scroll-target="#pandas-built-in-plotting">Pandas Built-in Plotting</a></li>
+  <li><a href="#matplotlib-basics" id="toc-matplotlib-basics" class="nav-link" data-scroll-target="#matplotlib-basics">Matplotlib Basics</a></li>
+  <li><a href="#matplotlib-labels-titles-layout" id="toc-matplotlib-labels-titles-layout" class="nav-link" data-scroll-target="#matplotlib-labels-titles-layout">Matplotlib Labels, Titles &amp; Layout</a></li>
+  <li><a href="#matplotlib-plot-types" id="toc-matplotlib-plot-types" class="nav-link" data-scroll-target="#matplotlib-plot-types">Matplotlib Plot Types</a></li>
+  </ul></li>
   </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content column-page-left" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
 
 <p><br></p>
 <div class="d-flex gap-2">
-<p><a href="../../index.html" class="btn btn-outline-secondary btn-sm">Home</a> <a href="../../python/index.html" class="btn btn-outline-secondary btn-sm">Python Overview</a> <a href="../../python/lessons/01basics1.html" class="btn btn-outline-secondary btn-sm">1</a> <a href="../../python/lessons/02basics2.html" class="btn btn-outline-secondary btn-sm">2</a> <a href="../../python/lessons/03basics3.html" class="btn btn-outline-secondary btn-sm">3</a> <a href="../../python/lessons/04basics4.html" class="btn btn-outline-secondary btn-sm">4</a> <a href="../../python/lessons/05pandas1.html" class="btn btn-outline-secondary btn-sm">5</a> <a href="../../python/lessons/06pandas2.html" class="btn btn-outline-secondary btn-sm">6</a> <a href="../../python/lessons/07Visualisations.html" class="btn btn-outline-secondary btn-sm">7</a> <a href="../../python/lessons/08WrapUp_Refresher.html" class="btn btn-outline-secondary btn-sm">8</a> <a href="../../python/lessons/09QA_SampleExam.html" class="btn btn-outline-secondary btn-sm">9</a></p>
+<p><a href="../../index.html" class="btn btn-outline-secondary btn-sm">Home</a> <a href="../../python/index.html" class="btn btn-outline-secondary btn-sm">Python Overview</a> <a href="../../python/lessons/01basics1.html" class="btn btn-outline-secondary btn-sm">1</a> <a href="../../python/lessons/02basics2.html" class="btn btn-outline-secondary btn-sm">2</a> <a href="../../python/lessons/03pandas1.html" class="btn btn-outline-secondary btn-sm">3</a> <a href="../../python/lessons/04pandas2.html" class="btn btn-outline-secondary btn-sm">4</a></p>
 </div>
-<section id="week-5-pandas-i" class="level1">
-<h1>Week 5: Pandas I</h1>
-<p><em>The foundation of your Python journey.</em></p>
-<div class="quarto-layout-panel" data-layout-ncol="1">
-<div class="quarto-layout-row">
-<section id="motivation" class="level3 quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
-<h3 class="anchored" data-anchor-id="motivation">(Motivation)</h3>
-<ul>
-<li><a href="https://www.youtube.com/watch?v=KHoEbRH46Zk" class="new-tab"><strong>Motivation NumPy &amp; Pandas</strong></a></li>
-</ul>
+<section id="session-4-pandas-ii-matplotlib" class="level1">
+<h1>Session 4: Pandas II &amp; Matplotlib</h1>
+<p><em>Daten aufbereiten, auswerten und sichtbar machen.</em></p>
+<p>In dieser Session bereitest du Daten sauber auf, fasst sie nach Gruppen zusammen und machst deine Ergebnisse mit Diagrammen sichtbar, erst direkt mit Pandas, dann mit Matplotlib.</p>
+<p><br></p>
+<section id="themen" class="level2">
+<h2 class="anchored" data-anchor-id="themen">Themen</h2>
+<section id="pandas-cleaning-data" class="level3">
+<h3 class="anchored" data-anchor-id="pandas-cleaning-data">Pandas Cleaning Data</h3>
+<p>Rohdaten enthalten oft Duplikate, Tippfehler oder uneinheitliche Schreibweisen. Bevor man auswertet, werden sie bereinigt, z. B. doppelte Zeilen entfernt und Texte vereinheitlicht.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> df.drop_duplicates()</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"stadt"</span>] <span class="op">=</span> df[<span class="st">"stadt"</span>].<span class="bu">str</span>.strip().<span class="bu">str</span>.title()</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> df.rename(columns<span class="op">=</span>{<span class="st">"alter"</span>: <span class="st">"age"</span>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-</div>
-<div class="quarto-layout-row">
-<section id="pandas-workshop" class="level3 quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
-<h3 class="anchored" data-anchor-id="pandas-workshop">(Pandas Workshop)</h3>
-<ul>
-<li><a href="https://github.com/STADS-Mannheim/python-course-2025/tree/main/Week_05_Pandas_Workshop" class="new-tab"><strong>Section 1</strong></a></li>
-<li>Review <a href="https://github.com/STADS-Mannheim/python-course-2025/tree/main/Week_05_Pandas_Workshop" class="new-tab"><strong>Section 1</strong></a></li>
-<li><a href="https://github.com/STADS-Mannheim/python-course-2025/tree/main/Week_05_Pandas_Workshop" class="new-tab"><strong>Section 2</strong></a></li>
-</ul>
+<section id="pandas-type-conversions" class="level3">
+<h3 class="anchored" data-anchor-id="pandas-type-conversions">Pandas Type Conversions</h3>
+<p>Nicht jede Spalte hat automatisch den richtigen Datentyp, Zahlen oder Daten werden z. B. oft als Text eingelesen. Mit <code>astype()</code> und <code>pd.to_datetime()</code> wandelt man sie um.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"alter"</span>] <span class="op">=</span> df[<span class="st">"alter"</span>].astype(<span class="bu">int</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"datum"</span>] <span class="op">=</span> pd.to_datetime(df[<span class="st">"datum"</span>])</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>df.dtypes</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-</div>
-</div>
-<section id="resources" class="level2">
-<h2 class="anchored" data-anchor-id="resources">Resources</h2>
-<div class="quarto-layout-panel" data-layout-ncol="2">
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<p><a href="https://www.github.com/STADS-Mannheim/python-course-2025/tree/main" class="btn btn-outline-primary btn-lg w-100 new-tab">GitHub Repo</a></p>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<p><a href="https://www.w3schools.com/python/" class="btn btn-outline-primary btn-lg w-100 new-tab">w3schools Tutorial</a></p>
-</div>
-</div>
-</div>
+<section id="pandas-creating-new-columns" class="level3">
+<h3 class="anchored" data-anchor-id="pandas-creating-new-columns">Pandas Creating New Columns</h3>
+<p>Neue Spalten entstehen, indem man einem neuen Spaltennamen einen Wert oder eine Berechnung aus anderen Spalten zuweist.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"preis_brutto"</span>] <span class="op">=</span> df[<span class="st">"preis"</span>] <span class="op">*</span> <span class="fl">1.19</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"volljaehrig"</span>] <span class="op">=</span> df[<span class="st">"alter"</span>] <span class="op">&gt;=</span> <span class="dv">18</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="pandas-sorting-indexing" class="level3">
+<h3 class="anchored" data-anchor-id="pandas-sorting-indexing">Pandas Sorting &amp; Indexing</h3>
+<p>Mit <code>sort_values()</code> sortiert man nach einer oder mehreren Spalten. Mit <code>set_index()</code> und <code>reset_index()</code> legt man fest, welche Spalte als Zeilenbeschriftung dient.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>df.sort_values(<span class="st">"alter"</span>, ascending<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> df.set_index(<span class="st">"name"</span>)</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> df.reset_index()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="pandas-groupby-aggregations" class="level3">
+<h3 class="anchored" data-anchor-id="pandas-groupby-aggregations">Pandas GroupBy &amp; Aggregations</h3>
+<p>Mit <code>groupby()</code> teilt man die Daten in Gruppen und berechnet für jede Gruppe Kennzahlen, z. B. den Durchschnitt pro Kategorie.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>df.groupby(<span class="st">"stadt"</span>)[<span class="st">"alter"</span>].mean()</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>df.groupby(<span class="st">"stadt"</span>).agg({<span class="st">"alter"</span>: [<span class="st">"mean"</span>, <span class="st">"max"</span>], <span class="st">"name"</span>: <span class="st">"count"</span>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="pandas-built-in-plotting" class="level3">
+<h3 class="anchored" data-anchor-id="pandas-built-in-plotting">Pandas Built-in Plotting</h3>
+<p>Pandas kann Diagramme direkt aus einem DataFrame oder einer Series erzeugen, ideal für einen schnellen ersten Blick auf die Daten.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>df[<span class="st">"alter"</span>].plot(kind<span class="op">=</span><span class="st">"hist"</span>)</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>df.groupby(<span class="st">"stadt"</span>)[<span class="st">"alter"</span>].mean().plot(kind<span class="op">=</span><span class="st">"bar"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="matplotlib-basics" class="level3">
+<h3 class="anchored" data-anchor-id="matplotlib-basics">Matplotlib Basics</h3>
+<p>Matplotlib ist die Standardbibliothek für Diagramme in Python. Mit <code>plt.plot()</code> erstellt man einen Plot und mit <code>plt.show()</code> zeigt man ihn an.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>]</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> [<span class="dv">10</span>, <span class="dv">20</span>, <span class="dv">15</span>, <span class="dv">25</span>]</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>plt.plot(x, y)</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="matplotlib-labels-titles-layout" class="level3">
+<h3 class="anchored" data-anchor-id="matplotlib-labels-titles-layout">Matplotlib Labels, Titles &amp; Layout</h3>
+<p>Ein Diagramm wird erst durch Beschriftungen verständlich: Titel, Achsenbeschriftungen und Legende. Mit <code>figsize</code> und <code>tight_layout()</code> steuert man Größe und Abstände.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">8</span>, <span class="dv">4</span>))</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>plt.plot(x, y, label<span class="op">=</span><span class="st">"Umsatz"</span>)</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"Umsatz pro Quartal"</span>)</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">"Quartal"</span>)</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">"Umsatz in €"</span>)</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>plt.legend()</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="matplotlib-plot-types" class="level3">
+<h3 class="anchored" data-anchor-id="matplotlib-plot-types">Matplotlib Plot Types</h3>
+<p>Je nach Frage passt ein anderer Diagrammtyp: Linien für Verläufe, Balken für Vergleiche, Histogramme für Verteilungen und Streudiagramme für Zusammenhänge.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>plt.bar([<span class="st">"A"</span>, <span class="st">"B"</span>, <span class="st">"C"</span>], [<span class="dv">5</span>, <span class="dv">8</span>, <span class="dv">3</span>])     <span class="co"># Balken</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>plt.hist(df[<span class="st">"alter"</span>], bins<span class="op">=</span><span class="dv">10</span>)          <span class="co"># Histogramm</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>plt.scatter(df[<span class="st">"alter"</span>], df[<span class="st">"preis"</span>])   <span class="co"># Streudiagramm</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 
 
+</section>
 </section>
 </section>
 

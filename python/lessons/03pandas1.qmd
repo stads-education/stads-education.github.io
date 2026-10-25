@@ -25,6 +25,14 @@ In dieser Session lernst du Pandas kennen, die wichtigste Python-Bibliothek für
 
 <br>
 
+## Material
+
+Das Vorbereitungs-Notebook enthält alle Themen dieser Session zum Mitmachen. Öffne es in Jupyter oder VS Code.
+
+[Notebook herunterladen (.ipynb)](../../files/Python_Session3_Vorbereitung.ipynb){.btn .btn-outline-primary role="button" download="Python_Session3_Vorbereitung.ipynb"}
+
+<br>
+
 ## Themen
 
 ### Pandas Getting Started

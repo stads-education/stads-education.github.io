@@ -2,13 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.27">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>basics2</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -67,15 +70,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <meta name="quarto:offset" content="../../">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-029b10fc0dc652dab2ec1ac156c1a037.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-84cfdeff8e8ddd510a79be3971e85af5.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -139,13 +141,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="menu-text">About Us</span></a>
   </li>  
 </ul>
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/stads-education" target="_blank"> <i class="bi bi-github" role="img">
-</i> 
-<span class="menu-text"></span></a>
-  </li>  
-</ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
 </div>
@@ -153,125 +148,134 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#week-2-python-basics-ii" id="toc-week-2-python-basics-ii" class="nav-link active" data-scroll-target="#week-2-python-basics-ii">Week 2: Python Basics II</a>
+  <li><a href="#session-2-python-basics-ii" id="toc-session-2-python-basics-ii" class="nav-link active" data-scroll-target="#session-2-python-basics-ii">Session 2: Python Basics II</a>
   <ul class="collapse">
-  <li><a href="#project-2-love-calculator" id="toc-project-2-love-calculator" class="nav-link" data-scroll-target="#project-2-love-calculator">Project 2: Love Calculator</a></li>
-  <li><a href="#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources">Resources</a></li>
+  <li><a href="#themen" id="toc-themen" class="nav-link" data-scroll-target="#themen">Themen</a>
+  <ul class="collapse">
+  <li><a href="#python-lists" id="toc-python-lists" class="nav-link" data-scroll-target="#python-lists">Python Lists</a></li>
+  <li><a href="#python-tuples" id="toc-python-tuples" class="nav-link" data-scroll-target="#python-tuples">Python Tuples</a></li>
+  <li><a href="#python-sets" id="toc-python-sets" class="nav-link" data-scroll-target="#python-sets">Python Sets</a></li>
+  <li><a href="#python-dictionaries" id="toc-python-dictionaries" class="nav-link" data-scroll-target="#python-dictionaries">Python Dictionaries</a></li>
+  <li><a href="#python-while-loops" id="toc-python-while-loops" class="nav-link" data-scroll-target="#python-while-loops">Python While Loops</a></li>
+  <li><a href="#python-for-loops" id="toc-python-for-loops" class="nav-link" data-scroll-target="#python-for-loops">Python For Loops</a></li>
+  <li><a href="#python-functions" id="toc-python-functions" class="nav-link" data-scroll-target="#python-functions">Python Functions</a></li>
+  <li><a href="#python-lambda" id="toc-python-lambda" class="nav-link" data-scroll-target="#python-lambda">Python Lambda</a></li>
+  <li><a href="#python-scope" id="toc-python-scope" class="nav-link" data-scroll-target="#python-scope">Python Scope</a></li>
+  </ul></li>
   </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content column-page-left" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
 
 <p><br></p>
 <div class="d-flex gap-2">
-<p><a href="../../index.html" class="btn btn-outline-secondary btn-sm">Home</a> <a href="../../python/index.html" class="btn btn-outline-secondary btn-sm">Python Overview</a> <a href="../../python/lessons/01basics1.html" class="btn btn-outline-secondary btn-sm">1</a> <a href="../../python/lessons/02basics2.html" class="btn btn-outline-secondary btn-sm">2</a> <a href="../../python/lessons/03basics3.html" class="btn btn-outline-secondary btn-sm">3</a> <a href="../../python/lessons/04basics4.html" class="btn btn-outline-secondary btn-sm">4</a> <a href="../../python/lessons/05pandas1.html" class="btn btn-outline-secondary btn-sm">5</a> <a href="../../python/lessons/06pandas2.html" class="btn btn-outline-secondary btn-sm">6</a> <a href="../../python/lessons/07Visualisations.html" class="btn btn-outline-secondary btn-sm">7</a> <a href="../../python/lessons/08WrapUp_Refresher.html" class="btn btn-outline-secondary btn-sm">8</a> <a href="../../python/lessons/09QA_SampleExam.html" class="btn btn-outline-secondary btn-sm">9</a></p>
+<p><a href="../../index.html" class="btn btn-outline-secondary btn-sm">Home</a> <a href="../../python/index.html" class="btn btn-outline-secondary btn-sm">Python Overview</a> <a href="../../python/lessons/01basics1.html" class="btn btn-outline-secondary btn-sm">1</a> <a href="../../python/lessons/02basics2.html" class="btn btn-outline-secondary btn-sm">2</a> <a href="../../python/lessons/03pandas1.html" class="btn btn-outline-secondary btn-sm">3</a> <a href="../../python/lessons/04pandas2.html" class="btn btn-outline-secondary btn-sm">4</a></p>
 </div>
-<section id="week-2-python-basics-ii" class="level1">
-<h1>Week 2: Python Basics II</h1>
-<p><em>The foundation of your Python journey.</em></p>
-<div class="quarto-layout-panel" data-layout-ncol="1">
-<div class="quarto-layout-row">
-<section id="project" class="level3 quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
-<h3 class="anchored" data-anchor-id="project">(Project)</h3>
-<ul>
-<li>Review <a href="https://stads-python-course.github.io/projects/project-1.html" class="new-tab"><strong>Project 1</strong></a></li>
-</ul>
-</section>
-</div>
-<div class="quarto-layout-row">
-<section id="fundamentals" class="level3 quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
-<h3 class="anchored" data-anchor-id="fundamentals">(Fundamentals)</h3>
-<ul>
-<li><a href="https://www.w3schools.com/python/python_booleans.asp" class="new-tab"><strong>Python Booleans</strong></a></li>
-<li><a href="https://www.w3schools.com/python/python_operators.asp" class="new-tab"><strong>Python Operators</strong></a></li>
-<li><a href="https://www.w3schools.com/python/python_math.asp" class="new-tab"><strong>Python Math</strong></a></li>
-</ul>
-</section>
-</div>
-<div class="quarto-layout-row">
-<section id="project-1" class="level3 quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
-<h3 class="anchored" data-anchor-id="project-1">(Project)</h3>
-<ul>
-<li><a href="https://stads-python-course.github.io/projects/project-2.html" class="new-tab"><strong>Project 2: Love Calculator</strong></a></li>
-<li>Review <a href="https://stads-python-course.github.io/projects/project-2.html" class="new-tab"><strong>Project 2</strong></a></li>
-</ul>
-</section>
-</div>
-<div class="quarto-layout-row">
-<section id="fundamentals-1" class="level3 quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
-<h3 class="anchored" data-anchor-id="fundamentals-1">(Fundamentals)</h3>
-<ul>
-<li><a href="https://www.w3schools.com/python/python_lists.asp" class="new-tab"><strong>Python Lists</strong></a></li>
-<li><a href="https://www.w3schools.com/python/python_tuples.asp" class="new-tab"><strong>Python Tuples</strong></a> (postponed to week 3)</li>
-<li><a href="https://www.w3schools.com/python/python_sets.asp" class="new-tab"><strong>Python Sets</strong></a> (postponed to week 3)</li>
-<li><a href="https://www.w3schools.com/python/python_dictionaries.asp" class="new-tab"><strong>Python Dictionaries</strong></a> (postponed to week 3)</li>
-</ul>
-</section>
-</div>
-</div>
+<section id="session-2-python-basics-ii" class="level1">
+<h1>Session 2: Python Basics II</h1>
+<p><em>Daten sammeln, wiederholen und wiederverwenden.</em></p>
+<p>In dieser Session lernst du die vier Sammlungstypen von Python kennen, wiederholst Code mit Schleifen und packst Logik in eigene Funktionen, damit du sie nicht immer wieder neu schreiben musst.</p>
 <p><br></p>
-<section id="project-2-love-calculator" class="level2">
-<h2 class="anchored" data-anchor-id="project-2-love-calculator">Project 2: Love Calculator</h2>
-<div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">The Task</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Hint</a></li></ul>
-<div class="tab-content">
-<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<p>Everyone knows the love calculators from the internet. You input two names and get a love score. Today you will code your own love calculator. You can be creative and make it all alone with your own creativity or you can use this template:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>name1 <span class="op">=</span> your name</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>name2 <span class="op">=</span> their name</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>combined_string <span class="op">=</span> name1 <span class="op">+</span> name2 <span class="co"># convert it to all lowercase</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>t <span class="op">=</span> number of t<span class="st">'s in combined_string</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="er">r = number of r's in combined_string</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>u <span class="op">=</span> ...</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>e <span class="op">=</span> ...</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>first_digit <span class="op">=</span> t <span class="op">+</span> r <span class="op">+</span> u <span class="op">+</span> e</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>...</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>second_digit <span class="op">=</span> l <span class="op">+</span> o <span class="op">+</span> v <span class="op">+</span> e</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>love_score <span class="op">=</span> string representation of first_digit <span class="op">+</span> string representation of second_digit</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>if the love score is under 10 or greater than 90 then print the score and the phrase “you go together like coke and mentos” if the love score is between inclusive 40 and inclusive 50 then print the score and the phrase “you are mid together” if the love score is 69 then print the score and the phrase “you are like ying and yang” else print the score and the phrase “you are like bonnie and clyde”</p>
-</div>
-<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<p>Here is a description of all steps required: - Ask the user for their name - Ask the user for their love’s name - Concatenate both to one string and make it lowercase - Count the number of t’s, r’s, u’s and e’s for the first digit - Count the number of l’s, o’s, v’s and e’s for the second digit - Convert both digits to strings then add them - Convert the result back to an integer</p>
-<ul>
-<li>if the love score is smaller or equal to 10 or larger or equal to 90 print “Your love score is {love_score}%, you go together like coca cola and mentos”</li>
-<li>else if love score is greater than 10 and smaller than 60 print “Your love score is {love_score}%, you are mid together”</li>
-<li>else if love score equals 69 print “Your love score is {love_score}%, you are like ying and yang.”</li>
-<li>else print “Your love score is {love_score}%, you are like bonnie and clyde.”</li>
-</ul>
-</div>
-</div>
-</div>
+<section id="themen" class="level2">
+<h2 class="anchored" data-anchor-id="themen">Themen</h2>
+<section id="python-lists" class="level3">
+<h3 class="anchored" data-anchor-id="python-lists">Python Lists</h3>
+<p>Listen speichern mehrere Werte in einer Variable, geschrieben in eckigen Klammern. Sie sind <strong>geordnet, veränderbar</strong> und erlauben doppelte Werte. Der erste Eintrag hat den Index <code>0</code>.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>fruechte <span class="op">=</span> [<span class="st">"Apfel"</span>, <span class="st">"Banane"</span>, <span class="st">"Kirsche"</span>]</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>fruechte.append(<span class="st">"Mango"</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(fruechte[<span class="dv">0</span>], <span class="bu">len</span>(fruechte))   <span class="co"># Apfel 4</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><a href="https://www.w3schools.com/python/python_lists.asp" class="btn btn-outline-primary btn-sm new-tab">Zum Thema →</a></p>
 </section>
-<section id="resources" class="level2">
-<h2 class="anchored" data-anchor-id="resources">Resources</h2>
-<div class="quarto-layout-panel" data-layout-ncol="2">
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<p><a href="https://www.github.com/STADS-Mannheim/python-course-2025/tree/main" class="btn btn-outline-primary btn-lg w-100 new-tab">GitHub Repo</a></p>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<p><a href="https://www.w3schools.com/python/" class="btn btn-outline-primary btn-lg w-100 new-tab">w3schools Tutorial</a></p>
-</div>
-</div>
-</div>
+<section id="python-tuples" class="level3">
+<h3 class="anchored" data-anchor-id="python-tuples">Python Tuples</h3>
+<p>Tupel funktionieren ähnlich wie Listen, werden aber mit runden Klammern geschrieben und sind <strong>nicht veränderbar</strong>. Sie eignen sich für feste Daten wie Koordinaten. Ein Tupel mit nur einem Element braucht ein Komma: <code>("a",)</code>.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>punkt <span class="op">=</span> (<span class="fl">49.48</span>, <span class="fl">8.47</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(punkt[<span class="dv">0</span>])     <span class="co"># 49.48</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co"># punkt[0] = 50     → Fehler, Tupel sind unveränderbar</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><a href="https://www.w3schools.com/python/python_tuples.asp" class="btn btn-outline-primary btn-sm new-tab">Zum Thema →</a></p>
+</section>
+<section id="python-sets" class="level3">
+<h3 class="anchored" data-anchor-id="python-sets">Python Sets</h3>
+<p>Sets stehen in geschweiften Klammern, sind <strong>ungeordnet</strong> und enthalten jeden Wert nur einmal. Doppelte Einträge werden automatisch entfernt. Ideal, wenn nur die eindeutigen Werte zählen.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>farben <span class="op">=</span> {<span class="st">"rot"</span>, <span class="st">"blau"</span>, <span class="st">"rot"</span>, <span class="st">"grün"</span>}</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(farben)            <span class="co"># {'rot', 'blau', 'grün'}</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>farben.add(<span class="st">"gelb"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><a href="https://www.w3schools.com/python/python_sets.asp" class="btn btn-outline-primary btn-sm new-tab">Zum Thema →</a></p>
+</section>
+<section id="python-dictionaries" class="level3">
+<h3 class="anchored" data-anchor-id="python-dictionaries">Python Dictionaries</h3>
+<p>Dictionaries speichern Daten als <strong>Schlüssel-Wert-Paare</strong>. Über den Schlüssel greift man direkt auf den Wert zu. Jeder Schlüssel ist eindeutig, Werte können aber jeden Datentyp haben, auch Listen.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>student <span class="op">=</span> {<span class="st">"name"</span>: <span class="st">"Lea"</span>, <span class="st">"semester"</span>: <span class="dv">3</span>, <span class="st">"kurse"</span>: [<span class="st">"Python"</span>, <span class="st">"SQL"</span>]}</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(student[<span class="st">"name"</span>])       <span class="co"># Lea</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>student[<span class="st">"semester"</span>] <span class="op">=</span> <span class="dv">4</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><a href="https://www.w3schools.com/python/python_dictionaries.asp" class="btn btn-outline-primary btn-sm new-tab">Zum Thema →</a></p>
+</section>
+<section id="python-while-loops" class="level3">
+<h3 class="anchored" data-anchor-id="python-while-loops">Python While Loops</h3>
+<p>Eine <code>while</code>-Schleife wiederholt Code, <strong>solange eine Bedingung wahr ist</strong>. Wichtig: Die Bedingung muss irgendwann falsch werden, sonst läuft die Schleife endlos. Mit <code>break</code> bricht man vorzeitig ab, mit <code>continue</code> springt man zum nächsten Durchlauf.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>i <span class="op">=</span> <span class="dv">1</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> i <span class="op">&lt;=</span> <span class="dv">3</span>:</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Durchlauf"</span>, i)</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    i <span class="op">+=</span> <span class="dv">1</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><a href="https://www.w3schools.com/python/python_while_loops.asp" class="btn btn-outline-primary btn-sm new-tab">Zum Thema →</a></p>
+</section>
+<section id="python-for-loops" class="level3">
+<h3 class="anchored" data-anchor-id="python-for-loops">Python For Loops</h3>
+<p>Eine <code>for</code>-Schleife geht <strong>jedes Element einer Sequenz</strong> durch, z. B. eine Liste, einen String oder ein Dictionary. Mit <code>range()</code> lässt sich auch einfach eine bestimmte Anzahl an Wiederholungen erzeugen.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> frucht <span class="kw">in</span> [<span class="st">"Apfel"</span>, <span class="st">"Banane"</span>]:</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(frucht)</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">3</span>):</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(i)        <span class="co"># 0, 1, 2</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><a href="https://www.w3schools.com/python/python_for_loops.asp" class="btn btn-outline-primary btn-sm new-tab">Zum Thema →</a></p>
+</section>
+<section id="python-functions" class="level3">
+<h3 class="anchored" data-anchor-id="python-functions">Python Functions</h3>
+<p>Mit <code>def</code> definiert man eine Funktion: einen benannten Codeblock, den man beliebig oft aufrufen kann. Funktionen können Parameter entgegennehmen und mit <code>return</code> ein Ergebnis zurückgeben.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> begruessung(name):</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="st">"Hallo "</span> <span class="op">+</span> name <span class="op">+</span> <span class="st">"!"</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(begruessung(<span class="st">"Max"</span>))   <span class="co"># Hallo Max!</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><a href="https://www.w3schools.com/python/python_functions.asp" class="btn btn-outline-primary btn-sm new-tab">Zum Thema →</a></p>
+</section>
+<section id="python-lambda" class="level3">
+<h3 class="anchored" data-anchor-id="python-lambda">Python Lambda</h3>
+<p>Eine Lambda-Funktion ist eine <strong>kleine, namenlose Funktion</strong> in einer Zeile: <code>lambda argumente: ausdruck</code>. Sie wird oft kurz zusammen mit <code>sorted()</code>, <code>map()</code> oder <code>filter()</code> genutzt.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>verdoppeln <span class="op">=</span> <span class="kw">lambda</span> x: x <span class="op">*</span> <span class="dv">2</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(verdoppeln(<span class="dv">5</span>))        <span class="co"># 10</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>namen <span class="op">=</span> [<span class="st">"Tom"</span>, <span class="st">"Alexandra"</span>, <span class="st">"Eva"</span>]</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">sorted</span>(namen, key<span class="op">=</span><span class="kw">lambda</span> n: <span class="bu">len</span>(n)))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><a href="https://www.w3schools.com/python/python_lambda.asp" class="btn btn-outline-primary btn-sm new-tab">Zum Thema →</a></p>
+</section>
+<section id="python-scope" class="level3">
+<h3 class="anchored" data-anchor-id="python-scope">Python Scope</h3>
+<p>Der Scope bestimmt, <strong>wo eine Variable sichtbar ist</strong>. Variablen innerhalb einer Funktion sind lokal und nur dort verfügbar. Variablen im Hauptprogramm sind global und überall lesbar.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">10</span>              <span class="co"># global</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> zeige():</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>    y <span class="op">=</span> <span class="dv">5</span>           <span class="co"># lokal</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(x <span class="op">+</span> y)</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>zeige()             <span class="co"># 15</span></span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a><span class="co"># print(y)          → Fehler, y existiert nur in der Funktion</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><a href="https://www.w3schools.com/python/python_scope.asp" class="btn btn-outline-primary btn-sm new-tab">Zum Thema →</a></p>
 
 
+</section>
 </section>
 </section>
 
