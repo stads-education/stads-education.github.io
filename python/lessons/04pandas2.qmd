@@ -25,6 +25,14 @@ In dieser Session bereitest du Daten sauber auf, fasst sie nach Gruppen zusammen
 
 <br>
 
+## Material
+
+Das Vorbereitungs-Notebook enthält alle Themen dieser Session zum Mitmachen. Öffne es in Jupyter oder VS Code.
+
+[Notebook herunterladen (.ipynb)](../../files/Python_Session4_Vorbereitung.ipynb){.btn .btn-outline-primary role="button" download="Python_Session4_Vorbereitung.ipynb"}
+
+<br>
+
 ## Themen
 
 ### Pandas Cleaning Data
